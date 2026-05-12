@@ -56,7 +56,7 @@ Workbook s.306–307 (etik kapanış) → ITC Method Book §D Etik Eğitmenlik.
 
 ### Madde C.2 — Sezgisel temas ve kalibrasyon
 
-Workbook s.31–45 (sezgisel temas) → ITC Method Book §C Modül I (Kendini Tanı). 2. baskıda bu bağ kurulur; 1. baskıda Method Book henüz yayımlanmadığı için referans yoktur.
+Workbook s.31–45 (sezgisel temas) → ITC Method Book §C Modül I (Kendini Tanı) — VAK + Sezgisel kanal bütünü. **2. baskıda iki kenar notu ile bu sayfa Çift Üçlü ayrımının görünür hâli olur:** (i) s.20 üst paragrafa "VAK ≠ Giriş Kapıları" kenar notu (klinik güvenlik bandıyla aynı sayfa), (ii) s.31–45 sezgisel temas spread başlığının altına "Bu kısım açık kanalını yokluyor; karaktere bilişsel, bedensel, ya da duygusal kapıdan girebilirsin — bu kısım o kapıyı belirlemez" kanon notu. Workbook bu noktada VAK katmanını çalışırken Giriş Kapıları'nın Method Book'ta açıldığını işaret eder. Çift Üçlü için bkz. ITC Method Book §3.10 (Spine v1.4).
 
 ### Madde C.3 — Doğrular, Timeline, Çerçeveler
 
@@ -109,7 +109,7 @@ Brief v2 §7.2 Workbook QR Kod Entegrasyonu hedefi. 1. baskıda yok; 2. baskıda
 | Workbook Bölüm | QR Hedef (App Sayfası) |
 |---|---|
 | Bölüm I–XIII (her bölüm sonu) | /workbook/[bolum-no] — App'in özel içeriği (henüz yayımlanmamış) |
-| s.31–45 (sezgisel temas) sonu | /antrenman/kalibrasyon — VAK + MBTI + Yıldız Oyuncu testleri |
+| s.31–45 (sezgisel temas) sonu | /antrenman/kalibrasyon — VAK + MBTI + Yıldız Oyuncu testleri. **App ekranında bilgi kutusu:** "Bu test nasıl öğrendiğini söyler. Karaktere nereden gireceğini (Bilişsel · Bedensel · Duygusal) Modül II soruları belirler — 3×3 Matris için bkz. Method Book §3.10." |
 | s.50–57 (Doğrular) sonu | /antrenman/karakter/hamlet#dogrular |
 | s.58–85 (Timeline) sonu | /antrenman/karakter/hamlet#timeline |
 | s.86–125 (Çerçeveler) sonu | /antrenman/karakter/hamlet#yazarin-cercevesi |
@@ -122,7 +122,7 @@ Brief v2 §7.2 Workbook QR Kod Entegrasyonu hedefi. 1. baskıda yok; 2. baskıda
 
 ## F. Sonuç ve Açık Kararlar
 
-**§F · Sonuç ve Açık Kararlar.** Workbook 2. baskı yapısal değişiklik içermez; 13 bölüm, 3 bedensel yoklama, 5 çapa, Tip A/B/C/D bölüm tiplemesi korunur. Değişiklikler errata (5 madde), Method Book geri-referansları (11 nokta), klinik güvenlik eklemeleri (5 katman) ve App QR kod entegrasyonu olarak dağılır. 2. baskı manuscript yayıncıya teslim edildiğinde rapor "kesin diff" hâline çevrilir.
+**§F · Sonuç ve Açık Kararlar.** Workbook 2. baskı yapısal değişiklik içermez; 13 bölüm, 3 bedensel yoklama, 5 çapa, Tip A/B/C/D bölüm tiplemesi korunur. Değişiklikler errata (5 madde + Çift Üçlü iki kenar notu = 7 madde), Method Book geri-referansları (11 nokta — C.2 Çift Üçlü ile genişledi), klinik güvenlik eklemeleri (5 katman) ve App QR kod entegrasyonu (Çift Üçlü bilgi kutusu satır 2'de eklendi) olarak dağılır. **Kanon altyapısı bakımından 2. baskı, ITC Method Book §3.10 (Spine v1.4) Çift Üçlü İlkesi ile uyumlu ilk Workbook baskısıdır;** bu kanonun pedagojik kaymasını sayfa düzeyinde işaretler, ama yapısal yeniden yazıma girmez. 2. baskı manuscript yayıncıya teslim edildiğinde rapor "kesin diff" hâline çevrilir.
 
 ### Açık Kararlar — Workbook 2. Baskı Özelinde
 
