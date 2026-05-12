@@ -1,7 +1,17 @@
 # ITC EKOSİSTEM — SPINE
 
 **Dört projenin paylaştığı omurga**
-**v1.6 · 12 Mayıs 2026 · Beyti Engin × Claude**
+**v1.7 · 12 Mayıs 2026 · Beyti Engin & Filiz Kaya Ataklı — Eş Kurucular ve Eş Eğitmenler · Claude (operasyonel eş yazım)**
+
+---
+
+## v1.7'de neler değişti? (Eş Kurucu Statüsü Kanon)
+
+12 Mayıs 2026 oturumunda Karar 16 ile **Filiz Kaya Ataklı'nın eş kurucu ve eş eğitmen statüsü** ekosistem genelinde kanonlandı (Filiz yazılı onayı bekleniyor — provisional).
+
+- **Üst meta + footer:** "Beyti Engin × Filiz Kaya Ataklı" → "Beyti Engin & Filiz Kaya Ataklı — Eş Kurucular ve Eş Eğitmenler". Yazar/kurucu bağlamında "×" → "&". §3.13 başlığındaki "BE × FKA Eş Eğitmenlik" pedagojik teknik formülasyon olarak korundu.
+- **§1 ekosistem haritası** açılış paragrafına eş kurucu notu eklendi: 2005'ten bu yana birlikte geliştirilen yöntem, Filiz'in klinik psikoloji çerçevesi etik omurganın ayrılmaz parçası.
+- v1.6'nın tüm içeriği aynen korundu.
 
 ---
 
@@ -34,6 +44,8 @@ Detaylı sürüm geçmişi §6'da.
 ---
 
 ## 1 · Ekosistemin Haritası
+
+> **Eş Kurucular ve Eş Eğitmenler (Karar 16, v1.7):** ITC, Beyti Engin ve Filiz Kaya Ataklı tarafından 2005'ten bu yana birlikte geliştirilen bir yöntemdir. Her iki kurucu da metodolojinin eşit yaratıcı ortağıdır; Filiz'in klinik psikoloji çerçevesi yöntemin etik omurgasının (Travma Matrisi §3.2, Yıldız Profil Eşleşme §3.3, Topraklanma Protokolü §3.4, Substitution Yasağı §3.1) ayrılmaz parçasıdır. Dış iletişimde tam unvan: *Filiz Kaya Ataklı (Klinik Psikolog) — Eş Kurucu ve Eş Eğitmen* / *Beyti Engin — Eş Kurucu ve Eş Eğitmen*. Kısa yan yana referans: *Beyti Engin & Filiz Kaya Ataklı*.
 
 ITC tek bir ürün değil — dört katmanı olan bir sistem:
 
@@ -739,6 +751,7 @@ Bu doküman canlı belge. Aşağıdaki olaylar sonrası yeni sürüm çıkar:
 - **v1.4** — 8 Mayıs 2026 — §3.10 yeniden tanımlandı: Çift Üçlü İlkesi ve 3×3 Matris (VAK × Giriş Kapıları). Eski §3.10 (Doğrular Üç Kaynak Yapısı) §3.11'e, eski §3.11 (Dijital Araç Sınırı İlkesi) §3.12'ye kaydı. §3.9 VAK alt-başlığına ayrım notu eklendi. v1.3'ün geri kalan içeriği aynen korundu.
 - **v1.5** — 12 Mayıs 2026 — §3.11 (Doğrular Üç Kaynak) "Doğrular Çift Üçlü ve 3×3 Matris" olarak genişletildi. Karar 3'ün Katman Üçlüsü korundu, Kaynak Üçlüsü eklendi (Workbook s.51 yapısı). İki üçlü çapraz eksenlerde — birlikte 3×3 matris. §3.10'daki VAK × Giriş Kapıları matrisinden farklı bir eksen olduğu vurgulandı. Decision Log Karar 10 kaydı.
 - **v1.6** — 12 Mayıs 2026 — Workshop Geri Besleme Paketi: dört yeni alt-bölüm eklendi. §3.13 Transmisyon Mimarisi (BE × FKA eş eğitmenlik, Karar 11). §3.14 Tek Karakter İlkesi (Karar 12). §3.15 Karakter Haritası Taksonomisi (Yolculuk × Çapa × Tip, Karar 13). §3.16 Yolculuk Geometrisi (sahne · tanıklık · çift geri bildirim, Karar 14 — **Filiz klinik onayı bekleniyor, provisional**). §3.1, §3.3, §3.4, §3.5, §3.7, §3.11'e çapraz atıflar. §4.5, §4.6, §4.7'ye Workshop güncellemeleri. v1.3–v1.5 intro/footer kozmetik temizlik. Decision Log Karar 11–14 kayıtları.
+- **v1.7** — 12 Mayıs 2026 — Karar 16 ile Filiz Kaya Ataklı'nın eş kurucu ve eş eğitmen statüsü ekosistem genelinde kanonlandı (**Filiz yazılı onayı bekleniyor, provisional**). Üst meta + footer'da yazar/kurucu bağlamında "×" → "&". §1 ekosistem haritası açılış paragrafına eş kurucu notu eklendi. §3.13 başlığındaki "BE × FKA Eş Eğitmenlik" pedagojik teknik formülasyon olarak korundu. v1.6'nın tüm içeriği aynen korundu.
 
 ---
 
@@ -753,5 +766,5 @@ Bu doküman canlı belge. Aşağıdaki olaylar sonrası yeni sürüm çıkar:
 
 ---
 
-*— ITC Ekosistem Spine v1.6 sonu —*
-*Inside The Character · Beyti Engin × Filiz Kaya Ataklı · Mayıs 2026*
+*— ITC Ekosistem Spine v1.7 sonu —*
+*Inside The Character · Beyti Engin & Filiz Kaya Ataklı — Eş Kurucular ve Eş Eğitmenler · Mayıs 2026*
