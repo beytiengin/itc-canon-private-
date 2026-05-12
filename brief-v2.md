@@ -1,7 +1,757 @@
-# Brief v2
+# ITC EKOSİSTEM — Geliştirici Brief'i
 
-ITC ekosisteminin 24 aylık yol haritası.
+**v2.0**
+
+**Hazırlayan:** Beyti Engin
+**Klinik & Akademik Eş Sahip:** Filiz Kaya Ataklı (Klinik Psikolog)
+**Operasyonel Eş Yazar (AI):** Claude (Anthropic)
+**Tarih:** Mayıs 2026
+**Hedef:** Mayıs 2028 (24 aylık yol haritası)
+**Spine Sürümü Referansı:** v1.1 (6 Mayıs 2026); v1.3 (8 Mayıs 2026) sonrası dört katmanlı yapıya geçildi — bu brief'in bir sonraki revizyonu (v2.1) bu güncellemeyi yansıtacak.
 
 ---
 
-*Brief v2'nin tam içeriği Claude.ai project knowledge'ından buraya kopyalanacak.*
+## ÖNSÖZ — Bu Brief Niçin Yazıldı?
+
+ITC, üç katmanlı bir ekosistemdir: Method Kitabı, Hamlet Workbook, ITC App. Spine v1.1 ile bu üçünün birbirine atıf veren, sabit ilkelerle bağlı, canlı bir yapı olduğu netleşti. Ancak şu ana kadar üç katman paralel geliştirildi — birbirini besleyen, birbirini güncelleyen bir sistem henüz operasyonel değil.
+
+Bu brief, üç katmanlı ekosistemin önümüzdeki 24 ay boyunca:
+
+1. Tek kişi (Beyti) tarafından, ara ara Filiz onayıyla yürütüldüğü gerçekliğinde
+2. Claude'un aktif eş yazar olarak haftalık ritimle dahil olduğu yapıda
+3. Sürdürülebilir, ölçülebilir, ve birbirine atıflarla canlı kalan bir biçimde
+
+nasıl ilerleyeceğini tanımlar.
+
+Brief'in stratejik tonu bilinçli olarak "vizyon-ön planda, teknik detay yedek" kuruluyor. Geliştirici tek kişi olduğu için, kararların **niçin verildiği** **ne yapıldığından** daha önemli — çünkü bu sayede yarın koşullar değişirse, kararı yeniden formüle etmek mümkün.
+
+---
+
+## 1. STRATEJİK ÖZET
+
+### 1.1 ITC Nedir? (Spine v1.1 §1'den)
+
+ITC tek bir ürün değil — üç katmanı olan bir sistemdir:
+
+| Katman | Form | Hedef Kitle | İşlev |
+|---|---|---|---|
+| Method Kitabı | Basılı kuramsal+pratik kitap (~320 sf) | Eğitmenler, ileri oyuncular, akademi | Foundation. Yöntemin kavramsal otoritesi. |
+| Hamlet Workbook | Basılı uygulamalı çalışma kitabı (314 sf) | Tek başına çalışan oyuncu, prova öncesi | Yöntemin tek karaktere derinleşmiş hâli. |
+| ITC App | Web uygulaması, mobil uyumlu | Günlük antrenman yapan oyuncu | Dijital günlük pratik. Kalibrasyon + kısa antrenman. |
+
+*Not: Spine v1.3 (8 Mayıs 2026) sonrası Workshop dördüncü katman olarak eklendi. Bu brief'in 24 aylık yol haritasında Workshop pilotu Faz 3 Milestone 3.1 (HMDK Stuttgart) altında.*
+
+### 1.2 Konumlandırma Sentezi — "Ticari ama akademik duran"
+
+Method Book akademik prestiji taşır; App+Workbook ticari geliri sağlar; bu sentez ekosistemin sürdürülebilir kalmasının kilidi. Akademik meşruiyet olmadan ticari ölçek itibarsız; ticari altyapı olmadan akademik proje finansmansız.
+
+---
+
+## 2. DÖRT KATMANIN GÜNCEL DURUMU
+
+### 2.1 Method Kitabı — Inside The Character
+
+**Durum:** Master Outline v3 hazırlanmakta. Manuscript yazımına henüz başlanmadı.
+
+**Yapı:** A. Giriş · B. Felsefe · C. Üç Modüllü Sistem · C-Ek. Performans Blokajları · D. Etik · E. Vakalar · F. Ekler.
+
+**Sonraki adım:** Bölüm III (Modül II — Karakteri Tanı) prototip yazımı (Faz 1 Milestone 1.7).
+
+### 2.2 Hamlet Workbook
+
+**Durum:** v1.0 basılı yayımda. 13 bölüm · 5 çapa · 3 bedensel yoklama · 314 sayfa. Eyüboğlu çevirisi: Türkiye İş Bankası Kültür Yayınları izniyle.
+
+**Sonraki adım — 2. baskı errata:**
+- s.310 "11 yolculuk" → 13 düzeltilir
+- TOC tutarsızlığı düzeltilir
+- Method Book'a geri-referanslar eklenir (sayfa numarası eşleşmeleri)
+- Klinik güvenlik notları eklenir (Eşik'e helpline notu, dört-beş soruluk öz-tarama, Yoklama'lara "iyi değilsen" dalı, "terapi değildir" disclaimer'ı)
+- Bölüm IX çapa cümlesi için ek koruma katmanı
+
+### 2.3 ITC App — Actor's Gym
+
+**Durum:** Canlı (erken beta). itc-app-six.vercel.app
+
+- **Modül I — Kendini Tanı:** ✅ CANLI · 3 test (VAK 27, MBTI 12, Yıldız 37) · ~15 dk
+- **Modül II — Karakterini İnşa Et:** ✅ CANLI · 4 karakter · 30 antrenman · 25-30 dk/antrenman
+
+**Modül II Hamlet Refactor (v1.1 yeni karar):**
+- Yeni sıralama: Doğrular (Workbook s.50-57) → Timeline (s.58-85) → Yazarın Çerçevesi (s.86-105) → Senin Çerçeven (s.106-125)
+- Pilot Hamlet'te → sonra Macbeth, Willy, Biff
+- Eski 9 antrenman retire edilmez, yeni yapıya entegre
+
+**Modül III — Sahnele (Yolculuk):** ⏳ YAKINDA
+- Pilot: Workbook 13 yolculuk metni (s.126-289), ~110 dk AI Dış Ses
+- Topraklanma overlay: Workbook s.288-289
+- TTS altyapısı: ElevenLabs Multilingual v2 (test aşamasında)
+
+### 2.4 Risk Profili (Ekosistem Geneli)
+
+| Risk | Olasılık | Etki | Azaltma |
+|---|---|---|---|
+| Beyti tek-kişi-bağımlılığı | Yüksek | Kritik | İçerik üretimi prosedürlü hale gelir (§7); Spine canlı tutulur; Claude eş yazar olarak sürekli devrede |
+| Eyüboğlu telif yenilemesi (App ticari kullanım) | Orta | Yüksek | Faz 1'de hukuk danışmanlığı + İş Bankası ile görüşme |
+| FKA klinik onay darboğazı | Düşük | Orta | Kritik içerikler (travma, topraklanma) için protokol netleştirildi (§6.2) |
+| Akademik meşruiyet gecikmesi | Orta | Orta | HMDK Stuttgart pilotu (Faz 3) + 1+ yayımlanmış makale (Faz 2) |
+| Pazar uyumu bulamama (App) | Orta | Yüksek | Faz 1'de 100+ ücretli abone hedefi, funnel ölçümlü (PostHog) |
+
+---
+
+## 3. SABİT İLKELER (Spine v1.1 §3'ten Özet)
+
+### 3.1 Substitution Kullanılmaz
+
+ITC oyuncunun kendi biyografik travmalarına dönmesini istemez. Karakterin verisi karakterin kendisinden çıkarılır.
+
+### 3.2 Travma Matrisi: 8 Kategori × 4 Yoğunluk
+
+Şiddet · Kayıp · İhanet · Cinsel · Zihinsel Kırılma · Çocukluk · Ahlaki Yara · Varoluşsal. Yoğunluk: 0 Yok · 1 Atıf · 2 Tanıklık · 3 İcra. *(Spine v1.3 ile teyit; v2.0 brief metni "3 yoğunluk" diyorsa düzeltilir.)*
+
+### 3.3 Yıldız Profil Eşleşme Matrisi
+
+- ≥5: Tüm seviyeler açık
+- 3–5: Uyarılı
+- <3: "Hazır olduğunda" — kilit değil bekleyiş
+
+### 3.4 Topraklanma Protokolü (6 adım)
+
+1. Nefes (4-4-6, üç tekrar)
+2. Bedene dönüş (eller, yüz)
+3. İsim (üç kez yüksek sesle)
+4. Tarih (gün-ay-yıl)
+5. Mekân (5 farklı renk/nesne)
+6. Kapanış cümlesi: "Karakter orada — ben buradayım."
+
+Hamlet'e özel adaptasyon Workbook s.288-289'da. App Modül III otomatik overlay olarak kullanır.
+
+### 3.5 Karakter Sayfası Mimarisi
+
+Karakter Kimliği → Değiştirilemez Doğrular → Timeline → Yazarın Çerçevesi → Senin Çerçeven → Zihinsel Antrenman.
+
+### 3.6 Üç Giriş Kapısı
+
+Bilişsel · Bedensel · Duygusal. VAK'tan farkı: nasıl öğrendiğin değil, karaktere nereden girdiğin.
+
+### 3.7 Altı Kabul
+
+1. Karakter analiz edilmelidir.
+2. Hiçbir analiz analiz edenden bağımsız değildir.
+3. Oyuncu kendini de analiz etmelidir.
+4. Karakter oyuncudan bağımsız yaratılmalıdır — "Sahip değil, misafir."
+5. Tek yöntem yoktur — kişiye özel giriş kapıları vardır.
+6. Zihin-beden bütünlüğü.
+
+### 3.8 Kuramsal Zemin
+
+Damasio · Goleman · Gardner · Levine · Csikszentmihalyi.
+
+---
+
+## 4. NEDEN ŞİMDİYE KADAR YAPMADIK? (Dürüst Değerlendirme)
+
+İçerik geliştirme muazzam zaman aldı ve doğru bir yatırımdı:
+- Hamlet Yolculuk Modu metni onlarca iterasyondan geçti (kalite ITC'nin temeli)
+- Workbook v1.0 yayımlandı (314 sayfa, derinlemesine)
+- Method Book Master Outline v2 hazır
+
+**Ancak:**
+- Pazar geri bildirimi olmadan içerik yapıldı (App'te henüz hiç ücretli müşteri yok)
+- Üç katmanın çapraz atıfları kâğıt üzerinde (Spine'da) kaldı, operasyonel sistem olmadı
+- Akademik altyapı (makale, vaka çalışmaları) ertelendi
+- Ölçek altyapısı (eğitmen arayüzü, çoklu dil, ödeme) hiç yapılmadı
+
+**Önümüzdeki 24 ay için denge değişiyor:** %30 içerik genişletme, %70 dağıtım altyapısı + ekosistem koordinasyonu.
+
+---
+
+## 5. 24 AYLIK YOL HARİTASI
+
+Üç fazlı, milestone bazlı. Her milestone üç katmandan en az ikisini etkiler — çapraz güncellemeler her zaman gözetilir.
+
+### FAZ 1 — Ürün-Pazar Uyumu + Ekosistem Koordinasyonu Kuruluş (Ay 0-6)
+
+**Stratejik niyet:** App'te ücretli müşteri kazanmaya başla. Workbook 2. baskısının ön çalışmasını başlat. Method Book Bölüm III prototip yazımına geç. Ve en önemlisi: Çapraz Güncelleme Protokolünü operasyonel hale getir.
+
+#### Milestone 1.1 — Çapraz Güncelleme Sistemi Kuruluşu (Ay 0-1)
+
+Bu, brief'in stratejik kalbi. Diğer her şey buna bağlı.
+
+**Çıktılar:**
+- Spine v1.1 → v1.2 güncelleme: §6 (Güncelleme Protokolü) operasyonel hâle getirilir
+- "Decision Log" sistemi kurulur (Notion sayfası veya markdown dosya)
+- Pazar ritmi başlar (bkz. §6 Çapraz Güncelleme Protokolü)
+- Claude'la haftalık check-in formatı belirlenir
+
+**Kabul kriteri:** Sistem 4 hafta üst üste sorunsuz çalışmış. Decision log'da en az 8-10 kayıt var.
+
+#### Milestone 1.2 — App: Yolculuk Modu Hamlet v1 Prodüksiyonu (Ay 1-2)
+
+**Çıktılar:**
+- 13 bölüm + Genel Giriş + 3 Yoklama + Çıkış = 18 ses dosyası
+- ElevenLabs Multilingual v2 ile Türkçe seslendirme
+- Supabase Storage'a yüklü, oynatıcı bileşeni hazır
+- Bölüm geçişlerinde "hazırım" onayı (zorla ileri itmeyen UX)
+
+**Kabul kriteri:** Bir oyuncu uygulamayı açıp baştan sona Yolculuk Modu Hamlet'i tamamlayabiliyor. Toplam üretim maliyeti ≤ $50.
+
+**Çapraz etki:**
+- → Workbook 2. baskıya: "App'te bu bölümün dijital pratiği" QR kod hazırlığı başlar
+- → Method Book Bölüm IV taslağına: Modül III pilot deneyimi referans olur
+
+#### Milestone 1.3 — App: Onboarding ve Ücretli Akış (Ay 2-3)
+
+**Çıktılar:**
+- Açılış sayfası: ITC nedir, üç katmanlı ekosistem hikâyesi (3 dakikalık video)
+- Kayıt → Kalibrasyon → Modül II tanıtım → Yolculuk Modu Hamlet teaser akışı
+- Stripe entegrasyonu (Türkiye için iyzico yedeği)
+- Free Tier (Hamlet ilk bölümler) → Pro Tier yükseltme akışı
+- Aboneliği iptal etme, faturalama (videolu özet, izinli)
+- "Erken kayıt indirimi" — ilk 100 abone $9/ay (life-time)
+- Email pazarlama altyapısı (Resend)
+- Analytics: PostHog ile funnel takibi
+
+**Kabul kriteri:** Bir kullanıcı kayıt → Kalibrasyon → ücretsiz içerik → ödeme → tam erişim akışını sorunsuz tamamlayabiliyor.
+
+#### Milestone 1.4 — Klinik Onay Görünür Hale Gelmesi (Ay 2-3)
+
+**Çıktılar:**
+- Filiz Kaya Ataklı'nın adı ve fotoğrafı "Klinik Eş Sahip & Akademik Ortak" olarak ana sayfada
+- Travma Etik Çerçevesi belgesi yayımlanmış (PDF, App'te ve Workbook arka eklerinde)
+- Her travma kategorisi sayfasında ön tarama soruları (App'te)
+- Crisis support kaynakları her seans öncesi/sonrası görünür
+
+**Kabul kriteri:** Filiz "Adımı koymakta rahat hissediyorum" diyor. Bir hukuki danışman travma protokollerini incelemiş, yazılı onay vermiş.
+
+**Çapraz etki:**
+- → Workbook 2. baskı: aynı klinik güvenlik dili eklenir (Eşik'e helpline notu, vs.)
+- → Method Book Bölüm VI (Eğitmen ve Etik): bu protokolün akademik versiyonu yazılır
+
+#### Milestone 1.5 — Workbook 2. Baskı Hazırlığı (Ay 3-5, paralel)
+
+**Çıktılar:**
+- Errata düzeltmeleri tamamlanmış (s.310, TOC, vs.)
+- Method Book'a geri-referans formatı belirlenmiş ve uygulanmış
+- Klinik güvenlik eklemeleri (Bölüm IX dahil) eklenmiş
+- "App'te bu bölümün dijital pratiği" QR kodları yerleştirilmiş
+- İş Bankası Kültür Yayınları ile yeniden basım görüşmesi
+
+**Kabul kriteri:** 2. baskı manuscript yayıncıya teslim edilmiş.
+
+#### Milestone 1.6 — İlk 50 Ücretli Abone Kampanyası (Ay 4-6)
+
+**Çıktılar:**
+- Beyti'nin sosyal medya kanalları üzerinden launch (Instagram, LinkedIn — Türkçe oyuncu ağı)
+- 4 vaka çalışmasının (Beren, Mehmet, Dicle, Mayda) halka açık formata getirilmesi
+
+**Kabul kriteri:** 50 ücretli abone (≥$450/ay MRR). Funnel'da nerede insanlar kaybolduğunu biliyoruz.
+
+**Çapraz etki:**
+- → Method Book Bölüm V (Çağdaş Karakter): vaka çalışmaları akademik yazıma kaynaklık eder
+- → Workbook ikinci baskı: vaka örnekleri ek olarak eklenebilir
+
+#### Milestone 1.7 — Method Book Bölüm III Prototip Yazımı (Ay 4-6, paralel)
+
+**Çıktılar:**
+- Üç Giriş Kapısı + Aşama 1 yazılmış (8-10 sayfa prototip)
+- Filiz ile çift ses entegrasyonu test edilmiş
+- App'in Modül II Hamlet refactor yapısıyla tutarlı (canlı geri besleme döngüsü)
+
+**Kabul kriteri:** Prototip Filiz tarafından onaylanmış. Bir akademik danışman okumuş, yapı geri bildirimi vermiş.
+
+#### FAZ 1 TAMAM SİNYALİ:
+- ✅ App: 100+ ücretli abone, MRR ≥ $1.500
+- ✅ Workbook: 2. baskı yayıncıya teslim
+- ✅ Method Book: Bölüm III prototip yazılmış
+- ✅ Çapraz Güncelleme Protokolü 6 ay boyunca sorunsuz işlemiş
+
+---
+
+### FAZ 2 — Ölçek + Akademik Meşruiyet Kuruluş (Ay 6-15)
+
+**Stratejik niyet:** App'i tek dilli/tek karakter olmaktan çıkar. v2 Seans Modu'nu hayata geçir. Method Book ana yazım fazına gir. İngilizce versiyon başlat.
+
+#### Milestone 2.1 — App v2 Seans Modu (Ay 6-9)
+
+**Çıktılar:**
+- WebRTC mikrofon erişimi
+- Voice Activity Detection
+- Whisper API (Edge Function proxy)
+- Claude API streaming
+- ElevenLabs Streaming TTS
+- Hedef latency: <2 saniye
+
+#### Milestone 2.2 — Method Book Ana Yazım Fazı (Ay 7-14)
+
+**Çıktılar:**
+- Tüm bölümler (A–F) yazılmış
+- FKA klinik onay geçti (Bölüm D dahil)
+- Akademik danışman okuması tamamlanmış
+- Yayıncı sözleşmesi imzalanmış
+
+#### Milestone 2.3 — İngilizce App Versiyonu (Ay 9-12)
+
+**Çıktılar:**
+- next-intl ile altyapı
+- TR + EN içerik paritesi
+- ElevenLabs İngilizce ses
+
+#### Milestone 2.4 — Akademik Makale Yazımı (Ay 8-12)
+
+**Çıktılar:**
+- 1+ makale submitted (hedef dergi: Theatre, Dance and Performance Training veya benzeri)
+- Konferans sunumu hazırlığı
+
+#### Milestone 2.5 — Ek Karakterler (Ay 10-14)
+
+**Çıktılar:**
+- Macbeth tam Yolculuk Modu (~110 dk)
+- Willy Loman tam Yolculuk Modu
+- Biff Loman tam Yolculuk Modu
+
+#### Milestone 2.6 — App Eğitmen Arayüzü v1 (Ay 12-15)
+
+**Çıktılar:**
+- Eğitmen hesap tipi
+- Kohort oluşturma, öğrenci davet
+- Öğrenci ilerleme görüntüleme
+- Atama oluşturma
+- Yansıma inceleme (oyuncu mahremiyetini koruma — opsiyonel paylaşım)
+- $79-99/ay fiyatlandırma
+
+**Kabul kriteri:** En az 5 ödeme yapan eğitmen, ortalama 8-10 öğrenci ile.
+
+#### FAZ 2 TAMAM SİNYALİ:
+- ✅ App: 500+ ücretli abone (TR + EN), MRR ≥ $10.000
+- ✅ Method Book: Manuscript tamamlanmış
+- ✅ Akademik makale submitted
+- ✅ Workbook 2. baskı yayımlanmış
+
+---
+
+### FAZ 3 — Kurumsal + Farklılaştırma + Ekosistem Olgunluğu (Ay 15-24)
+
+**Stratejik niyet:** Bireysel pazarın ötesine geç. Method Book yayımlansın. ITC'yi tek kişiye bağımlı olmaktan kurtar.
+
+#### Milestone 3.1 — HMDK Stuttgart Pilot (Ay 15-18)
+
+**Çıktılar:**
+- HMDK ile resmi pilot anlaşması (1 yarıyıl, 1 sınıf)
+- Almanca versiyon (Schlegel çevirisi, Ay 12-18 paralel çalışma)
+- HMDK öğretim üyesi ile haftalık koordinasyon
+- Pilot sonu rapor (akademik makaleyi ve Method Book Bölüm V'i besler)
+
+**Kabul kriteri:** HMDK pilot tamamlandı, en az 12 öğrenci kullandı, pozitif geri bildirim (≥4/5).
+
+#### Milestone 3.2 — App: Diğer Karakter Refactor'ları (Ay 15-18)
+
+**Çıktılar:**
+- Macbeth, Willy, Biff için Hamlet Modül II yapısı uygulandı (Doğrular → Timeline → Yazarın Çerçevesi → Senin Çerçeven)
+- Her karakter için Modül III Yolculuk Modu canlıda
+
+#### Milestone 3.3 — Karakter Üretim Internal Tool (Ay 18-21)
+
+**Çıktılar:**
+- Sadece admin erişimli sayfa
+- ITC ilkeleri system prompt
+- Karakter input → bölüm taslakları
+- Otomatik kalite kontrol (meta-referans linting, üçüncü kişi tespiti)
+- Beyti revizyon arayüzü
+
+#### Milestone 3.4 — Method Book Türkçe Yayımı (Ay 20-22)
+
+**Çıktılar:**
+- Basılı kitap rafta (Routledge / Methuen Drama / Nick Hern Books — yayıncı kararı Faz 2'de verilmiş olacak)
+- Launch kampanyası (akademi, tiyatro festivalleri)
+- İlk 6 ay 1.000+ satış hedefi
+
+#### Milestone 3.5 — Method Book İngilizce Çevirisi Başlangıcı (Ay 22-24)
+
+**Çıktılar:**
+- Çevirmen seçimi + sözleşme
+- İlk 3 bölüm çevrilmiş
+- Uluslararası yayıncı görüşmeleri
+
+#### FAZ 3 TAMAM SİNYALİ:
+- ✅ Method Book Türkçe yayımlanmış, 1.000+ satış
+- ✅ HMDK Stuttgart pilot tamamlanmış, raporlanmış
+- ✅ App: 1.000+ ücretli abone, MRR ≥ $20.000
+- ✅ İngilizce çeviri başlamış
+- ✅ 1+ akademik makale yayımlanmış
+
+---
+
+## 6. ÇAPRAZ GÜNCELLEME PROTOKOLÜ
+
+Bu brief'in stratejik kalbi. Spine v1.1 §6'yı operasyonel hale getirir.
+
+### 6.1 Karar Tipleri
+
+- **Tip 1 — Kanon Değişikliği** (Yüksek Öncelik): Kanonik bir kavram değişti
+- **Tip 2 — Yapısal Karar** (Orta Öncelik): Bir projede yapısal karar verildi
+- **Tip 3 — İçerik Güncellemesi** (Düşük Öncelik): İçerik değişti ama yapı aynı
+- **Tip 4 — Açık Karar Çözüldü** (Orta Öncelik): Spine §5'teki açık kararlardan biri çözüldü
+
+### 6.2 Yapılacaklar Akışı (Tip Bazlı)
+
+**Tip 1:**
+1. Spine §3 güncellenir (yeni sürüm)
+2. Method Book taslağı revize edilir
+3. Workbook 2. baskı errata listesine eklenir
+4. App'in ilgili sayfaları güncellenir
+5. Decision Log'a kayıt
+
+**Tip 2:**
+1. Spine §2 ve gerekirse §4 güncellenir
+2. Etkilenen diğer projeler revize edilir
+3. Decision Log kaydı
+
+**Tip 3:**
+1. Sadece Spine §2 (Güncel Durum) güncellenir
+2. Diğer projelerde sayfa numarası değişiyorsa §4 atıfları güncellenir
+3. Decision Log kaydı (kısa)
+
+**Tip 4:**
+1. Spine §5'ten kaldırılır, ilgili bölüme taşınır
+2. Yeni Spine sürümü çıkar
+3. Etkilenen projelere yansıtılır
+
+### 6.3 Üç Senaryo — Somut Örnekler
+
+**Senaryo A:** Workbook 2. Baskıda Bölüm IX Çapa Cümlesi Değişti (Klinik güvenlik gerekçesi)
+- Workbook 2. baskı manuscript güncellenir
+- App Modül III Bölüm IX seslendirmesi yeniden üretilir (ElevenLabs)
+- Method Book Bölüm IV örneklerinde bu cümle kullanılıyorsa revize edilir
+- Spine §2 Workbook bölümü güncellenir (errata notu)
+- Decision Log: "Bölüm IX çapa cümlesi revize — [tarih] — Filiz klinik onay"
+
+**Senaryo B:** App'te Yeni Karakter (Macbeth Modül III)
+- Spine §2 App durumu güncellenir
+- Method Book Bölüm V (Çağdaş Karakter) için vaka örneği olarak not edilir
+- Workbook revize edilmez (Workbook sadece Hamlet)
+- Marketing sitesi güncellenir
+- Decision Log
+
+**Senaryo C:** Method Book Bölüm III Prototip — "Üç Giriş Kapısı"nın Yeni Formülasyonu
+- Spine §3.6 güncellenir (kanon değişikliği — Tip 1)
+- App'in karakter sayfası mimarisi etkileniyor mu? Etkileniyorsa (§3.5) revize edilir
+- Workbook 2. baskıya not edilir
+- Yeni Spine sürümü çıkar
+- Decision Log
+
+### 6.4 Operasyonel Ritim — Tek Kişi İçin
+
+**Pazar 30 Dakika — "Spine Health Check"**
+Beyti her Pazar 30 dakika ayırır:
+1. Son hafta hangi projede ne değişti? (5 dk)
+2. Spine güncel mi? (10 dk — gerekirse güncellenir)
+3. Üç projeye atıflar tutarlı mı? (5 dk — sample check)
+4. Decision Log'a son hafta kayıtları girildi mi? (5 dk)
+5. Filiz'e onay gereken bir şey var mı? (5 dk — varsa mesaj atılır)
+
+**Ayda Bir — "Cross-link Audit" (Claude ile)**
+Ayda bir Beyti, Claude'la birlikte:
+1. Spine §4 (çapraz geçiş tabloları) gözden geçirir
+2. Yanlış atıfları işaretler
+3. Eksik atıfları tespit eder
+4. Yeni Spine sürümü hazırlar
+5. Üç projeye yansıtılması gereken değişiklikleri listeler
+
+**Çeyreklik — "Strategic Review" (Beyti + Filiz)**
+Üç ayda bir:
+1. Bu brief'in milestone'ları gözden geçirilir
+2. Faz ilerlemesi değerlendirilir
+3. Açık kararlar gözden geçirilir
+4. Yeni stratejik kararlar Decision Log'a girer
+5. Brief gerekirse minor sürüm yükseltilir (v2.0 → v2.1)
+
+### 6.5 Decision Log Sistemi
+
+**Konum:** Notion sayfası VEYA `/itc-app/docs/decision-log.md` (App reposunda)
+**Format:** Markdown, kronolojik
+
+Her kayıt şu yapıda:
+
+```markdown
+## [Tarih] — [Kısa başlık]
+
+**Tip:** Kanon Değişikliği / Yapısal Karar / İçerik Güncellemesi / Açık Karar Çözüldü
+**Etkilenen katmanlar:** Method Book / Workbook / App
+**Spine sürümü:** v1.X → v1.Y
+**Karar veren:** Beyti / Filiz / Beyti+Filiz
+**Karar:** [karar metni]
+**Uygulama tarihi:** [hangi milestone'da uygulanır]
+**Notlar:** [varsa ek not]
+```
+
+### 6.6 Claude'un Rolü — Aktif Eş Yazar
+
+Beyti yalnız çalıştığı için Claude operasyonel olarak ekibin parçası:
+
+**Haftalık (Pazar 30 dk içinde):**
+- Beyti Spine'ı Claude'a okutur
+- Claude tutarsızlıkları işaret eder ("§3.2'de 4 yoğunluk diyor ama §4.1'de 3 referans var — kontrol")
+- Decision Log'daki son kayıtları gözden geçirir
+
+**Aylık (Cross-link Audit):**
+- Claude §4 atıflarını sistematik tarar
+- Sayfa numarası tutarsızlıkları, eksik atıflar, gereksiz atıflar listeler
+- Beyti'ye düzelti önerisi verir
+
+**Çeyreklik (Strategic Review):**
+- Claude faz milestone'larını Spine'la karşılaştırır
+- Hangi milestone gerçekleşti, hangisi geri kaldı raporu
+- Brief revizyonu için öneri hazırlar
+
+**Olay Bazlı:**
+- Yeni karakter yazılırken Claude ITC ilkeleriyle uyum kontrolü
+- Yeni içerik (Workbook 2. baskı, Method Book bölümleri) yazılırken canlı eş yazar
+- Akademik makale yazımında akademik dil ve referans kontrolü
+
+---
+
+## 7. TEKNİK MİMARİ HEDEFLERİ
+
+### 7.1 Mevcut Stack (Korunan)
+
+- **Frontend:** Next.js 14+ (App Router)
+- **Backend:** Supabase (PostgreSQL + Auth + Storage + RLS)
+- **Hosting:** Vercel
+
+### 7.2 Eklenmesi Gereken Bileşenler
+
+**Yolculuk Oynatıcı (Faz 1):**
+```jsx
+<YolculukOynatici karakter="hamlet" bolum={4} />
+```
+- MP3 streaming (Supabase Storage signed URL)
+- "Hazırım" onay butonu her bölüm geçişinde
+- Pause/resume tutuluyor (kaldığın yerden devam et)
+- Acil çık butonu görünür her zaman
+- Yansıma yazma alanı her bölüm sonunda (auto-save)
+
+**v2 Seans Modu (Faz 2):**
+- WebRTC mikrofon erişimi
+- Voice Activity Detection
+- Whisper API (Edge Function proxy)
+- Claude API streaming
+- ElevenLabs Streaming TTS
+- Hedef latency: <2 saniye
+
+**Karakter Üretim Internal Tool (Faz 3):**
+- Sadece admin erişimli sayfa
+- ITC ilkeleri system prompt
+- Karakter input → bölüm taslakları
+- Otomatik kalite kontrol (meta-referans linting, üçüncü kişi tespiti)
+- Beyti revizyon arayüzü
+
+**i18n Altyapısı (Faz 2):**
+- next-intl
+- Diller: tr, en, de
+- İçerik markdown dosyaları olarak dil bazında klasörlenmiş
+
+**Eğitmen Arayüzü (Faz 2):**
+- Yeni tablolar: `kohortlar`, `kohort_uyeleri`, `atamalar`, `atama_yansimalar`
+- Yeni sayfalar: `/egitmen/dashboard`, `/egitmen/kohort/[id]`
+
+**Workbook QR Kod Entegrasyonu (Faz 1-2):**
+- Workbook 2. baskıda her bölüm sonunda QR kod
+- App'te `/workbook/[bolum]` sayfaları (App'in özel içeriği)
+- Workbook satın alanlara App'te ek erişim (kupon kodu sistemi)
+
+### 7.3 Aylık Operasyonel Maliyet
+
+| Bileşen | Faz 1 | Faz 3 |
+|---|---|---|
+| Vercel Pro | $20 | $20-50 |
+| Supabase Pro | $25 | $25-100 |
+| ElevenLabs Creator | $22 | $99 (Pro) |
+| Anthropic Claude API | $0 | $50-200 |
+| Stripe / iyzico | %2.9+$0.30 | %2.9+$0.30 |
+| Resend | $0-35 | $35 |
+| PostHog | $0 | $0-50 |
+| Crisp | $25 | $25 |
+| Sentry | $26 | $26 |
+| **Toplam (sabit)** | **~$120** | **~$330+** |
+
+---
+
+## 8. PAZARLAMA STRATEJİSİ (Genel Hatlar)
+
+### 8.1 Faz 1 — Türkçe oyuncu ağı
+
+- Beyti'nin Instagram + LinkedIn kanalları üzerinden organik
+- 4 vaka çalışmasının halka açık formatı (Beren, Mehmet, Dicle, Mayda)
+- Tiyatro festivalleri, oyunculuk atölyeleri ile temas
+
+### 8.2 Faz 2 — Uluslararası akademi
+
+- HMDK Stuttgart kontağı (mevcut bağlantı)
+- Royal Central, RADA, Stella Adler ile pilot görüşmeleri
+- Akademik makale + konferans sunumları
+
+### 8.3 Faz 3 — Kurumsal lisans
+
+- B2B/kurumsal pilot: Workshop kit + App lisansı paket
+- $5K+/yıl kurumsal müşteri hedefi
+- HMDK pilotu referans olarak
+
+---
+
+## 9. AÇIK KARARLAR (Spine §5'ten genişletilmiş)
+
+### 9.1 Method Book
+
+- Alt başlık: "Inside The Character" tek başına mı?
+- "Actor's Gym" markasının kitap ile ilişkisi
+- Manifesto madde 7-8'in nihai isimleri
+- Bölüm I yapısı: Altı Kabul + Manifesto sonda mı, ayrı bölüm mü?
+- Çağdaş vaka anonimleştirme derinliği
+
+### 9.2 Workbook
+
+- 2. baskıda Method Book'a geri-referans formatı
+- Klinik güvenlik eklemeleri (öz-tarama uzunluğu, "iyi değilsen" dalı formatı)
+- Bölüm IX çapa cümlesi ek koruma katmanı
+- İngilizce baskı için RSC Shakespeare adaptasyonu
+
+### 9.3 App
+
+- AI sesli yönlendirmenin teknik altyapısı (TTS, ElevenLabs voice cloning?)
+- Eyüboğlu telifi App'te ticari kullanım için lisans yenilemesi gerekiyor mu? (kritik, Faz 1'de çözülmeli)
+
+### 9.4 Ekosistem Genel (açık)
+
+- Method Book Türkçe ilk baskı + İngilizce çeviri sıralaması
+- Yayıncı kararı (Routledge / Methuen Drama / Nick Hern Books)
+- App'in yurt dışına açılma stratejisi (Stuttgart, RADA bağlantıları)
+- Ekosistemin tek bir markası mı (Inside The Character) yoksa üç ayrı isim mi?
+
+### 9.5 Operasyonel Kararlar
+
+- Domain ve marka: itcactorsgym.com mi, başka bir isim mi?
+- Şirket yapısı: LTD Türkiye / Delaware C-Corp / hibrit?
+- Filiz'in formal hisse durumu (eş kurucu olduğu netleşti, hisse %?)
+- İlk 100 abone fiyatlandırması: $9 life-time vs $14 12-ay sınırlı?
+
+---
+
+## 10. KABUL KRİTERLERİ — 24 Ay Sonra Tamamlanmış ITC Ekosistemi
+
+### 10.1 Method Kitabı
+
+- [ ] Manuscript tamamlanmış, yayıncı sözleşmesi imzalanmış
+- [ ] Türkçe baskı yayımlanmış
+- [ ] İngilizce çeviri başlatılmış
+- [ ] İlk 6 ayda 1.000+ satış
+
+### 10.2 Hamlet Workbook
+
+- [ ] 2. baskı yayımlanmış (errata + Method Book referansları + klinik güvenlik + App QR kodlar)
+- [ ] İngilizce baskı yolda
+
+### 10.3 ITC App
+
+- [ ] 1.000+ ücretli abone
+- [ ] Aylık MRR ≥ $20.000
+- [ ] 4+ karakter aktif (TR + EN)
+- [ ] v2 Seans Modu canlı, NPS ≥ 50
+- [ ] Eğitmen arayüzü kullanılıyor
+- [ ] Biyometrik entegrasyon opt-in çalışıyor
+
+### 10.4 Akademik
+
+- [x] 1+ yayımlanmış makale
+- [x] 2+ konferans sunumu
+- [x] HMDK Stuttgart pilot tamamlanmış
+- [x] 5+ vaka çalışması yayımlanmış
+
+### 10.5 Operasyonel
+
+- [x] Beyti içerik üretimi prosedürlü, AI-destekli
+- [x] Filiz klinik gözetim aktif
+- [x] Çapraz Güncelleme Protokolü sorunsuz işliyor (24 ay boyunca)
+- [x] Spine v2.X canlı, üç katmana atıflar tutarlı
+- [x] 1+ kurumsal müşteri ($5.000+/yıl)
+
+### 10.6 Konum
+
+- [x] "Trauma-Informed Character Building Pedagogy" alanında **referans araç**
+- [x] Beyti Engin uluslararası tanınan pedagojik figür
+- [x] ITC, gelecek AI-destekli oyunculuk eğitimi araçlarının kıyas noktası
+
+---
+
+## 11. SONUÇ
+
+ITC Ekosistemi — Method Kitabı, Hamlet Workbook, ITC App — 20+ yıllık pedagojik pratiğin dijital ve basılı dönüşümüdür.
+
+Önümüzdeki 24 ay, üç katmanın:
+- Birbirine atıflarla canlı kalan bir sistem haline gelmesi (§6 Çapraz Güncelleme Protokolü)
+- Birey oyuncuların ödediği bir araç (App: 1.000 abone, $20K MRR)
+- Akademik dünyanın ciddiye aldığı bir pedagoji (Method Book yayımı + makale)
+- Beyti'ye tek başına bağımlı olmayan ölçeklenebilir bir sistem (AI-destekli içerik üretimi)
+
+dönüşmesi gereken bir yolculuktur.
+
+**Strateji:** Ürün-pazar uyumunu önce gerçekleştir, akademik meşruiyeti onun üzerine inşa et, ekosistemi birbirine bağlı tut.
+
+**Brief'in en kritik tek mesajı:** Üç katman birbirine atıflarla canlı kalmazsa, ekosistem bütünsel gücünü kaybeder. **§6 Çapraz Güncelleme Protokolü** bu yüzden brief'in stratejik kalbidir.
+
+---
+
+## EK A — Kullanılacak Kaynaklar
+
+- Spine v1.1 (kanon — sürekli güncellenir; v1.3 itibarıyla son sürüm 8 Mayıs 2026)
+- Hamlet Yolculuk Modu Final metni (`Yolculuk_Modu_Hamlet_Final.md`)
+- 8 Bölüm Denetim Raporu
+- ITC Filiz Briefing dokümanı
+- ITC Akademik Yol Haritası
+- 4 Blueprint vaka dosyası (Beren, Mehmet, Dicle, Mayda)
+- Macbeth dersi transkripti
+- Kaya seansı transkripti
+- Workbook v1.0 (basılı kitap)
+- Method Book Master Outline v2
+
+---
+
+## EK B — Önerilen Tooling
+
+| Kategori | Araç | Aylık |
+|---|---|---|
+| Hosting | Vercel Pro | $20 |
+| Database | Supabase Pro | $25 |
+| TTS | ElevenLabs Creator | $22 |
+| AI (Faz 2+) | Anthropic Claude API | Pay-as-you-go |
+| Payment | Stripe + iyzico | %2.9+$0.30 |
+| Email | Resend | $0-35 |
+| Analytics | PostHog | $0 (self-hosted) |
+| Customer Support | Crisp | $25 |
+| Error tracking | Sentry | $26 |
+| Decision Log | Notion / Markdown | $0 |
+| Project management | Linear | $0-10 |
+
+---
+
+## EK C — Acil İlk Adım Listesi (Bu Hafta)
+
+1. Decision Log dosyası kur (Notion sayfası veya markdown)
+2. Pazar Spine Health Check ritmi başla (bu Pazar 30 dk)
+3. ElevenLabs hesap aç + Bölüm 4 testi (`Bolum4_DuzMetin.txt` ile)
+4. Domain satın al (itcactorsgym.com)
+5. Filiz ile resmi rol konuşması (eş kurucu durumunu netleştir)
+6. Hukuki danışmanlık görüşmesi (Eyüboğlu lisansı + sorumluluk + şirket yapısı)
+7. Eyüboğlu lisans araştırması (İş Bankası ile temas)
+8. ITC ilkeler belgesi başla (Spine §3'ten genişletilmiş, AI system prompt için)
+
+---
+
+*Brief sonu.*
+
+*Hazırlık: Beyti Engin*
+*Klinik & Akademik Eş Sahip: Filiz Kaya Ataklı (Klinik Psikolog)*
+*Operasyonel Eş Yazar: Claude (Anthropic)*
+*Versiyon: v2.0*
+*Tarih: Mayıs 2026*
+*Önerilen revizyon: Çeyreklik (üç ayda bir)*
+
+> *"Karakter orada — ben buradayım." — ITC Topraklanma Protokolü §3.4 kapanış cümlesi*
