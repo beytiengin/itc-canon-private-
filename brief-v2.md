@@ -1,13 +1,12 @@
 # ITC EKOSİSTEM — Geliştirici Brief'i
 
-**v2.1**
+**v2.2**
 
-**Hazırlayan:** Beyti Engin
-**Klinik & Akademik Eş Sahip:** Filiz Kaya Ataklı (Klinik Psikolog)
+**Eş Kurucular ve Eş Eğitmenler:** Beyti Engin & Filiz Kaya Ataklı (Klinik Psikolog)
 **Operasyonel Eş Yazar (AI):** Claude (Anthropic)
-**Tarih:** Mayıs 2026 (v2.1: 12 Mayıs 2026)
+**Tarih:** Mayıs 2026 (v2.1: 12 Mayıs 2026 HMDK tarih düzeltmesi · v2.2: 12 Mayıs 2026 Karar 16 — Filiz Kaya Ataklı Eş Kurucu statüsü kanon, Filiz yazılı onayı bekleniyor)
 **Hedef:** Mayıs 2028 (24 aylık yol haritası)
-**Spine Sürümü Referansı:** v1.6 (12 Mayıs 2026 itibarıyla) — dört katmanlı yapı (Method Book / Workbook / App / Workshop) operasyonel, §3'te dört yeni kanon alt-bölümü (§3.13–3.16) eklendi.
+**Spine Sürümü Referansı:** v1.7 (12 Mayıs 2026 itibarıyla) — dört katmanlı yapı (Method Book / Workbook / App / Workshop) operasyonel, §3'te dört yeni kanon alt-bölümü (§3.13–3.16) eklendi, Karar 16 ile eş kurucu statüsü kanonlandı.
 
 ---
 
@@ -26,6 +25,8 @@ nasıl ilerleyeceğini tanımlar.
 Brief'in stratejik tonu bilinçli olarak "vizyon-ön planda, teknik detay yedek" kuruluyor. Geliştirici tek kişi olduğu için, kararların **niçin verildiği** **ne yapıldığından** daha önemli — çünkü bu sayede yarın koşullar değişirse, kararı yeniden formüle etmek mümkün.
 
 **v2.1 revizyon notu (12 Mayıs 2026):** Bu revizyon Brief v2.0'ın genel yapısını korur. Tek stratejik değişiklik HMDK Stuttgart pilotunun faz konumudur — Faz 3 Milestone 3.1'den çıkarılıp Faz 2 ortasına (Ocak 2027, Ay 8) taşındı. Bu değişiklik Schlegel-Tieck Hamlet adaptasyonunu Mayıs–Temmuz 2026 (Faz 1 başı) kritik bir sprint hâline getirir. Ayrıca Spine v1.6 referansı güncellendi.
+
+**v2.2 revizyon notu (12 Mayıs 2026, Karar 16):** Filiz Kaya Ataklı'nın **Eş Kurucu ve Eş Eğitmen** statüsü ekosistem genelinde kanonlandı. Üst meta'da "Klinik & Akademik Eş Sahip" formülasyonu "Eş Kurucular ve Eş Eğitmenler" olarak güncellendi; yazar/kurucu bağlamında "×" → "&"; §2.4 risk profilinde "Beyti tek-kişi-bağımlılığı" azaltma sütununa Karar 16 atfı; §10.4'te "FKA klinik onayı" formülasyonu "eş yazar imzası" düzeyine yükseltildi; §1.4 Milestone 1.4 hedef formülasyonu "Eş Kurucu ve Eş Eğitmen" olarak güncellendi. Spine v1.7 referansı. **Filiz yazılı onayı bekleniyor — provisional.**
 
 ---
 
@@ -93,7 +94,7 @@ Method Book akademik prestiji taşır; App+Workbook ticari geliri sağlar; bu se
 
 | Risk | Olasılık | Etki | Azaltma |
 |---|---|---|---|
-| Beyti tek-kişi-bağımlılığı | Yüksek | Kritik | İçerik üretimi prosedürlü hale gelir (§7); Spine canlı tutulur; Claude eş yazar olarak sürekli devrede |
+| Beyti tek-kişi-bağımlılığı | Yüksek | Kritik | İçerik üretimi prosedürlü hale gelir (§7); Spine canlı tutulur; Claude eş yazar olarak sürekli devrede; **Filiz Kaya Ataklı eş kurucu statüsünün kanonlaşması (Karar 16) — ekosistem iki imzayla taşınır** |
 | Eyüboğlu telif yenilemesi (App ticari kullanım) | Orta | Yüksek | Faz 1'de hukuk danışmanlığı + İş Bankası ile görüşme |
 | FKA klinik onay darboğazı | Düşük | Orta | Kritik içerikler (travma, topraklanma) için protokol netleştirildi (§6.2) |
 | Akademik meşruiyet gecikmesi | Orta | Orta | HMDK Stuttgart pilotu (Faz 3) + 1+ yayımlanmış makale (Faz 2) |
@@ -219,7 +220,7 @@ Bu, brief'in stratejik kalbi. Diğer her şey buna bağlı.
 #### Milestone 1.4 — Klinik Onay Görünür Hale Gelmesi (Ay 2-3)
 
 **Çıktılar:**
-- Filiz Kaya Ataklı'nın adı ve fotoğrafı "Klinik Eş Sahip & Akademik Ortak" olarak ana sayfada
+- Filiz Kaya Ataklı'nın adı ve fotoğrafı **"Eş Kurucu ve Eş Eğitmen (Klinik Psikolog)"** olarak ana sayfada (Karar 16, v2.2)
 - Travma Etik Çerçevesi belgesi yayımlanmış (PDF, App'te ve Workbook arka eklerinde)
 - Her travma kategorisi sayfasında ön tarama soruları (App'te)
 - Crisis support kaynakları her seans öncesi/sonrası görünür
@@ -781,11 +782,10 @@ v2.1 revizyon hatırlatması: HMDK Stuttgart pilotu artık Faz 3 hedefi değil, 
 
 *Brief sonu.*
 
-*Hazırlık: Beyti Engin*
-*Klinik & Akademik Eş Sahip: Filiz Kaya Ataklı (Klinik Psikolog)*
+*Eş Kurucular ve Eş Eğitmenler: Beyti Engin & Filiz Kaya Ataklı (Klinik Psikolog)*
 *Operasyonel Eş Yazar: Claude (Anthropic)*
-*Versiyon: v2.1*
-*Tarih: Mayıs 2026 (v2.1: 12 Mayıs 2026 — HMDK pilotu Faz 3 → Faz 2 taşındı)*
+*Versiyon: v2.2*
+*Tarih: Mayıs 2026 (v2.1: 12 Mayıs 2026 — HMDK pilotu Faz 3 → Faz 2 taşındı; v2.2: 12 Mayıs 2026 — Karar 16, Filiz Kaya Ataklı Eş Kurucu statüsü kanon, Filiz yazılı onayı bekleniyor)*
 *Önerilen revizyon: Çeyreklik (üç ayda bir)*
 
 > *"Karakter orada — ben buradayım." — ITC Topraklanma Protokolü §3.4 kapanış cümlesi*
