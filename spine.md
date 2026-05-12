@@ -1,7 +1,7 @@
 # ITC EKOSİSTEM — SPINE
 
 **Dört projenin paylaştığı omurga**
-**v1.3 · 8 Mayıs 2026 · Beyti Engin × Claude**
+**v1.4 · 8 Mayıs 2026 · Beyti Engin × Claude**
 
 ---
 
@@ -176,13 +176,15 @@ Damasio (somatik belirteçler — Kabul 6) · Goleman (duygusal zekâ) · Gardne
 
 ### 3.9 · Modül I'in Üç Testi (YENİ — v1.3, Karar 1+5)
 
-Modül I (Kalibrasyon) üç bağımsız test üzerine kurulur. Her test farklı bir boyutu ölçer ve App-only olarak uygulanır (bkz. §3.11):
+Modül I (Kalibrasyon) üç bağımsız test üzerine kurulur. Her test farklı bir boyutu ölçer ve App-only olarak uygulanır (bkz. §3.12):
 
 **VAK — Öğrenme Stili Analizi**
 - Soru sayısı: 27 · Süre: ~5 dakika
 - Ölçtüğü: Bilgiyi içselleştirme kanalı — Görsel, İşitsel, Kinestetik
 - Sonuç: Üç kanaldan baskın olanı belirlenir
 - Pedagojik kullanımı: Zihinsel antrenmanların "derinleşme" adımı oyuncunun baskın kanalına göre şekillenir.
+
+> **Önemli ayrım:** VAK ≠ Giriş Kapıları. VAK "nasıl öğrendiğini" söyler (algı kanalı). Karaktere "nereden girdiğini" (Bilişsel · Bedensel · Duygusal) Modül II'deki Giriş Kapıları belirler. İki üçlünün kesişimi 3×3 Matris'tir — bkz. §3.10.
 
 **MBTI — Kişilik Tipi Analizi**
 - Soru sayısı: 12 senaryo · Süre: ~5 dakika
@@ -196,7 +198,72 @@ Modül I (Kalibrasyon) üç bağımsız test üzerine kurulur. Her test farklı 
 - Sonuç: Her boyutta puan, "psikolojik" boyutu travma erişim eşiğini belirler (§3.3)
 - Pedagojik kullanımı: Oyuncunun "yıldız" konumuna mesafesi gösterir; periyodik tekrar gerekir.
 
-### 3.10 · Doğrular Üç Kaynak Yapısı (YENİ — v1.3, Karar 3)
+### 3.10 · Çift Üçlü İlkesi ve 3×3 Matris (YENİ — v1.4, Karar 9)
+
+ITC içinde iki ayrı kanonik üçlü bulunur. Bu iki üçlü zaman zaman birbirinin yerine geçecek biçimde kullanılmıştır; bu kullanım hatalıdır ve pedagojik hataya yol açar. İlke şudur: iki üçlü farklı sorulara cevap verir, farklı modüllerde operasyonel hale gelir, farklı uygulama biçimine sahiptir. Çarpımları (3×3) eğitmen ve oyuncu için somut bir başlama matrisi üretir.
+
+**İki Üçlünün Karşılaştırması**
+
+| Boyut | VAK Üçlüsü | Giriş Kapıları Üçlüsü |
+|---|---|---|
+| Üçlü | Görsel · İşitsel · Kinestetik | Bilişsel · Bedensel · Duygusal |
+| Sorduğu soru | Nasıl öğrenirsin? | Karaktere nereden girersin? |
+| Ölçtüğü | Bilgi işleme kanalı (algı–içselleştirme) | Karaktere erişim kanalı (analiz–temas) |
+| Kanonik yeri | Modül I — Kendini Tanı (Kalibrasyon) | Modül II — Karakter Dramaturjisi |
+| Uygulama | App-only test (27 soru · ~5 dk) | Soru havuzu — kâğıt-kalem (Karaktere Hazırlık Soruları) |
+| Dijital Araç Sınırı (§3.12) | App-only — algoritmik puanlama | Method Book Bölüm F — birey kâğıtla çalışır |
+| Dördüncü kanal | **Sezgisel** (gözlemsel okuma; algoritmaya girmez) | Yok — üçlü kapalıdır |
+| Pedagojik kullanım | Zihinsel antrenmanların "derinleşme" adımı baskın kanala göre | "Bir gece / bir hafta" sınırı altında en hızlı doğru soruyu bulma |
+
+**Yaygın Hatanın Anatomisi**
+
+Karışımın klasik biçimi: *"VAK'a göre karaktere bedenden giriyor."*
+
+- **Hata:** "VAK = Kinestetik" ile "Giriş Kapısı = Bedensel" aynı şey sanılmıştır. Aynı şey değildir.
+- **Doğru okuma:** Görsel öğrenen bir oyuncu, karaktere bilişsel, bedensel veya duygusal kapıdan girebilir. Bunlar farklı katmanlardır ve birbirinden bağımsız işler.
+- **Örnek:** Görsel-baskın bir oyuncu (VAK) → Macbeth'e bilişsel kapıdan girer (Giriş Kapısı) → derinleşme aşamasında karakteri "kafasında resmederek" çalışır (VAK'ın baskın kanalı bu noktada devreye girer). Kapı bilişsel olduğu için soruları analitik-yapısaldır; oyuncu görsel olduğu için derinleştirme sahnenin gözle kurulmasıdır.
+
+**3×3 Matris**
+
+İki üçlünün kesişimi 9 hücreli bir matris üretir. Her hücre, oyuncunun "açık kanalından açık kapıya" geçişinde önerilen başlangıç egzersizini taşır. Matris kullanımı: oyuncu VAK kalibrasyonundan (Modül I) baskın kanalını öğrenir; Karaktere Hazırlık Soruları (Modül II / Method Book Bölüm F) ile baskın kapısını bulur; matriste karşılık gelen hücreye bakar.
+
+|                  | **Bilişsel Kapı**                          | **Bedensel Kapı**                              | **Duygusal Kapı**                                  |
+|------------------|--------------------------------------------|------------------------------------------------|----------------------------------------------------|
+| **Görsel**       | Sahne diyagramı · zihin haritası · timeline çizimi | Karakterin silueti · postür eskizi · ayna çalışması | Yüz/beden ifadesi okuma · karakter portresi etüdü |
+| **İşitsel**      | Replik analizi · tonlama yapısı · monolog parçalama | Nefes-ses ritmi · vokal warm-up · prosodi çalışması | Ses kalitesi-duygu eşleştirme · iç ses dinleme   |
+| **Kinestetik**   | Yapıyı bedenle deneyimleme · blocking provası | Hareket etüdü · somatik bedensel yoklama · yürüyüş | Karakterin bedensel duygusu · imgesel temas      |
+
+**Önemli — etik kayıt:** "Kinestetik × Duygusal" hücresinde *karakterin* bedensel duygusu çalışılır, oyuncunun kendi anısı değil. Bu Substitution kullanılmaz ilkesinin (§3.1) matris üzerinde işaretidir.
+
+**Sezgisel Dördüncü Kanal**
+
+VAK üçlüsünün yanında **Sezgisel** kanal dördüncü olarak konumlanır. Bu kanal Karakter Tasarım 2021 kitabında ("görebildiğiniz · işitebildiğiniz · tadabildiğiniz · dokunabildiğiniz · koklayabildiğiniz" duyu açıklamasının üzerinde "bir düşünce akışı" olarak işaretli) ve Hamlet Workbook s.31–45 sezgisel temas bölümünde yer alır.
+
+Sezgisel kanal algoritmik puanlamaya girmez; VAK testi 27 soruluk Görsel–İşitsel–Kinestetik puanlamasıyla sınırlıdır. Sezgisel, eğitmenin atölyede ya da oyuncunun günlüğünde gözlemsel olarak farkına vardığı bir katmandır. Bu, ITC'nin VAK testini sınır olarak işaretler — testin yeterince ölçemediği bir kanal vardır ve metot bunu reddetmez.
+
+Sezgisel kanal matriste dördüncü bir satır açmaz — kendi başına bir okuma kanalıdır; matrise sezgisel okumanın notları kenardan eklenir.
+
+Giriş Kapıları üçlüsü **kapalıdır**. Bilişsel · Bedensel · Duygusal'a "Sezgisel" dördüncü olarak eklenmez. Giriş Kapıları operasyonel olarak üç kapıyla çalışır ve bu üçlü Method Book Bölüm F'deki 9 adımlık Karaktere Hazırlık Soruları haritasının omurgasıdır.
+
+**Karaktere Hazırlık Soruları ile Bağ**
+
+Karaktere Hazırlık Soruları (Method Book Bölüm F · 2023 Berlin 9 adımlık akış) Üç Giriş Kapısı ile yapılandırılır. Her adımda kapılardan biri (ya da birden fazlası) baskındır; her kapı için ayrı soru seti bulunur.
+
+- **Bilişsel kapı** — analitik / yapısal sorular (örn. "Karakterin değiştirilemez doğruları nelerdir?")
+- **Bedensel kapı** — somatik / duyusal sorular (örn. "Karakter bir odaya girdiğinde bedeni nasıl hareket eder?")
+- **Duygusal kapı** — ilişkisel / etkilenim soruları (örn. "Karakter babasını anlattığında bedeninde ne oluyor?")
+
+Bu soru havuzu kâğıt-kalemle çalışıldığı için Method Book'ta yer alır — Dijital Araç Sınırı İlkesi §3.12 gereği. App'te bulunmaz; App'in karşılık gelen alanı "Senin Çerçeven" boşluk yansımalarıdır (Workbook s.106–125).
+
+**Klinik Zemin (FKA)**
+
+Giriş Kapısı seçiminin Duygusal'a yanlışlıkla zorlanması (örneğin "duygusal kanalı zayıfsan oradan başla, güçlendir" mantığı) oyuncuyu kendi duygu havuzuna geri çekme riski yaratır. ITC bu mantığı reddeder: oyuncu hangi kapıyı seçtiyse seçsin, karakterin verisinde kalır — kendi yarasında değil.
+
+3×3 Matris bu açıdan bir güvence katmanıdır: matris hücreleri "açık kanaldan açık kapıya" geçişi somut egzersizle gösterir; oyuncuyu kendi geçmişine değil, karakterin verisine yönlendirir. Eğitmen bir kapıdan giriş "denenip" sonuç alınmadığında diğer kapıya geçer — bu test-deneme akışı Modül II/Aşama 2'nin operasyonel ritmidir.
+
+Bu açıdan Çift Üçlü ayrımı sadece pedagojik değil, aynı zamanda etik bir kanondur. Substitution kullanılmaz ilkesi (§3.1) ile doğrudan bağlıdır.
+
+### 3.11 · Doğrular Üç Kaynak Yapısı (v1.3, Karar 3 — v1.4'te §3.10'dan §3.11'e kaydı)
 
 Değiştirilemez Doğrular her zaman üç kaynaktan çıkarılır:
 
@@ -208,7 +275,7 @@ Bu üçlü, ITC'nin omurga kavramlarından biridir. Modül II/Aşama 2'nin tamam
 
 **Not:** "Zihinsel Sabitler" terimi karışıklık yaratabilir: oyuncunun değil, karakterin zihninde sabit olan ilkeleri ifade ediyor.
 
-### 3.11 · Dijital Araç Sınırı İlkesi (YENİ — v1.3, Karar 7)
+### 3.12 · Dijital Araç Sınırı İlkesi (v1.3, Karar 7 — v1.4'te §3.11'den §3.12'ye kaydı)
 
 Yalnızca dijital ortamda anlamlı çalışan araçlar (kişisel test, profil hesaplama, kalibrasyon sonucu üreten testler) App-only olur. Bireyin kâğıt üzerinde kendi başına çalışabileceği araçlar (soru havuzları, defterler, formlar) **kitapta / atölye materyallerinde** yer alır.
 
@@ -316,7 +383,7 @@ Workshop, Method Book'un D bölümünden (Eğitmen Rehberliği) türeyen bir uyg
 
 **A2 ve sonraki atölyeler ön koşul:** Katılımcı App Modül I'i tamamlamış olmalı (VAK + MBTI + Yıldız Oyuncu sonuçları atölye gününe gelmeden hazır).
 
-**Atölyede:** Test sonuçları okunur/yorumlanır, kâğıt üzerinde test çözülmez (Dijital Araç Sınırı — §3.11).
+**Atölyede:** Test sonuçları okunur/yorumlanır, kâğıt üzerinde test çözülmez (Dijital Araç Sınırı — §3.12).
 
 **Atölye sonrası:** Katılımcılar App'ten kalibrasyonlarını derinleştirir, karakter çalışmasını sürdürür.
 
@@ -338,11 +405,11 @@ Aşağıdaki kararlar henüz verilmedi. Bunlardan biri çözüldüğünde Spine 
 
 - MBTI'nın kanonik yeri: ✓ Modül I (§3.9'a eklendi)
 - Travma yoğunluğu sayısı: ✓ 4 yoğunluk (§3.2 zaten doğru, dokümante teyit)
-- Doğrular yapısı: ✓ 3 kaynak (§3.10'a eklendi)
+- Doğrular yapısı: ✓ 3 kaynak (§3.11'e taşındı; v1.3'te §3.10 idi, v1.4'te kaydı)
 - Modül III iç yapısı: ✓ Tek modül (Canlandırma + Akış + Güvenli Çıkış); Performans Blokajları ek bölüm
 - Yıldız Oyuncu boyutları: ✓ 6 boyut kanon (§3.9 altında)
-- Yıldız Oyuncu test formu yeri: ✓ App-only (§3.11)
-- Karaktere Hazırlık Soruları + Öğrenci Defteri yeri: ✓ Method Book Bölüm F (§3.11)
+- Yıldız Oyuncu test formu yeri: ✓ App-only (§3.12)
+- Karaktere Hazırlık Soruları + Öğrenci Defteri yeri: ✓ Method Book Bölüm F (§3.12)
 - Karaktere Hazırlık Soruları yapısı: ✓ 9 adım × 3 Giriş Kapısı haritası
 
 ### Method Book (açık)
@@ -402,6 +469,7 @@ Bu doküman canlı belge. Aşağıdaki olaylar sonrası yeni sürüm çıkar:
 - **v1.1** — 6 Mayıs 2026 — İki büyük karar çözüldü: (1) Modül III pilot kararı — Hamlet Workbook'un 13 yolculuk metni Modül III'ün ilk pilotu olacak. (2) Modül II Hamlet refactor kararı — App'teki mevcut 9 antrenman, Workbook yapısına göre yeniden inşa edilecek. Konumlandırma sentezi açıkça yazıldı: "ticari ama akademik duran". §4.3 (Workbook ↔ App köprüleri) zenginleştirildi.
 - **v1.2** — 6 Mayıs 2026 — Modül II Hamlet refactor tamamlandı. Hamlet karakter sayfası Workbook s.50-125 ile birebir hizalandı. §2'de App durumu güncellendi (Modül II Hamlet ✓). §4.3 canlandı (potansiyel köprülerden gerçek bağlantılara). §5'ten "Modül II refactor planı" kaldırıldı, yerine "diğer üç karakterin refactor zamanı" açık karar olarak eklendi.
 - **v1.3** — 8 Mayıs 2026 — İki büyük güncelleme: (1) **Workshop dördüncü katman olarak eklendi** — §1, §2, §4 (yeni §4.5-4.7) bu genişlemeye göre güncellendi. (2) **Method Book ana yapı oturumunda 8 stratejik karar alındı** — §3'e üç yeni alt-bölüm eklendi (§3.9 Modül I'in Üç Testi, §3.10 Doğrular Üç Kaynak Yapısı, §3.11 Dijital Araç Sınırı İlkesi). §2 Method Book yapısı güncellendi (C-Ek bölümü eklendi). §5 açık kararları azaldı (9 karar çözüldü).
+- **v1.4** — 8 Mayıs 2026 — §3.10 yeniden tanımlandı: Çift Üçlü İlkesi ve 3×3 Matris (VAK × Giriş Kapıları). Eski §3.10 (Doğrular Üç Kaynak Yapısı) §3.11'e, eski §3.11 (Dijital Araç Sınırı İlkesi) §3.12'ye kaydı. §3.9 VAK alt-başlığına ayrım notu eklendi. v1.3'ün geri kalan içeriği aynen korundu.
 
 ---
 
