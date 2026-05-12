@@ -24,9 +24,11 @@ Spine ve Decision Log canlı belgelerdir. Her güncelleme tarih ve sürüm numar
 3. **App — ITC Actor's Gym** (canlı, erken beta)
 4. **Workshop** (D1, D2, C2, E1 modülleri)
 
-## Yazarlar
+## Eş Kurucular ve Eş Eğitmenler
 
-Beyti Engin × Filiz Kaya Ataklı
+Beyti Engin & Filiz Kaya Ataklı (Klinik Psikolog)
+
+*Karar 16 (12 Mayıs 2026) ile kanonlandı — Filiz yazılı onayı bekleniyor.*
 
 ## Lisans
 
