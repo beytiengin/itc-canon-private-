@@ -1,13 +1,13 @@
 # ITC EKOSİSTEM — Geliştirici Brief'i
 
-**v2.0**
+**v2.1**
 
 **Hazırlayan:** Beyti Engin
 **Klinik & Akademik Eş Sahip:** Filiz Kaya Ataklı (Klinik Psikolog)
 **Operasyonel Eş Yazar (AI):** Claude (Anthropic)
-**Tarih:** Mayıs 2026
+**Tarih:** Mayıs 2026 (v2.1: 12 Mayıs 2026)
 **Hedef:** Mayıs 2028 (24 aylık yol haritası)
-**Spine Sürümü Referansı:** v1.1 (6 Mayıs 2026); v1.3 (8 Mayıs 2026) sonrası dört katmanlı yapıya geçildi — bu brief'in bir sonraki revizyonu (v2.1) bu güncellemeyi yansıtacak.
+**Spine Sürümü Referansı:** v1.6 (12 Mayıs 2026 itibarıyla) — dört katmanlı yapı (Method Book / Workbook / App / Workshop) operasyonel, §3'te dört yeni kanon alt-bölümü (§3.13–3.16) eklendi.
 
 ---
 
@@ -24,6 +24,8 @@ Bu brief, üç katmanlı ekosistemin önümüzdeki 24 ay boyunca:
 nasıl ilerleyeceğini tanımlar.
 
 Brief'in stratejik tonu bilinçli olarak "vizyon-ön planda, teknik detay yedek" kuruluyor. Geliştirici tek kişi olduğu için, kararların **niçin verildiği** **ne yapıldığından** daha önemli — çünkü bu sayede yarın koşullar değişirse, kararı yeniden formüle etmek mümkün.
+
+**v2.1 revizyon notu (12 Mayıs 2026):** Bu revizyon Brief v2.0'ın genel yapısını korur. Tek stratejik değişiklik HMDK Stuttgart pilotunun faz konumudur — Faz 3 Milestone 3.1'den çıkarılıp Faz 2 ortasına (Ocak 2027, Ay 8) taşındı. Bu değişiklik Schlegel-Tieck Hamlet adaptasyonunu Mayıs–Temmuz 2026 (Faz 1 başı) kritik bir sprint hâline getirir. Ayrıca Spine v1.6 referansı güncellendi.
 
 ---
 
@@ -56,6 +58,8 @@ Method Book akademik prestiji taşır; App+Workbook ticari geliri sağlar; bu se
 **Yapı:** A. Giriş · B. Felsefe · C. Üç Modüllü Sistem · C-Ek. Performans Blokajları · D. Etik · E. Vakalar · F. Ekler.
 
 **Sonraki adım:** Bölüm III (Modül II — Karakteri Tanı) prototip yazımı (Faz 1 Milestone 1.7).
+
+*Not (v2.1): Method Book Bölüm E (Uygulama Vakaları), HMDK Stuttgart pilotunun (Ocak 2027) verisini canlı vaka olarak alacak. Bölüm E yazımı Faz 2 boyunca pilotla paralel ilerler.*
 
 ### 2.2 Hamlet Workbook
 
@@ -320,6 +324,30 @@ Bu, brief'in stratejik kalbi. Diğer her şey buna bağlı.
 
 **Kabul kriteri:** En az 5 ödeme yapan eğitmen, ortalama 8-10 öğrenci ile.
 
+#### Milestone 2.7 — HMDK Stuttgart Pilot (Ay 7–9 — Yeni Konum, Karar 15) ← v2.1'de eklendi
+
+**Stratejik niyet:** Ekosistemin Faz 2 ortasında akademik meşruiyet enjeksiyonu. HMDK Stuttgart'taki yarıyıl atölyesinde pilot gerçekleştirilir.
+
+**Pilot Tarihi:** 25–29 Ocak 2027 (yarıyıl yoğunluğunda 5 günlük intensif modeli)
+
+**Ön Koşullar (Faz 1'de bitmeli):**
+- Schlegel-Tieck Hamlet adaptasyonu (kritik darboğaz, Mayıs–Temmuz 2026)
+- HMDK ile resmi pilot anlaşması (Ekim 2026)
+- App Modül III Almanca seslendirme (kısmi — pilotta kullanılacak bölümler)
+- §3.13 (BE × FKA eş eğitmenlik) ve §3.16 (Yolculuk Geometrisi) Filiz klinik onayı geçmiş olmalı
+
+**Çıktılar:**
+- 5 günlük pilot atölye gerçekleştirildi (12+ öğrenci hedefi)
+- §3.13 (eş eğitmenlik) ve §3.14 (tek karakter — Hamlet) ve §3.16 (yolculuk geometrisi) operasyonel test
+- Pilot sonu rapor (Şubat 2027) — akademik makale (Milestone 2.4) ve Method Book Bölüm E için veri
+
+**Kabul kriteri:** Pilot tamamlandı, en az 12 öğrenci tam döngüyü deneyimledi, pozitif geri bildirim (≥4/5), Method Book Bölüm E için en az 2 vaka çalışması hammaddesi çıktı.
+
+**Çapraz etki:**
+- → Akademik makale (Milestone 2.4) pilot verisiyle yazılır
+- → Method Book Bölüm E pilot deneyiminden besleneceği için bu bölümün yazımı Şubat 2027 sonrası hızlanır
+- → İngilizce App (Milestone 2.3) Almanca pilot deneyiminden i18n derslerini alır
+
 #### FAZ 2 TAMAM SİNYALİ:
 - ✅ App: 500+ ücretli abone (TR + EN), MRR ≥ $10.000
 - ✅ Method Book: Manuscript tamamlanmış
@@ -332,15 +360,16 @@ Bu, brief'in stratejik kalbi. Diğer her şey buna bağlı.
 
 **Stratejik niyet:** Bireysel pazarın ötesine geç. Method Book yayımlansın. ITC'yi tek kişiye bağımlı olmaktan kurtar.
 
-#### Milestone 3.1 — HMDK Stuttgart Pilot (Ay 15-18)
+#### Milestone 3.1 — İkinci Dalga Akademik Pilot (Ay 15-18, Karar 15 sonrası yeniden konumlandı)
 
-**Çıktılar:**
-- HMDK ile resmi pilot anlaşması (1 yarıyıl, 1 sınıf)
-- Almanca versiyon (Schlegel çevirisi, Ay 12-18 paralel çalışma)
-- HMDK öğretim üyesi ile haftalık koordinasyon
-- Pilot sonu rapor (akademik makaleyi ve Method Book Bölüm V'i besler)
+**v2.1 notu:** HMDK Stuttgart pilotu Faz 2 Milestone 2.7'ye taşındı (gerçek pilot tarihi 25–29 Ocak 2027). Faz 3 Milestone 3.1 boşalan konum için "ikinci dalga akademik pilot" hedefli — Royal Central, RADA, veya Stella Adler bağlantılarından biri. Spesifik kurum kararı Faz 2 sonunda HMDK pilot raporundan sonra alınır.
 
-**Kabul kriteri:** HMDK pilot tamamlandı, en az 12 öğrenci kullandı, pozitif geri bildirim (≥4/5).
+**Çıktılar:** [İkinci dalga kurum belirlendiğinde detaylanacak]
+- İkinci akademik kurumla pilot anlaşması
+- HMDK pilot raporu pazarlama materyali olarak kullanılır
+- Yeni dil/çeviri ihtiyacı (kurum İngilizce ya da farklı dilde olursa)
+
+**Kabul kriteri:** İkinci kurumda pilot tamamlandı, HMDK ile karşılaştırmalı veri elde edildi (akademik makale için iki vakalık bir dataset).
 
 #### Milestone 3.2 — App: Diğer Karakter Refactor'ları (Ay 15-18)
 
@@ -625,6 +654,7 @@ Beyti yalnız çalıştığı için Claude operasyonel olarak ekibin parçası:
 - Yayıncı kararı (Routledge / Methuen Drama / Nick Hern Books)
 - App'in yurt dışına açılma stratejisi (Stuttgart, RADA bağlantıları)
 - Ekosistemin tek bir markası mı (Inside The Character) yoksa üç ayrı isim mi?
+- **İkinci dalga akademik kurum kararı** (Faz 3 Milestone 3.1 için): Royal Central, RADA, Stella Adler arasından hangisi — HMDK pilot raporu sonrası karar
 
 ### 9.5 Operasyonel Kararlar
 
@@ -662,7 +692,8 @@ Beyti yalnız çalıştığı için Claude operasyonel olarak ekibin parçası:
 
 - [x] 1+ yayımlanmış makale
 - [x] 2+ konferans sunumu
-- [x] HMDK Stuttgart pilot tamamlanmış
+- [x] HMDK Stuttgart pilot tamamlanmış (Faz 2 Ocak 2027 — Karar 15)
+- [x] İkinci dalga akademik pilot tamamlanmış (Faz 3, kurum Faz 2 sonunda belirlenir)
 - [x] 5+ vaka çalışması yayımlanmış
 
 ### 10.5 Operasyonel
@@ -694,6 +725,8 @@ ITC Ekosistemi — Method Kitabı, Hamlet Workbook, ITC App — 20+ yıllık ped
 dönüşmesi gereken bir yolculuktur.
 
 **Strateji:** Ürün-pazar uyumunu önce gerçekleştir, akademik meşruiyeti onun üzerine inşa et, ekosistemi birbirine bağlı tut.
+
+v2.1 revizyon hatırlatması: HMDK Stuttgart pilotu artık Faz 3 hedefi değil, Faz 2 ortası kritik milestone'dur. Faz 1'in başında Schlegel-Tieck Hamlet adaptasyonu (Mayıs–Temmuz 2026) kritik darboğazdır — bu adaptasyon bitmeden HMDK pilotu yapılamaz, dolayısıyla Faz 1 sprint planlaması bu darboğazı ön planda tutmalıdır.
 
 **Brief'in en kritik tek mesajı:** Üç katman birbirine atıflarla canlı kalmazsa, ekosistem bütünsel gücünü kaybeder. **§6 Çapraz Güncelleme Protokolü** bu yüzden brief'in stratejik kalbidir.
 
@@ -734,14 +767,15 @@ dönüşmesi gereken bir yolculuktur.
 
 ## EK C — Acil İlk Adım Listesi (Bu Hafta)
 
-1. Decision Log dosyası kur (Notion sayfası veya markdown)
-2. Pazar Spine Health Check ritmi başla (bu Pazar 30 dk)
-3. ElevenLabs hesap aç + Bölüm 4 testi (`Bolum4_DuzMetin.txt` ile)
-4. Domain satın al (itcactorsgym.com)
-5. Filiz ile resmi rol konuşması (eş kurucu durumunu netleştir)
-6. Hukuki danışmanlık görüşmesi (Eyüboğlu lisansı + sorumluluk + şirket yapısı)
-7. Eyüboğlu lisans araştırması (İş Bankası ile temas)
-8. ITC ilkeler belgesi başla (Spine §3'ten genişletilmiş, AI system prompt için)
+1. **Schlegel-Tieck Hamlet adaptasyon sprintini başlat** (Mayıs–Temmuz 2026, Faz 1 başı kritik darboğaz — HMDK Ocak 2027 pilotunun ön koşulu)
+2. Decision Log dosyası kur (Notion sayfası veya markdown)
+3. Pazar Spine Health Check ritmi başla (bu Pazar 30 dk)
+4. ElevenLabs hesap aç + Bölüm 4 testi (`Bolum4_DuzMetin.txt` ile)
+5. Domain satın al (itcactorsgym.com)
+6. Filiz ile resmi rol konuşması (eş kurucu durumunu netleştir)
+7. Hukuki danışmanlık görüşmesi (Eyüboğlu lisansı + sorumluluk + şirket yapısı)
+8. Eyüboğlu lisans araştırması (İş Bankası ile temas)
+9. ITC ilkeler belgesi başla (Spine §3'ten genişletilmiş, AI system prompt için)
 
 ---
 
@@ -750,8 +784,8 @@ dönüşmesi gereken bir yolculuktur.
 *Hazırlık: Beyti Engin*
 *Klinik & Akademik Eş Sahip: Filiz Kaya Ataklı (Klinik Psikolog)*
 *Operasyonel Eş Yazar: Claude (Anthropic)*
-*Versiyon: v2.0*
-*Tarih: Mayıs 2026*
+*Versiyon: v2.1*
+*Tarih: Mayıs 2026 (v2.1: 12 Mayıs 2026 — HMDK pilotu Faz 3 → Faz 2 taşındı)*
 *Önerilen revizyon: Çeyreklik (üç ayda bir)*
 
 > *"Karakter orada — ben buradayım." — ITC Topraklanma Protokolü §3.4 kapanış cümlesi*
