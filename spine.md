@@ -84,7 +84,7 @@ Bu yapı "ticari ama akademik duran" sentezi sağlıyor: Method Book yöntemin a
 - E. Dördüncü Bölüm: Uygulama Vakaları
 - F. Ekler (Sözlük, Karaktere Hazırlık Soruları, Öğrenci Defteri, formlar)
 
-**Yazarlar:** Beyti Engin × Filiz Kaya Ataklı (çift sesli)
+**Yazarlar:** Beyti Engin & Filiz Kaya Ataklı (çift sesli)
 **Hedef:** ~320 sayfa
 **Üretim sırası:** Bölüm III prototip → I → II → IV → VI → V → Açılış+Kapanış sona
 

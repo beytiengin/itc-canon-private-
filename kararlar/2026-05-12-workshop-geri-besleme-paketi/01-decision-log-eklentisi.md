@@ -331,7 +331,7 @@ Beş katmanlı dağılım hem güçtür hem maliyettir. Operasyonel sonuçlar:
 
 Karar 6 (8 Mayıs) Workshop'u dördüncü katman olarak ekosisteme ekledi ve Filiz'in klinik gözetim rolünü genel hatlarıyla işaretledi. Karar 11 bu rolü **operasyonel düzeyde** açar: hangi modülde nerede durur, hangi tetikleyiciler aktive olunca müdahale eder, hangi bloklar imzasını taşır.
 
-Filiz Engin'in (Klinik & Akademik Eş Sahip) ekosistemdeki konumu — Karar 11 ile birlikte — net hâle gelir:
+Filiz Kaya Ataklı'nın (Eş Kurucu, Klinik Psikolog) ekosistemdeki konumu — Karar 11 ile birlikte — net hâle gelir:
 - **Method Book:** Çift sesli (BE + FKA), Bölüm D imzalı (Etik & Eğitmen Rehberliği)
 - **Workbook:** Klinik güvenlik eklemeleri imzalı (2. baskı)
 - **App:** Klinik güvenlik motoru (Yıldız Profil eşleşme, Topraklanma overlay) onay imzalı
