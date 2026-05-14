@@ -3,7 +3,7 @@
 **Eş Kurucular ve Eş Eğitmenler:** Beyti Engin & Filiz Kaya Ataklı (Klinik Psikolog)
 **Operasyonel Eş Yazar:** Claude (Anthropic)
 **Başlangıç:** 6 Mayıs 2026
-**Son güncelleme:** 12 Mayıs 2026 (Karar 16)
+**Son güncelleme:** 13 Mayıs 2026 (Karar 17–20, Workshop Sonuç Paketi)
 
 ---
 
@@ -43,6 +43,297 @@ Her kayıt şu yapıda olur:
 ---
 
 # KARARLAR
+
+---
+
+## 13 Mayıs 2026 — ITC Tarihsel Çizgi Kanonu + İsim Sıralaması (Karar 20)
+
+**Tip:** Tip 1 — Kanon Değişikliği (yöntemin tarihsel kimliği) + Tip 1 — Kanon Genişlemesi (Karar 16 ek: sıralama kuralı)
+**Etkilenen katmanlar:** Tüm ekosistem (Method Book + Workbook + App + Workshop + Brief + Decision Log + tüm dış iletişim)
+**Spine sürümü:** v1.7 → v1.8 (kompoze paket; §3.17 yeni alt-bölüm: Yöntem Tarihsel Çizgisi)
+**Karar veren:** Beyti Engin (doğrudan anlatımdan kanon çıkarımı)
+**Tasarım eş yazımı:** Claude (Anthropic)
+**Tetikleyici:** Workshop sohbeti 11-13 Mayıs 2026 — gelecek tüm belgelerin (Method Book, akademik başvurular, atölye tanıtımları, yayıncı teklifleri) referans çerçevesi ihtiyacı.
+
+### Karar
+
+Inside The Character yönteminin **tarihsel çizgisi** ve **isim sıralama kuralı** kanonlanır. Bu kanon gelecekteki tüm belgelerin referansıdır — Method Book yazımı, akademik başvurular, atölye tanıtımları, yayıncı teklifleri, üç dilli paketler (TR + EN + DE).
+
+### A. Tarihsel Çizgi (kanon)
+
+**Doğru ifade:**
+
+> "Inside The Character (ITC), 20 yılı aşkın araştırma ve pratiğin sentezidir. Beyti Engin ve Filiz Kaya Ataklı tarafından 2005'ten bu yana birlikte geliştirilen yöntem, İstanbul'da Pozitif Atölye'de pratik temelini attı; 2022'den bu yana HMDK Stuttgart ve Chubbuck Studio Berlin'de profesyonel oyunculara aktarılmaktadır."
+
+**Önemli yan notlar:**
+
+- **NIPAI ile çalışma YOK.** NIPAI görüşme aşamasındadır, sonuçlanmamıştır. Hiçbir tanıtım metninde "NIPAI ortaklığı" veya "NIPAI bağlantısı" ifadesi kullanılmaz.
+- **2021 veya sonrasında basılmış kitap YOK** (ITC marka altında). Karakter Tasarım 2021 kitabı kapağında "Filiz Kaya & Beyti Engin" sıralamasıyla tarihsel kanıt olarak duruyor — ama bu kitap ITC marka altında basılmamış; ITC ekosistem yayını değil. Method Book ITC ekosisteminin ilk kanonik akademik yayını olacak (Faz 3 Milestone 3.4, Q1 2027 hedef).
+- **"1000+ profesyonel oyuncu" iddiası doğrulanmamış.** Tanıtım metinlerinde **rakam verilmez** — yerine "20 yılı aşkın pratik sentezi" ifadesi.
+- **"Eş yürütücü" veya "birincil yürütücü" gibi ifadeler Karar 16 ile çelişir, kullanılmaz.** Doğru kanonik unvan: "Eş Kurucu ve Eş Eğitmen" (TR), "Co-Founder & Co-Instructor" (EN), "Mitbegründer/in & Co-Trainer/in" (DE).
+
+### B. Sıralama Kuralı (Karar 16 ek)
+
+**Tüm belgelerde sıralama: Beyti Engin önce, Filiz Kaya Ataklı sonra.**
+
+**Gerekçe:** Yöntemin emek ağırlığını yansıtır. Beyti Engin yöntemin pedagojik omurgasının ve karakter inşası araçlarının (metin çözümleme, boşluklar, timeline, değiştirilemez doğrular, Üç Kapı, 9 adım × 3 Giriş Kapısı) mimarıdır; Filiz Kaya Ataklı klinik altyapının (Travma Matrisi 8×4, Yıldız Profil Eşleşme, Topraklanma Protokolü, Substitution Yasağı) yaratıcısıdır. İki ayrı katkı alanı simetrik durur; sıralama hiyerarşi değil, kronolojik ve kavramsal kuruluş ağırlığı.
+
+**Karar 16 ile ilişki:** Eş Kurucu unvan kuralını ihlal etmez. "Eş Kurucu ve Eş Eğitmen" statüsü değişmez; sıralama bağlama göre değil **her zaman BE → FKA** olarak sabitlenir.
+
+**İstisna (tarihsel kanıt — silinmez):**
+
+- Karakter Tasarım 2021 kitabı kapağındaki "Filiz Kaya & Beyti Engin" sıralaması: **tarihsel kayıt**, retroaktif değiştirilmez.
+- Chubbuck Studio Berlin sitesindeki "Filiz Kaya Ataklı and Beyti Engin, creators of the Character Design Technique" formülasyonu: **saha pratiği kanıtı**, Karar 18 marka geçişi sırasında BE→FKA sıralamasına güncellenir ama tarihsel anlatımda bu eski formülasyon Karar 16 metni içinde alıntı olarak kalır.
+
+### C. BE ve FKA Özgeçmiş Sabit Hâlleri
+
+**BE özgeçmiş sabit hâli:**
+
+> "Oyuncu ve oyunculuk eğitmeni. Yöntemin pedagojik omurgasının ve karakter inşası araçlarının mimarı. Filiz Kaya Ataklı ile birlikte Inside The Character'ı 2005'ten bu yana geliştirmektedir. İstanbul'da Pozitif Atölye'yi birlikte kurarak yöntemin pratik temelini attı; 2022'den bu yana HMDK Stuttgart ve Chubbuck Studio Berlin'de profesyonel oyunculara yöntemi aktarmaktadır."
+
+**FKA özgeçmiş sabit hâli:**
+
+> "Klinik psikolog. Inside The Character'ın 2005'ten bu yana etik ve klinik altyapısını yaratan eş kurucu. Karakter inşası süreçlerinde oyuncunun kişisel deneyimini koruyan yapısal çerçevenin geliştiricisi. Beyti Engin ile birlikte İstanbul'da Pozitif Atölye'de yöntemin pratik geliştirmesini yürüttü; 2022'den bu yana HMDK Stuttgart ve Chubbuck Studio Berlin'de profesyonel oyunculara yöntemi aktarmaktadır."
+
+Bu iki metin **birebir** kullanılır — varyasyon yapılmaz. Çeviri sırasında EN/DE versiyonları ayrı kanonlanır (yedirme paketine eklenir).
+
+### Gerekçe
+
+Workshop sohbeti boyunca tüm tanıtım denemeleri tarihsel olarak farklı çerçevelerle yapılıyordu — bazen NIPAI ima ediliyor, bazen "1000+ oyuncu" rakamı atılıyor, bazen Filiz'in adı önce, bazen sonra. Karar 20 bu varyasyonu kapatır.
+
+**Üç katmanlı gerekçe:**
+
+1. **Akademik meşruiyet.** Method Book yayımına (Q1 2027) yaklaşırken yöntemin tarihsel iddiası belirsiz olamaz. Akademik referans çerçevesi tutarlı olmalı.
+2. **Hukuki temizlik.** "NIPAI ortaklığı" gibi doğrulanmamış iddialar gelecek hukuki riskleri doğurur. Tanıtım metinlerinde sadece **doğrulanabilir ifadeler** kullanılır.
+3. **Etik tutarlılık.** Eş kurucu unvan kuralı (Karar 16) Filiz'in saha pratiğindeki konumunu kanonladı; sıralama kuralı (Karar 20) Beyti'nin pedagojik omurga mimarisini görünür kılar. İki kanon simetrik durur — biri klinik, diğeri pedagojik alanı işaretler.
+
+### Uygulama Detayları
+
+- **Spine v1.7 → v1.8** — §3'e yeni alt-bölüm: **§3.17 Yöntem Tarihsel Çizgisi** (bu kararın A maddesi tam metni + B sıralama + C özgeçmiş sabit hâlleri). §1 ekosistem haritası eş kurucu notuna sıralama kuralı eki: "Tüm belgelerde sıralama: Beyti Engin önce, Filiz Kaya Ataklı sonra."
+- **Tarihsel hata temizliği (zaten yapıldı — bu kararın yedirmesinden önce, 14 Mayıs 2026 sabahı):** NIPAI referansları silindi (raporda 0 sonuç); "1000+ oyuncu" iddiası silindi (raporda 0 sonuç); "Birincil yürütücü / primary practitioner" silindi (raporda 0 sonuç); "Filiz Kaya Ataklı ve Beyti Engin" eski sıralaması "Beyti Engin & Filiz Kaya Ataklı" olarak güncellendi (kalan satırlar Berlin sitesi tarihsel kanıt alıntısı); "Filiz Engin" yanlış kullanımları "Filiz Kaya Ataklı" olarak düzeltildi (Karar 11 arşivinde son kalan satır 14 Mayıs sabahı kapatıldı); yazar/kurucu bağlamında "×" → "&" güncellendi (§3.13 BE × FKA Eş Eğitmenlik pedagojik formülasyonu korundu; spine.md §2 Yazarlar satırı 14 Mayıs sabahı kapatıldı).
+- **Brief v2.2 → v2.3** — Önsöz §1 yöntem tarihçesi bölümü §3.17 çizgisine göre yeniden yazılır. Yazar/kurucu sıralaması her geçişte BE önce, FKA sonra. **(Karar 17, 18 ile birlikte tek paket — bu paket dışı, sonraki tura.)**
+- **README.md güncelleme** — Eş kurucular satırı sıralama kuralı uyumlu kalır (zaten "Beyti Engin & Filiz Kaya Ataklı"). Karar 16 Filiz onayı bekleniyor notu Karar 20'yle birlikte sürmeli — Karar 20 sıralama eki, Karar 16 onayı kaldırmaz.
+- **Method Book Project Instructions + Workshop Project Instructions** — Yazar tanımları §3.17 çizgisi + C maddesi sabit özgeçmiş hâlleriyle güncellenir. **(Bu paket dışı, sonraki iş.)**
+- **Çeviri paketi (gelecek iş)** — BE ve FKA özgeçmiş sabit hâllerinin EN + DE versiyonları ayrı kanonlanır. FKA onay turunda her üç dil ayrı imza alınır.
+
+### Notlar
+
+- Karar 20, Karar 16'nın kapanış mührüdür — Karar 16 statüyü kanonladı, Karar 20 sıralama kuralını + tarihsel çizgiyi kanonlar. İki karar birlikte ITC'nin kurumsal kimliğinin temelini oluşturur.
+- "20 yılı aşkın araştırma ve pratiğin sentezi" ifadesi 2005-2026 = 21 yıl. 2025 yılı sonu itibarıyla "20 yılı aşkın" doğru. 2030'da "25 yılı aşkın" olarak güncellenir.
+- HMDK Stuttgart + Chubbuck Studio Berlin işbirliği 2022'den bu yana — bu tarihten önce Berlin Chubbuck Studio bağlantısı vardı ama yapılandırılmış değildi. 2022 kanonu netleştirilmek istenirse [DOLDUR: kesin başlangıç tarihi varsa düzeltilir].
+- BE özgeçmişindeki "pedagojik omurganın mimarı" formülasyonu Kanon Hatırlatma Kural 4'ten — FKA'nın klinik altyapı yaratıcılığıyla simetrik durur, hiyerarşi ima etmez. Bu formülasyon kalıcı kanondur.
+
+---
+
+## 13 Mayıs 2026 — Berlin Tarihsel Ses Kayıtları + Yolculuk Süresi Kanonu (Karar 19)
+
+**Tip:** Tip 1 — Kanon Genişlemesi (Yolculuk Modu operasyonel parametresi) + Tip 2 — Yapısal Karar (arşiv ve kayıt etiği)
+**Etkilenen katmanlar:** Workshop (birincil) + Method Book Bölüm E (vaka çalışmaları kaynak materyali) + App Modül III (süre referansı)
+**Spine sürümü:** v1.7 → v1.8 (kompoze paket; §3.16 Yolculuk Geometrisi süre parametresiyle genişletilir)
+**Karar veren:** Beyti Engin
+**Tasarım eş yazımı:** Claude (Anthropic)
+**Tetikleyici:** Workshop sohbeti 11-13 Mayıs 2026 — Berlin tarihsel kayıtlarının analizi.
+
+**⚠ DURUM: Filiz klinik onayı bekleniyor (B + C maddeleri).** A maddesi (45-60 dk süre kanonu) operasyonel parametre — flag dışı. B (karakter spektrumu sınırı yok) ve C (ses kayıtları arşivleme etiği) klinik kararlardır; Spine'a girer ama Filiz onay turunda kontrol edilecek; onay tarihi geldiğinde flag kaldırılır.
+
+### Karar
+
+Berlin Chubbuck Studio 2020-2023 atölyelerinden gelen tarihsel ses kayıtları üzerinden Yolculuk Modu operasyonel parametreleri kanonlanır. Üç ayrı alt-karar:
+
+**A. Yolculuk süre kanonu: 45-60 dakika**
+**B. Karakter spektrum sınırı: ITC karakter konusunda sınır koymaz**
+**C. Ses kayıtları arşivleme etiği: çift onaylı**
+
+### A. Yolculuk Süre Kanonu
+
+Workshop Spine v1.2'de Modül III bireysel yolculuk süresi farklı varyantlar için farklı yazıldı (A2-intensive 75 dk, A2-base 90 dk). Berlin tarihsel kayıtları **45-60 dakika aralığını kanonlar:**
+
+- **Heidrich kaydı:** 58.7 dakika
+- **Eva Braun kaydı:** 45.6 dakika
+- (Bianca/Sofia kaydı bozuk — yeniden export bekleniyor)
+
+Bu aralık §3.16 Yolculuk Geometrisi operasyonel parametresi olarak işlenir. Daha uzun süre (>60 dk) klinik koruma protokolünü zorlar (dissosiyatif risk artışı); daha kısa süre (<45 dk) çift geri bildirim mimarisinin (önce grup, sonra oyuncu) anlamlı tezahürüne zaman tanımaz.
+
+Workshop Spine v1.2 §4 atölye formatları içindeki Modül III süre referansları bu aralığa göre revize edilir.
+
+### B. Karakter Spektrumu Sınırı Yok
+
+Berlin tarihsel kayıtlarındaki karakter spektrumu üç ana kategoriyi gösterir:
+
+- **Tarihsel / karanlık:** Eva Braun (Heidrich), tarihsel travma figürleri
+- **Tarihsel / dramatik:** [DOLDUR: ek örnekler varsa]
+- **Kurgu:** Hamlet, Macbeth, Willy Loman, Biff Loman (ITC kanonik karakterleri) + diğer kurgusal roller
+
+**Kanon ilkesi:** ITC karakter konusunda sınır koymaz. Etik filtre §3.3 Travma Matrisi (8 kategori × 4 yoğunluk) ve §3.3 Yıldız Profil Eşleşme Matrisi üzerinden işler, karakter kimliği üzerinden değil. Tarihsel karanlık figürler (Eva Braun gibi) ITC çerçevesinde çalışılabilir — etik koruma içerikle (travma yoğunluğu) ve oyuncuyla (psikolojik puan eşiği) belirlenir.
+
+Bu ilke Karar 18 (Berlin Eylül 2026) Participant Advance kademesinde — kendi karakter mini-journey — operasyonel olarak test edilecek.
+
+### C. Ses Kayıtları Arşivleme Etiği
+
+Berlin tarihsel kayıtları iki ayrı kullanım katmanı taşır, **her birinin ayrı onay protokolü** vardır:
+
+**Katman 1 — Kişisel kullanım (Participant'a verilir):**
+- Kayıt Participant'a kendi yolculuğunun kişisel kullanımı için verilir
+- Bu onay otomatik — atölye katılım sözleşmesinin parçası
+- Participant kaydı kendi prova / eğitim sürecinde kullanabilir
+
+**Katman 2 — ITC arşivi (yöntem dokümantasyonu):**
+- Kayıtların ITC kanonik arşivine girmesi **ayrı Participant onayı** gerektirir
+- Onay protokolü: yazılı, atölye sonrası ayrı imza, kayıt amacı ve kullanım kapsamı belirtilmiş
+- Arşiv kayıtları Method Book Bölüm E vaka çalışmaları kaynak materyali olabilir (anonimleştirme derinliği ayrı karar — Spine §5 açık)
+- Akademik makale yazımında (Brief Faz 2 Milestone 2.4) referans veri olabilir
+
+**Bianca/Sofia kaydı:** Dosya bozuk — yeniden export edilirse arşive girip girmeyeceği yeniden Participant onayına bağlı. Yeniden export öncelik: Berlin Eylül 2026 pilotu öncesi mümkünse.
+
+### Gerekçe
+
+Üç ayrı boyut Workshop sohbetinde olgunlaştı, Decision Log'a girmedi:
+
+- **Süre kanonu:** A2 varyantlarında tutarsız süre belirtimleri, tarihsel pratik verileriyle doğrulanmamış. Berlin kayıtları operasyonel kanonu vermek için yeterli veri içeriyor.
+- **Karakter spektrumu:** ITC'nin etik altyapısı sıkça "yöntem karanlık karakterlerde çalışmaz" olarak yanlış anlaşılıyor. Berlin tarihsel pratiği aksini gösteriyor — yöntem karakter konusunda sınır koymaz, içerik filtresi §3.3 üzerinden işler.
+- **Arşiv etiği:** Kayıtların pedagojik ve akademik kullanımı her zaman ad-hoc yapılıyordu. Çift onaylı protokol Filiz klinik gözetim mantığıyla uyumlu, Participant haklarını korur.
+
+### Uygulama Detayları
+
+- **Spine v1.7 → v1.8** — §3.16 Yolculuk Geometrisi süre parametresi eklenir: "Bireysel yolculuk 45-60 dk (Berlin tarihsel kayıt kanonu, Karar 19)".
+- **Workshop Spine v1.2 → v1.3** — §4 atölye formatları içindeki Modül III süreleri revize edilir (A2-intensive 60 dk, A2-Berlin-Variant 45-60 dk vs.). §2 Tasarım İlkeleri'ne karakter spektrumu maddesi eklenir; §8'e ses kayıtları onay formu maddesi eklenir.
+- **App Modül III** — Yolculuk Modu süre referansı: Hamlet 13 bölüm toplam ~110 dk (mevcut), bireysel bölüm 45-60 dk aralığında. Bu kararla App parametresi teyit edilir, değişiklik yok.
+- **Method Book Bölüm E** — Berlin tarihsel kayıtları vaka çalışmaları kaynak materyali olarak işaretlenir. Yazım fazına (Faz 2) girince anonimleştirme derinliği kararı verilir.
+- **Workshop materyalleri** — `workshop/karakter-dosyalari/tarihsel-kayit-referanslari/` klasörü açıldı (yeniden export edilmiş kayıtlar için iskelet).
+- **Akademik makale (Brief Faz 2 Milestone 2.4)** — Berlin 2020-2023 atölye verisi makalenin temel veri kaynağıdır. HMDK Ocak 2027 pilotu (Karar 17) ikinci dataset olarak makaleye girer.
+
+### Notlar
+
+- "0 Yok" yoğunluk seviyesi (Spine §3.2) Berlin kayıtlarında nasıl işlendi — bu retrospektif analiz ayrı çalışmayı gerektirir.
+- Bianca/Sofia kaydı yeniden export tekniği: [DOLDUR: ses dosyası kurtarma yöntemi varsa not] Aksi hâlde profesyonel ses kurtarma servisi seçeneği değerlendirilir.
+- Participant onay formu şablonu — `workshop/katilimci-materyalleri/katilimci-onay-formu.md` (Spine §1.6.0 Manifest envanterinde işaretli, henüz yazılmamış) bu kararla aktif yazım iş listesine girer.
+
+---
+
+## 13 Mayıs 2026 — Berlin Chubbuck Studio Eylül 2026 A2-Berlin-Variant Pilotu (Karar 18)
+
+**Tip:** Tip 2 — Yapısal Karar (Workshop ilk gerçek pilotu) + Tip 4 — Açık Karar Çözüldü (Karar 16 notundaki "gelecek karar: Berlin Chubbuck Studio yapısı" kapanır)
+**Etkilenen katmanlar:** Workshop (birincil) + Brief v2 §4 Faz 1 (Berlin Eylül 2026 yeni milestone) + Marka kanonu (Character Design → Inside The Character Berlin)
+**Spine sürümü:** v1.7 → v1.8 (kompoze paket; Workshop Spine v1.2 §4 A2-Berlin-Variant alt-formatı zaten kanonik, bu karar onu pilot tarihiyle operasyonelleştirir)
+**Karar veren:** Beyti Engin (Berlin Chubbuck Studio koordinasyon: [DOLDUR: kontak adı])
+**Tasarım eş yazımı:** Claude (Anthropic)
+**Tetikleyici:** Workshop sohbeti 11-13 Mayıs 2026 — Kanon Hatırlatma belgesi maddesi.
+
+### Karar
+
+Berlin Chubbuck Studio Eylül 2026 atölyesi, **ITC Workshop katmanının ilk gerçek pilotu** ve **A2-Berlin-Variant alt-formatının kurucu uygulamasıdır**. HMDK Stuttgart Ocak 2027 pilotunun (Karar 17) öncesinde — Brief v2 §4 Faz 1 sonunun kritik milestone'u.
+
+### Madde Özeti
+
+1. **Tarih:** Eylül 2026 — kesin tarih: [DOLDUR: Chubbuck koordinasyonu sonrası, Eylül başı/ortası/sonu]
+2. **Yer:** Chubbuck Studio Berlin
+3. **Atölye URL:** https://www.chubbuckstudioberlin.com/characterdesign
+4. **Marka kararı (kanon):** Atölye markası **«Inside The Character Berlin»**. Berlin'in tarihsel «Character Design» markası bu pilotla emekliye ayrılır. Chubbuck Studio Berlin sitesi güncellenir: "Filiz Kaya Ataklı (Clinical Psychologist) & Beyti Engin, co-founders and co-instructors of Inside The Character (ITC), formerly known as Character Design." (Karar 16 EN formülasyonu)
+5. **Süre:** 4 gün, 09:00-17:00 (8 saat/gün × 4 gün = 32 saat toplam)
+6. **Kohort yapısı (üç kademeli):**
+   - **Auditor:** 20-24 kişi — atölye gözlemcisi, diğerlerinin yolculuklarına tanıklık
+   - **Participant:** 8 kişi — tam katılım, 1 Hamlet yolculuğu sahnede
+   - **Participant Advance:** 4-6 kişi — Participant artı + kendi karakter mini-journey (B1-bridge entegre)
+7. **Dil mimarisi:** Türkçe + İngilizce + Almanca çevirmen (Berlin tarihsel modeli — Chubbuck Studio'nun yerleşik dil pratiği)
+8. **Yapı:** Workshop Spine v1.2 §4 A2-Berlin-Variant alt-formatı (4 gün adım dağıtımı §6 tablosunda)
+9. **Karakter (Tek Karakter İlkesi §3.14 ve istisnası):**
+   - Participant kohortu için **Hamlet** (ortak alan, pedagojik araç konumunda — deklare edilmez, içeride çalışılır)
+   - Participant Advance kohortu için **kendi karakter mini-journey** (B1-bridge istisnası, ön koşul: A2 mezunu veya eşdeğer profesyonel deneyim)
+10. **Yolculuk süresi kanonu (Karar 19'la ortak):** Bireysel yolculuk 45-60 dakika (Berlin tarihsel kayıtlarından kanon: Heidrich 58.7 dk, Eva Braun 45.6 dk). Yolculuklar **Gün 3-4'te** sahnede grup tanıklığında (§3.16 geometri).
+11. **Pre-work Versiyon A (kanon):** Tüm Participant ve Advance katılımcılar kendi karakter Doğrular + Timeline taslağıyla atölyeye gelir (~5-7 saat öğrenci yükü). Hamlet okuma opsiyonel — Participant kohortu için tavsiye edilen, Auditor için gerekli değil.
+12. **Eş eğitmenler:** Beyti Engin & Filiz Kaya Ataklı, **4 gün fiziksel mevcudiyet** (Karar 16 eş eğitmen statüsünün ilk profesyonel oyuncu stüdyosu uygulaması)
+13. **Ücretlendirme önerisi (Chubbuck onayı bekleniyor):**
+    - **Auditor:** €230-250
+    - **Participant:** €550-650
+    - **Participant Advance:** [DOLDUR: Chubbuck koordinasyonu sonrası, Participant'tan ~€150-200 üstü öneri]
+
+### Gerekçe
+
+**Üç katmanlı gerekçe:**
+
+1. **İlk gerçek pilot konumu.** Workshop Spine v1.2 §9 Üretim Sırası tablosunda Berlin Eylül 2026 zaten "İlk gerçek pilot" olarak işaretli. Ancak bu konum ana repoda Brief v2 §4 Faz 1 milestone listesinde yok — pilot Brief'in dışında bir yapısal boşluktu. Karar 18 bu boşluğu kapatır.
+2. **A2-Berlin-Variant'ın kurucu uygulaması.** Workshop Spine v1.2'de tanımlı 4 günlük üç kademeli (Auditor + Participant + Advance) varyant, Berlin Chubbuck Studio'nun yerleşik kademe yapısının üzerine inşa edilmiş. Bu pilot varyantın gerçek pazarda valide edilmesi.
+3. **Marka geçişi kanonik anı.** Chubbuck Studio Berlin'in tarihsel "Character Design" markası, ITC ekosistemine bu pilotla resmi olarak entegre edilir. Karar 20 (tarihsel çizgi) ile birlikte değerlendirildiğinde: "Character Design 2005-2024" → "Inside The Character 2005-bugün" kronolojik kanon. Berlin tarihsel pratiği yöntemin kurucu sahalarından biri olarak kaydedilir, ama markası ITC altında birleşir.
+
+### Uygulama Detayları
+
+- **Spine v1.7 → v1.8** — Sürüm Geçmişi'ne v1.8 satırı (4 karar paketi içinde). Workshop dördüncü katman olarak (§1) Berlin pilotunun ilk uygulama olduğu işaretlenir.
+- **Brief v2.2 → v2.3** — §4 Faz 1 Milestone 1.5 ve 1.6 arasına **yeni Milestone 1.8 Berlin Eylül 2026 Pilotu** eklenir. Karar 17 (HMDK) ile birlikte Brief §4 Faz 1 sonu ve Faz 2 başı yeniden hizalanır. **(Bu paket dışı, sonraki tura.)**
+- **Workshop Spine v1.2 → v1.3** — §1 editör notunda "Berlin Eylül 2026 pilotu açık karar" notu kaldırılır, §9 Brief çelişkisi notu güncellenir (HMDK + Berlin iki paket de yedirildi).
+- **Marka geçişi:** Chubbuck Studio Berlin sitesi güncelleme isteği gönderilir (Karar 16 EN formülasyonu + "Character Design" → "Inside The Character Berlin (formerly Character Design)"); ITC tanıtım materyalleri Berlin pilotuna referansla güncellenir.
+- **Workshop materyalleri** — `workshop/kurumsal-pilot-paketleri/berlin-eylul-2026/` klasörü açıldı: A2-Berlin-Variant 4 gün master outline, üç kademeli pre-work paketi, Hamlet pedagojik araç dosyası, TR+EN+DE çevirmen brief'i, ücretlendirme tablosu (iskelet).
+- **Karar 19 ile entegrasyon** — Yolculuk süresi kanonu (45-60 dk) Berlin tarihsel kayıtlarından geliyor; bu karar onu A2-Berlin-Variant operasyonel parametresi olarak kanonlar.
+
+### Açık Uçlar (Bu Kararla Çözüm Bekleyenler)
+
+- **Spesifik tarih:** Eylül başı/ortası/sonu — Chubbuck koordinasyonu [DOLDUR: koordinasyon turu sonrası patch]
+- **Hamlet metin EN versiyonu:** Workbook EN hazır mı, hangi sahneler tercüme edilmiş? [DOLDUR: Workbook 2. baskı EN durumu]
+- **Berlin paketi gönderim tarihi:** Mayıs sonu hedef ([DOLDUR: gerçek deadline])
+- **Participant Advance ön koşul tanımı:** A2 mezunu zorunlu mu, profesyonel deneyim eşdeğer sayılır mı? §3.14 B1 istisnasıyla tutarlılık.
+
+### Notlar
+
+- Berlin Eylül 2026 pilotu Karar 17 (HMDK Ocak 2027) için önemli bir provadır — A2 ailesinin iki gerçek uygulamasının 4 ay arayla gelmesi yöntemin operasyonel olgunlaşmasını hızlandırır.
+- Karar 19 (ses kayıtları + journey süresi) ile birlikte değerlendirilir — Berlin pilotunda yapılan ses kayıtları ITC arşivine ek Participant onayıyla girer.
+- Bianca/Sofia tarihsel ses kaydı bozuk — yeniden export edilirse Berlin pilotunun "tarihsel kanıt" referans materyali olarak kullanılır.
+- "Character Design" markasının emekliye ayrılması Berlin koordinatörlerine hassasiyetle iletilmeli — 20 yıllık marka geçmişi var, geçiş tonu önemli.
+
+---
+
+## 13 Mayıs 2026 — HMDK Stuttgart 25-29 Ocak 2027 Bağlam Kanonu (Karar 17)
+
+**Tip:** Yapısal Karar (Tip 2 — kurumsal pilot bağlamının operasyonel kanonu)
+**Etkilenen katmanlar:** Workshop (birincil) + Brief v2 §4 Faz 2 Milestone 2.7 (gelecek paket) + Method Book Bölüm E (gelecek vaka kaynağı)
+**Spine sürümü:** v1.7 → v1.8 (kompoze paket; §3'e yeni alt-bölüm açmaz, mevcut §3.13–3.16 çerçevesinde uygulanır)
+**Karar veren:** Beyti Engin (HMDK koordinasyon: Prof. Pia Podgornik + Prof. Katherina [DOLDUR: soyad])
+**Tasarım eş yazımı:** Claude (Anthropic)
+**Tetikleyici:** Workshop sohbeti 11-13 Mayıs 2026 — Kanon Hatırlatma belgesi maddesi.
+
+> **Karar numaralandırma notu:** Bu karar Workshop sohbetinden "Karar 11 (HMDK Stuttgart Bağlam)" olarak gelmişti; ana Decision Log'da **Karar 17** olarak yedirildi. Workshop sohbetinin Karar 11'i ana repodaki Karar 11'den (Transmisyon Mimarisi: BE × FKA Eş Eğitmenlik, Spine §3.13) farklı içeriktedir. Arşivdeki orijinal dosyalar `kararlar/2026-05-13-workshop-sonuc-paketi/` altında.
+
+### Karar
+
+HMDK Stuttgart 25-29 Ocak 2027 atölyesinin operasyonel bağlamı 13 maddeyle kanonlanır. Bu kanon Workshop Spine v1.2 §4 A2-intensive varyantının ilk kurumsal akademik uygulamasıdır; Berlin Chubbuck Studio Eylül 2026 pilotunun (Karar 18) ardından gelen ikinci uygulama.
+
+### 13 Madde
+
+1. **Tarih:** 25-29 Ocak 2027 (5 gün, ardışık intensive blok)
+2. **Yer:** HMDK Stuttgart (Hochschule für Musik und Darstellende Kunst), Schauspiel bölümü
+3. **Kohort:** 12 Schauspiel öğrencisi (akademik kohort, yarıyıl içi intensive)
+4. **Dil mimarisi:** BE Türkçe konuşur → anlık DE çevirmen → DE kohort. FKA bağlama göre EN, gerekirse DE. Pre-work materyalleri DE.
+5. **Karakter:** Hamlet, Frank Günther Almanca çevirisi (kanonik metin DE kohort için)
+6. **Saat:** 09:00-17:00 (8 saat/gün × 5 gün = 40 saat toplam)
+7. **FKA mevcudiyeti:** 5 gün fiziksel Stuttgart'ta (Karar 16 eş eğitmen statüsünün ilk akademik uygulaması)
+8. **Akademik kadro işbirliği:** Prof. Pia Podgornik + Prof. Katherina [DOLDUR: soyad]. Pilot tasarımı + gözlem + akademik değerlendirme.
+9. **Ücretlendirme modeli:** Saatlik, iki eş eğitmene ayrı ayrı (Karar 16 §3.13 dağılımına uygun). [DOLDUR: saatlik tutar HMDK ile mutabakat sonrası]
+10. **Çift hedef:** (a) Yöntem aktarımı — Schauspiel öğrencilerine ITC mimarisi; (b) Uluslararası akademik transmisyon — pilot raporu Brief Faz 2 Milestone 2.4 (akademik makale) için veri.
+11. **Pre-work paketi:** Hamlet okuma (Günther çevirisi) + Doğrular taslağı + Timeline taslağı. ~5-7 saat öğrenci yükü. **Pre-work Versiyon A kanonu** (Karar 18'le ortak): katılımcı kendi karakter hazırlığıyla atölyeye gelir.
+12. **Anlık DE çevirmen ihtiyacı:** [DOLDUR: çevirmen adı + iletişim] — atölye öncesi terminoloji oturumu zorunlu (ITC kanonik terimlerinin DE karşılıkları, `.claude/rules/terminoloji.md` DE sütununa göre).
+13. **ITC pre-work temas anketi:** Katılımcı App Modül I tamamlama teyidi + VAK + MBTI + Yıldız Oyuncu sonuçları + travma matrisi öz-tarama (FKA klinik koruma altyapısı). Anket tasarımı: [DOLDUR: BE + Claude ayrı oturum].
+
+### Gerekçe
+
+HMDK Stuttgart pilotu Brief v2.1 ile Faz 3 Milestone 3.1'den Faz 2 Milestone 2.7'ye taşındı (Karar 15, 12 Mayıs 2026). Tarih hizalandı ama operasyonel detay yedirilmedi — 13 madde Workshop sohbetinde olgunlaştı, Decision Log'a girmedi. Bu karar bağlamı kanonlar:
+
+- **Akademik meşruiyet:** HMDK ITC'nin ilk Schauspiel kohort uygulaması. Pilot raporu Method Book Bölüm E için canlı vaka, Brief Faz 2 akademik makalesi için veri.
+- **Workshop Spine v1.2 §4 A2-intensive operasyonel kanıt:** 5 günlük intensive varyantı şimdiye kadar teoriydi; HMDK uygulamayla onu valide eder.
+- **Karar 16 sahada test:** FKA eş eğitmen statüsünün ilk kurumsal akademik uygulaması; ücretlendirmeye, akademik kadro işbirliğine, dil mimarisine yansır.
+
+### Uygulama Detayları
+
+- **Spine v1.7 → v1.8** — Sürüm Geçmişi'ne v1.8 satırı (4 karar paketi içinde). §3.13 eş eğitmenlik dağılımı zaten kanonik; HMDK uygulaması §3'te yeni alt-bölüm açmaz, mevcut çerçeve içinde işler.
+- **Brief v2.2 → v2.3** — §4 Faz 2 Milestone 2.7 detaylı yazımı. 13 madde Brief'e tam aktarılır. **(Karar 18 Berlin entegrasyonuyla birlikte tek paket — bu paket dışı, sonraki tura.)**
+- **Workshop Spine v1.2 → v1.3** — §9 Üretim Sırası tablosunda HMDK satırı zaten var; §8 Açık Kararlar 3a (DE çevirmen), 8a (pre-work anket), 12a (Katherina soyadı) bu kararın alt-maddeleri olarak işaretli kalır (atıf "Karar 11" → "Karar 17" güncellendi).
+- **Workshop materyalleri** — `workshop/kurumsal-pilot-paketleri/hmdk-stuttgart-ocak-2027/` klasörü açıldı (iskelet).
+- **Method Book Bölüm E** — HMDK pilotu Şubat 2027 raporu sonrası vaka çalışması olarak yazıma girer (gelecek iş).
+- **Karakter dosyası** — `workshop/karakter-dosyalari/hamlet-atolye-dosyasi.md` Günther çevirisi DE versiyonuyla genişletilir — bu yedirme kapsamında değil; ayrı görev.
+
+### Notlar
+
+- Prof. Katherina'nın soyadı HMDK koordinasyon turunda netleştirilecek — bu karar yedirilirken [DOLDUR] olarak kalır, soyad geldiğinde patch güncellemesi.
+- Anlık DE çevirmen kararı kritik darboğaz — terminoloji oturumu çevirmenin kanonik ITC terimlerine hâkim olmasını gerektirir.
+- ITC pre-work temas anketi tasarımı ayrı bir Claude Code oturumunda yapılacak.
+- Brief v2.3 yedirilirken bu kararla Karar 18 (Berlin) birlikte değerlendirilir — iki pilot kronolojik sırada (Berlin Eylül 2026 → HMDK Ocak 2027) Brief Faz 1 sonu / Faz 2 başı geçişine yerleşir.
 
 ---
 
@@ -1190,6 +1481,7 @@ Bu listede **henüz çözülmemiş** kararlar var. Çözüldükçe yukarıya kay
 | **12 Mayıs 2026** | **Workshop geri besleme paketi (Karar 11–14) — Spine v1.6 yayımlandı** |
 | **12 Mayıs 2026** | **Brief v2.1 yayımlandı — HMDK Stuttgart pilotu Faz 3 → Faz 2 (25–29 Ocak 2027)** |
 | **12 Mayıs 2026** | **Karar 16 — Filiz Kaya Ataklı Eş Kurucu ve Eş Eğitmen statüsü kanon (Spine v1.7, Brief v2.2 — Filiz yazılı onayı bekleniyor)** |
+| **13 Mayıs 2026** | **Workshop Sonuç Paketi: Karar 17 (HMDK 13 madde bağlam) + Karar 18 (Berlin Chubbuck pilot + marka geçişi) + Karar 19 (yolculuk süresi 45-60 dk + spektrum + arşiv etiği — B+C Filiz klinik onayı bekleniyor) + Karar 20 (tarihsel çizgi + sıralama + özgeçmiş sabit hâlleri). Spine v1.8, Workshop Spine v1.3. (Brief v2.3 ayrı turda.)** |
 
 ---
 
