@@ -1,7 +1,26 @@
 # ITC EKOSİSTEM — SPINE
 
 **Dört projenin paylaştığı omurga**
-**v1.7 · 12 Mayıs 2026 · Beyti Engin & Filiz Kaya Ataklı — Eş Kurucular ve Eş Eğitmenler · Claude (operasyonel eş yazım)**
+**v1.8 · 13 Mayıs 2026 · Beyti Engin & Filiz Kaya Ataklı — Eş Kurucular ve Eş Eğitmenler · Claude (operasyonel eş yazım)**
+
+---
+
+## v1.8'de neler değişti? (Workshop Sonuç Paketi — 4 karar entegre)
+
+13 Mayıs 2026 oturumunda Workshop sohbetinden gelen **dört karar tek pakette** ekosisteme yedirildi:
+
+1. **§3.17 — Yöntem Tarihsel Çizgisi** (YENİ alt-bölüm, Karar 20). ITC tarihsel çizgisi, isim sıralama kuralı (her zaman BE → FKA), BE ve FKA özgeçmiş sabit hâlleri. NIPAI yok, "1000+" iddiası yok, "birincil yürütücü" yok. Method Book yayımına (Q1 2027) hizalanmış akademik referans çerçevesi.
+
+2. **§3.16 — Yolculuk Geometrisi süre parametresi** (Karar 19 A). Bireysel yolculuk 45-60 dakika aralığı (Berlin tarihsel kayıt kanonu — Heidrich 58.7 dk, Eva Braun 45.6 dk). Workshop Spine §4 atölye formatları içindeki Modül III süreleri buna göre revize edildi. Karar 19'un B (karakter spektrumu sınırı yok) ve C (ses kayıtları çift onaylı arşivleme etiği) maddeleri **Filiz klinik onayı bekleniyor — provisional**.
+
+3. **Karar 17 — HMDK Stuttgart 25-29 Ocak 2027 Bağlam (13 madde)**. A2-intensive ilk akademik kurumsal uygulama; Karar 16 (FKA Eş Kurucu) sahasındaki ilk akademik test. Açık [DOLDUR]: Prof. Katherina soyadı, anlık DE çevirmen, saatlik tutar, pre-work temas anketi tasarımı.
+
+4. **Karar 18 — Berlin Chubbuck Studio Eylül 2026 Pilotu**. Workshop katmanının **ilk gerçek pilotu**; A2-Berlin-Variant'ın kurucu uygulaması (Auditor + Participant + Participant Advance). Marka kanonu: «Inside The Character Berlin» («Character Design» emekliye). Karar 16 (FKA Eş Kurucu) sahasındaki ilk profesyonel oyuncu stüdyosu uygulaması.
+
+- **§1 ekosistem haritası eş kurucu paragrafına** Karar 20 sıralama kuralı eki eklendi.
+- **Workshop Spine v1.2 → v1.3** — 3 karar entegre (17 + 18 + 19); Karar 20 ana Spine'da §3.17 olarak yedirildi.
+- **Brief v2.3 yedirmesi sonraki tura ertelendi** — Karar 17, 18, 20 birlikte bütünleşik tek paket olarak yazılacak.
+- v1.7'nin tüm içeriği aynen korundu.
 
 ---
 
@@ -46,6 +65,8 @@ Detaylı sürüm geçmişi §6'da.
 ## 1 · Ekosistemin Haritası
 
 > **Eş Kurucular ve Eş Eğitmenler (Karar 16, v1.7):** ITC, Beyti Engin ve Filiz Kaya Ataklı tarafından 2005'ten bu yana birlikte geliştirilen bir yöntemdir. Her iki kurucu da metodolojinin eşit yaratıcı ortağıdır; Filiz'in klinik psikoloji çerçevesi yöntemin etik omurgasının (Travma Matrisi §3.2, Yıldız Profil Eşleşme §3.3, Topraklanma Protokolü §3.4, Substitution Yasağı §3.1) ayrılmaz parçasıdır. Dış iletişimde tam unvan: *Filiz Kaya Ataklı (Klinik Psikolog) — Eş Kurucu ve Eş Eğitmen* / *Beyti Engin — Eş Kurucu ve Eş Eğitmen*. Kısa yan yana referans: *Beyti Engin & Filiz Kaya Ataklı*.
+>
+> **Sıralama Kuralı (Karar 20, v1.8):** Tüm ekosistem dokümantasyonunda ve dış iletişimde isim sıralaması her zaman **Beyti Engin önce, Filiz Kaya Ataklı sonra**. Sıralama hiyerarşi değil, kronolojik ve kavramsal kuruluş ağırlığıdır (BE pedagojik omurga mimarı, FKA klinik altyapı yaratıcısı — simetrik durur). Tarihsel kanıt alıntıları (Karakter Tasarım 2021 kapağı, Berlin Chubbuck Studio sitesi eski formülasyonu) bu kuralın istisnası — retroaktif değiştirilmez. Detay §3.17.
 
 ITC tek bir ürün değil — dört katmanı olan bir sistem:
 
@@ -556,9 +577,57 @@ Olası koruma unsurları (Filiz tarafından şekillendirilecek):
 - Eğitmenin "şimdi sen anlat — Hamlet değil, oyuncu" formülasyonu (üçüncü kişi geçişi)
 - FKA klinik on-call eşiklerinin (§3.13) bu noktada devreye girmesi
 
+**Süre Kanonu (45-60 dakika, Karar 19 A — v1.8)**
+
+Bireysel yolculuk süresi **45-60 dakika aralığındadır**. Bu kanon Berlin Chubbuck Studio 2020-2023 atölyelerinden gelen tarihsel ses kayıtlarından çıkarılmıştır (Heidrich kaydı 58.7 dk, Eva Braun kaydı 45.6 dk). Daha uzun süre (>60 dk) klinik koruma protokolünü zorlar (dissosiyatif risk artışı); daha kısa süre (<45 dk) çift geri bildirim mimarisinin (önce grup, sonra oyuncu) anlamlı tezahürüne zaman tanımaz. Workshop Spine v1.3 §4 atölye formatları içindeki Modül III süre referansları bu aralığa göre revize edilmiştir.
+
 **App Modül III ile İlişki**
 
 App'in Yolculuk Modu **bireysel** kullanımda kalır — oyuncu tek başına, kulaklıkla, kendi alanında. App'in grup transmisyonu yoktur; Karar 14 doğrudan App'i etkilemez. Method Book Bölüm D'de "App'in tek başına kullanımı vs Workshop grup transmisyonu" ayrımı netleşir.
+
+---
+
+### 3.17 · Yöntem Tarihsel Çizgisi (YENİ — v1.8, Karar 20)
+
+ITC ekosisteminin tüm dış iletişim ve yayın belgelerinin referans çerçevesi. Method Book, akademik başvurular, atölye tanıtımları, yayıncı teklifleri ve üç dilli paketler (TR + EN + DE) bu çizgiye uyar. §3.17 yöntem-içi pedagojik veya klinik bir ilke değil — ekosistemin **kurumsal kimlik referansıdır**.
+
+**A. Tarihsel Çizgi (kanonik ifade)**
+
+> Inside The Character (ITC), 20 yılı aşkın araştırma ve pratiğin sentezidir. Beyti Engin ve Filiz Kaya Ataklı tarafından 2005'ten bu yana birlikte geliştirilen yöntem, İstanbul'da Pozitif Atölye'de pratik temelini attı; 2022'den bu yana HMDK Stuttgart ve Chubbuck Studio Berlin'de profesyonel oyunculara aktarılmaktadır.
+
+**Yan kanonlar (uyulması zorunlu negatif kurallar):**
+
+- **NIPAI ile çalışma YOK.** NIPAI görüşme aşamasındadır, sonuçlanmamıştır. Hiçbir tanıtım metninde "NIPAI ortaklığı" veya "NIPAI bağlantısı" ifadesi kullanılmaz.
+- **2021 veya sonrasında basılmış kitap YOK** (ITC marka altında). Karakter Tasarım 2021 kitabı ITC ekosistem yayını değil; tarihsel kanıt olarak duruyor. Method Book ITC ekosisteminin ilk kanonik akademik yayını olacak (Brief Faz 3 Milestone 3.4, Q1 2027 hedef).
+- **"1000+ profesyonel oyuncu" iddiası doğrulanmamış.** Tanıtım metinlerinde **rakam verilmez** — yerine "20 yılı aşkın pratik sentezi" ifadesi.
+- **"Eş yürütücü" / "birincil yürütücü" / "primary practitioner" kullanılmaz.** Karar 16 ile çelişir. Doğru kanonik unvan: "Eş Kurucu ve Eş Eğitmen" (TR), "Co-Founder & Co-Instructor" (EN), "Mitbegründer/in & Co-Trainer/in" (DE).
+
+**B. Sıralama Kuralı**
+
+Tüm belgelerde sıralama: **Beyti Engin önce, Filiz Kaya Ataklı sonra.**
+
+Bu sıralama hiyerarşi değil, kronolojik ve kavramsal kuruluş ağırlığıdır. Beyti Engin yöntemin pedagojik omurgasının ve karakter inşası araçlarının (metin çözümleme, boşluklar, timeline, değiştirilemez doğrular, Üç Kapı, 9 adım × 3 Giriş Kapısı) mimarıdır; Filiz Kaya Ataklı klinik altyapının (Travma Matrisi 8×4, Yıldız Profil Eşleşme, Topraklanma Protokolü, Substitution Yasağı) yaratıcısıdır. İki katkı alanı simetrik durur.
+
+Karar 16 (Eş Kurucu unvan) ile çelişmez — statü değişmez; sıralama bağlama göre değil her zaman BE → FKA olarak sabittir.
+
+**İstisna (tarihsel kanıt — silinmez):**
+
+- Karakter Tasarım 2021 kitabı kapağındaki "Filiz Kaya & Beyti Engin" sıralaması: tarihsel kayıt, retroaktif değiştirilmez.
+- Chubbuck Studio Berlin sitesindeki eski "Filiz Kaya Ataklı and Beyti Engin, creators of the Character Design Technique" formülasyonu: saha pratiği kanıtı, Karar 18 marka geçişi sırasında BE→FKA sıralamasına güncellenir; tarihsel anlatımda eski formülasyon Karar 16 metninde alıntı olarak kalır.
+
+**Uygulama alanı:** atölye tanıtım belgeleri (Berlin, HMDK, gelecek tüm atölyeler), Method Book kapağı + iç sayfaları (telif sayfası dahil), Workbook kapağı + iç sayfaları (2. baskı), App kredileri + tanıtım ekranları, akademik başvurular ve özgeçmişler, atölye sertifikaları, yayıncı teklifleri, sosyal medya tanıtım metinleri, Brief — Spine — Decision Log dahil iç dokümanlar, üç dilli paketler (TR + EN + DE).
+
+**C. BE ve FKA Özgeçmiş Sabit Hâlleri**
+
+Aşağıdaki iki metin **birebir** kullanılır — varyasyon yapılmaz. Çeviri sırasında EN/DE versiyonları FKA onay turunda ayrı kanonlanır.
+
+**Beyti Engin:**
+
+> Oyuncu ve oyunculuk eğitmeni. Yöntemin pedagojik omurgasının ve karakter inşası araçlarının mimarı. Filiz Kaya Ataklı ile birlikte Inside The Character'ı 2005'ten bu yana geliştirmektedir. İstanbul'da Pozitif Atölye'yi birlikte kurarak yöntemin pratik temelini attı; 2022'den bu yana HMDK Stuttgart ve Chubbuck Studio Berlin'de profesyonel oyunculara yöntemi aktarmaktadır.
+
+**Filiz Kaya Ataklı:**
+
+> Klinik psikolog. Inside The Character'ın 2005'ten bu yana etik ve klinik altyapısını yaratan eş kurucu. Karakter inşası süreçlerinde oyuncunun kişisel deneyimini koruyan yapısal çerçevenin geliştiricisi. Beyti Engin ile birlikte İstanbul'da Pozitif Atölye'de yöntemin pratik geliştirmesini yürüttü; 2022'den bu yana HMDK Stuttgart ve Chubbuck Studio Berlin'de profesyonel oyunculara yöntemi aktarmaktadır.
 
 ---
 
@@ -752,6 +821,7 @@ Bu doküman canlı belge. Aşağıdaki olaylar sonrası yeni sürüm çıkar:
 - **v1.5** — 12 Mayıs 2026 — §3.11 (Doğrular Üç Kaynak) "Doğrular Çift Üçlü ve 3×3 Matris" olarak genişletildi. Karar 3'ün Katman Üçlüsü korundu, Kaynak Üçlüsü eklendi (Workbook s.51 yapısı). İki üçlü çapraz eksenlerde — birlikte 3×3 matris. §3.10'daki VAK × Giriş Kapıları matrisinden farklı bir eksen olduğu vurgulandı. Decision Log Karar 10 kaydı.
 - **v1.6** — 12 Mayıs 2026 — Workshop Geri Besleme Paketi: dört yeni alt-bölüm eklendi. §3.13 Transmisyon Mimarisi (BE × FKA eş eğitmenlik, Karar 11). §3.14 Tek Karakter İlkesi (Karar 12). §3.15 Karakter Haritası Taksonomisi (Yolculuk × Çapa × Tip, Karar 13). §3.16 Yolculuk Geometrisi (sahne · tanıklık · çift geri bildirim, Karar 14 — **Filiz klinik onayı bekleniyor, provisional**). §3.1, §3.3, §3.4, §3.5, §3.7, §3.11'e çapraz atıflar. §4.5, §4.6, §4.7'ye Workshop güncellemeleri. v1.3–v1.5 intro/footer kozmetik temizlik. Decision Log Karar 11–14 kayıtları.
 - **v1.7** — 12 Mayıs 2026 — Karar 16 ile Filiz Kaya Ataklı'nın eş kurucu ve eş eğitmen statüsü ekosistem genelinde kanonlandı (**Filiz yazılı onayı bekleniyor, provisional**). Üst meta + footer'da yazar/kurucu bağlamında "×" → "&". §1 ekosistem haritası açılış paragrafına eş kurucu notu eklendi. §3.13 başlığındaki "BE × FKA Eş Eğitmenlik" pedagojik teknik formülasyon olarak korundu. v1.6'nın tüm içeriği aynen korundu.
+- **v1.8** — 13 Mayıs 2026 — **Workshop Sonuç Paketi: 4 karar entegre.** (1) **Karar 17** ile HMDK Stuttgart 25-29 Ocak 2027 atölyesinin operasyonel bağlamı 13 maddeyle kanonlandı (A2-intensive ilk akademik kurumsal uygulama; FKA Eş Kurucu sahasındaki ilk akademik test). (2) **Karar 18** ile Berlin Chubbuck Studio Eylül 2026 atölyesi Workshop katmanının ilk gerçek pilotu ve A2-Berlin-Variant'ın kurucu uygulaması olarak kanonlandı (üç kademe: Auditor + Participant + Participant Advance; "Character Design" markası emekliye, "Inside The Character Berlin"). (3) **Karar 19** ile §3.16'ya bireysel yolculuk süresi 45-60 dk aralığı operasyonel parametresi eklendi (Berlin tarihsel kayıt kanonu); ayrıca karakter spektrumu sınırının olmadığı ve ses kayıtları arşivleme etiğinin çift onaylı olduğu kanonlandı (B + C **Filiz klinik onayı bekleniyor — provisional**). (4) **Karar 20** ile yöntemin tarihsel çizgisi ve isim sıralama kuralı kanonlandı; **§3.17 yeni alt-bölüm: Yöntem Tarihsel Çizgisi** açıldı (BE ve FKA özgeçmiş sabit hâlleri dahil). §1 ekosistem haritasına sıralama kuralı eki eklendi (her zaman BE önce, FKA sonra; tarihsel kanıt alıntıları istisna). Brief v2.3 yedirmesi sonraki tura ertelendi. Workshop Spine v1.2 → v1.3 (3 karar entegre: 17 + 18 + 19). v1.7'nin tüm içeriği aynen korundu.
 
 ---
 
@@ -766,5 +836,5 @@ Bu doküman canlı belge. Aşağıdaki olaylar sonrası yeni sürüm çıkar:
 
 ---
 
-*— ITC Ekosistem Spine v1.7 sonu —*
+*— ITC Ekosistem Spine v1.8 sonu —*
 *Inside The Character · Beyti Engin & Filiz Kaya Ataklı — Eş Kurucular ve Eş Eğitmenler · Mayıs 2026*
