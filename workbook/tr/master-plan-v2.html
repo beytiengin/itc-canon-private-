@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Inside The Hamlet — Master Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F5F0E5;
+    --paper-warm: #EBE3D2;
+    --paper-deep: #DDD3BD;
+    --ink: #1F1A14;
+    --ink-soft: #4A3F30;
+    --ink-faint: #8B7F6B;
+    --rule: #BFB29A;
+    --accent: #6B2731;
+    --accent-soft: #A85461;
+    --accent-pale: rgba(107, 39, 49, 0.08);
+    --gold: #B89968;
+    --t0: #C4D5C9;
+    --t1: #DECF8F;
+    --t2: #C97A52;
+    --t3: #8B3A3A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--paper); color: var(--ink); }
+  body { font-family: 'Cormorant Garamond', Georgia, serif; line-height: 1.55; }
+  .doc { max-width: 1080px; margin: 0 auto; background: var(--paper); padding: 80px 70px 120px; }
+
+  .doc-header { border-bottom: 2px solid var(--accent); padding-bottom: 30px; margin-bottom: 40px; }
+  .doc-tag { font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 14px; }
+  .doc-title { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 52px; line-height: 1.05; letter-spacing: -0.015em; margin-bottom: 8px; }
+  .doc-sub { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: var(--ink-soft); margin-bottom: 24px; }
+  .doc-meta { display: flex; gap: 38px; font-family: 'Geist', sans-serif; font-size: 12px; color: var(--ink-faint); letter-spacing: 0.05em; }
+  .doc-meta strong { display: block; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 3px; font-weight: 500; }
+  .doc-meta span { color: var(--ink); font-size: 16px; font-family: 'Cormorant Garamond', serif; }
+
+  .section-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: var(--accent-soft); margin-bottom: 4px; }
+  .section-h { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 32px; margin-bottom: 16px; letter-spacing: -0.01em; }
+  .section-intro { font-family: 'Cormorant Garamond', serif; font-size: 16.5px; line-height: 1.65; color: var(--ink-soft); max-width: 720px; margin-bottom: 32px; }
+  .section-divider { margin: 60px 0 40px; border-top: 0.5px solid var(--rule); padding-top: 4px; }
+
+  .master-table { width: 100%; border-collapse: collapse; margin: 16px 0 30px; font-family: 'Geist', sans-serif; font-size: 12.5px; }
+  .master-table th { text-align: left; padding: 10px 12px; background: var(--paper-deep); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; border-bottom: 2px solid var(--accent); }
+  .master-table td { padding: 12px; border-bottom: 0.5px solid var(--rule); vertical-align: top; }
+  .col-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: var(--accent); width: 36px; }
+  .col-title { font-family: 'Cormorant Garamond', serif; font-size: 15px; line-height: 1.3; width: 240px; }
+  .col-title small { font-family: 'Geist', sans-serif; font-size: 10.5px; color: var(--ink-faint); letter-spacing: 0.04em; }
+
+  .type-pill { display: inline-block; padding: 2px 9px; border-radius: 2px; font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.12em; font-weight: 500; text-transform: uppercase; }
+  .pill-A { background: rgba(107,39,49,0.12); color: var(--accent); border: 0.5px solid var(--accent-soft); }
+  .pill-B { background: rgba(31,26,20,0.06); color: var(--ink-soft); border: 0.5px solid var(--ink-faint); }
+  .pill-C { background: rgba(168,84,97,0.18); color: #6B2731; border: 0.5px solid var(--accent); }
+  .pill-D { background: rgba(184,153,104,0.18); color: #6B5223; border: 0.5px solid var(--gold); }
+
+  .traum { display: inline-flex; gap: 3px; align-items: center; }
+  .traum-dot { width: 9px; height: 9px; border-radius: 50%; }
+  .t-active.t0 { background: var(--t0); }
+  .t-active.t1 { background: var(--t1); }
+  .t-active.t2 { background: var(--t2); }
+  .t-active.t3 { background: var(--t3); }
+  .t-empty { background: rgba(31,26,20,0.08); }
+  .traum-label { font-family: 'Geist Mono', monospace; font-size: 10px; color: var(--ink-soft); margin-left: 6px; letter-spacing: 0.04em; }
+
+  .anchor-mark { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--accent); font-size: 13px; }
+  .col-pages { font-family: 'Geist Mono', monospace; font-size: 12px; text-align: center; width: 50px; }
+
+  .legend { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0 40px; padding: 22px 26px; background: var(--paper-warm); border-left: 2px solid var(--accent); }
+  .legend-item { display: flex; gap: 14px; align-items: flex-start; }
+  .legend-pill { flex-shrink: 0; margin-top: 3px; }
+  .legend-content { font-family: 'Cormorant Garamond', serif; font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+  .legend-content strong { display: block; font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); margin-bottom: 3px; font-weight: 500; }
+
+  .chapter-grid { display: flex; flex-direction: column; gap: 28px; margin-top: 30px; }
+  .chapter-card { background: var(--paper-warm); border-left: 3px solid var(--accent); padding: 28px 32px 26px; position: relative; }
+  .chapter-card.type-A { border-left-color: var(--accent); background: rgba(107,39,49,0.05); }
+  .chapter-card.type-B { border-left-color: var(--ink-faint); background: rgba(31,26,20,0.025); }
+  .chapter-card.type-C { border-left-color: var(--accent-soft); background: rgba(168,84,97,0.08); }
+  .chapter-card.type-D { border-left-color: var(--gold); background: rgba(184,153,104,0.08); }
+
+  .chapter-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; gap: 20px; }
+  .chapter-head-l { flex: 1; }
+  .chapter-num-tag { font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase; font-weight: 500; margin-bottom: 4px; }
+  .chapter-title { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 24px; line-height: 1.15; margin-bottom: 4px; letter-spacing: -0.005em; }
+  .chapter-sub { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14.5px; color: var(--ink-soft); }
+  .chapter-head-r { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex-shrink: 0; }
+  .chapter-summary { font-family: 'Cormorant Garamond', serif; font-size: 15.5px; line-height: 1.6; margin-bottom: 18px; padding-bottom: 16px; border-bottom: 0.5px dashed var(--rule); }
+  .chapter-summary em { color: var(--ink-soft); }
+
+  .chapter-detail { display: grid; grid-template-columns: 130px 1fr; gap: 8px 18px; font-size: 13px; }
+  .detail-label { font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); font-weight: 500; padding-top: 2px; }
+  .detail-value { font-family: 'Cormorant Garamond', serif; font-size: 14.5px; line-height: 1.5; }
+  .detail-value em { color: var(--ink-soft); font-style: italic; }
+
+  .anchor-callout { background: var(--accent); color: #F5F0E5; padding: 10px 14px; margin: 14px 0 4px; font-family: 'Cormorant Garamond', serif; display: flex; align-items: baseline; gap: 14px; }
+  .anchor-callout-tag { font-family: 'Geist', sans-serif; font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 500; flex-shrink: 0; }
+  .anchor-callout-cue { font-style: italic; font-size: 16px; line-height: 1.4; }
+
+  .yoklama-divider { margin: 40px 0; padding: 18px 24px; background: var(--paper-deep); border-top: 0.5px solid var(--ink-soft); border-bottom: 0.5px solid var(--ink-soft); display: flex; align-items: center; gap: 16px; }
+  .yoklama-tag { font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); font-weight: 500; padding: 4px 10px; background: var(--accent-pale); border-radius: 2px; flex-shrink: 0; }
+  .yoklama-text { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: var(--ink-soft); }
+
+  .outer-card { background: var(--paper-warm); padding: 30px 34px; margin-bottom: 24px; border-top: 2px solid var(--ink-soft); border-bottom: 0.5px solid var(--rule); }
+  .outer-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px; color: var(--accent-soft); margin-bottom: 4px; }
+  .outer-title { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 28px; margin-bottom: 4px; }
+  .outer-pages { font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--ink-faint); margin-bottom: 16px; }
+  .outer-body { font-family: 'Cormorant Garamond', serif; font-size: 15.5px; line-height: 1.65; margin-bottom: 14px; }
+  .outer-list { font-family: 'Cormorant Garamond', serif; font-size: 14.5px; line-height: 1.7; color: var(--ink-soft); list-style: none; padding: 0; margin: 12px 0; }
+  .outer-list li { padding-left: 20px; position: relative; margin-bottom: 4px; }
+  .outer-list li::before { content: "—"; position: absolute; left: 0; color: var(--accent-soft); }
+
+  .totals { margin-top: 60px; padding: 30px 34px; background: var(--ink); color: var(--paper); }
+  .totals-title { font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; font-weight: 500; }
+  .totals-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .total-item { border-left: 1px solid var(--gold); padding-left: 16px; }
+  .total-num { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 500; line-height: 1; margin-bottom: 6px; }
+  .total-label { font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--paper-deep); opacity: 0.7; }
+
+  .footnote { margin-top: 40px; padding-top: 20px; border-top: 0.5px solid var(--rule); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13px; color: var(--ink-faint); text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="doc">
+
+  <div class="doc-header">
+    <div class="doc-tag">Master Plan · İç Çalışma Belgesi</div>
+    <h1 class="doc-title">Inside The Hamlet</h1>
+    <p class="doc-sub">Bir oyuncunun karakter yolculuğu için workbook</p>
+    <div class="doc-meta">
+      <div><strong>Kısım sayısı</strong><span>5</span></div>
+      <div><strong>Yolculuk bölümü</strong><span>13</span></div>
+      <div><strong>Çapa noktası</strong><span>5</span></div>
+      <div><strong>Bedensel yoklama</strong><span>3</span></div>
+      <div><strong>Tahmini sayfa</strong><span>~285</span></div>
+    </div>
+  </div>
+
+  <div class="section-num">Üst yapı</div>
+  <h2 class="section-h">Beş kısım, bir akış</h2>
+  <p class="section-intro">Kitap beş kısımdan oluşur. Eşik ve Bütünleşme çerçeveler; Kısım I tanışma, Kısım II analiz, Kısım III deneyim. Asıl ağırlık merkezi Kısım III'tür — kitabın yaklaşık yüzde altmışı orada yaşar.</p>
+
+  <table class="master-table">
+    <thead><tr><th>Kısım</th><th>İçerik özeti</th><th style="width: 80px; text-align: center;">Sayfa</th></tr></thead>
+    <tbody>
+      <tr><td class="col-title"><strong style="font-weight:500;">EŞİK</strong><br><small>Önsöz · etik sözleşme · kullanım</small></td><td class="detail-value"><em>Oyuncuyla yapılan içsel sözleşme. Kitap nasıl çalışır, ITC App ile nasıl ilişkilenir, ne yapılmaz.</em></td><td class="col-pages">~25</td></tr>
+      <tr><td class="col-title"><strong style="font-weight:500;">KISIM I — Tanışma</strong><br><small>Hamlet'le sezgisel temas</small></td><td class="detail-value"><em>Test yok, puanlama yok. Oyuncu Hamlet'i ilk düşündüğünde ne hissediyor? Karakter karşısında nereye yakın, nereye uzak?</em></td><td class="col-pages">~15</td></tr>
+      <tr><td class="col-title"><strong style="font-weight:500;">KISIM II — Karakterini İnşa Et</strong><br><small>Doğrular · Timeline · İki çerçeve</small></td><td class="detail-value"><em>Değiştirilemez doğrular, oyun öncesi yaşam, sahne timeline, Yazarın Çerçevesi (yazılı sahneler), Senin Çerçeven (boşluklar).</em></td><td class="col-pages">~80</td></tr>
+      <tr style="background: var(--accent-pale);"><td class="col-title"><strong style="font-weight:500;">KISIM III — Sahnele</strong><br><small>13 bölüm yolculuk · 5 çapa</small></td><td class="detail-value"><em><strong>Kitabın motoru.</strong> Hamlet'in çocukluğundan ölümüne kadar uzanan, oyuncunun bedeninde yaşadığı yolculuk. Yolculuk Modu metni burada kitap formuna geçer.</em></td><td class="col-pages">~140</td></tr>
+      <tr><td class="col-title"><strong style="font-weight:500;">BÜTÜNLEŞME</strong><br><small>Bedensel Hamlet Haritası · ekler</small></td><td class="detail-value"><em>Tek sayfa beş çapa haritası, çapa kartları, eğitmen notları, ekosistem köprüsü.</em></td><td class="col-pages">~25</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-divider"></div>
+  <div class="section-num">Kısım III'ün haritası</div>
+  <h2 class="section-h">On üç bölüm, dört tip</h2>
+  <p class="section-intro">Bölümler aynı yapıyı izlemiyor. Bazıları çapa noktası taşır ve daha derin form gerektirir; bazıları geçiş bölümleridir; bir tanesi anne sahnesi gibi sınır bir yüzleşmedir; sonuncusu kapanış protokolüdür.</p>
+
+  <div class="legend">
+    <div class="legend-item"><span class="type-pill pill-A legend-pill">Tip A</span><div class="legend-content"><strong>Çapa Bölümü</strong>Tam yapı: hazırlık, yolculuk, içsel kayıt, çapa kayıt sayfası, karakter sesinden yazma. Beş bölüm.</div></div>
+    <div class="legend-item"><span class="type-pill pill-B legend-pill">Tip B</span><div class="legend-content"><strong>Geçiş Bölümü</strong>Hazırlık, yolculuk, içsel kayıt, karakter sesinden yazma. Çapa yok. Yedi bölüm.</div></div>
+    <div class="legend-item"><span class="type-pill pill-C legend-pill">Tip C</span><div class="legend-content"><strong>Derin Yüzleşme</strong>Travma sınır 2-3. Özel hazırlık ve uzun çıkış protokolü. Bir bölüm: Anne Sahnesi.</div></div>
+    <div class="legend-item"><span class="type-pill pill-D legend-pill">Tip D</span><div class="legend-content"><strong>Kapanış</strong>Düello + ölüm + çıkış. Travma sönümlenmesi. Bir bölüm: Düello ve Son An.</div></div>
+  </div>
+
+  <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 22px; margin: 32px 0 4px;">Tüm bölümler — özet tablo</h3>
+  <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14px; color: var(--ink-soft); margin-bottom: 8px;">Travma seviyeleri ITC etik altyapısıyla uyumludur — ama kitapta puanlama veya eşleşme yok, yalnızca yönlendirme.</p>
+
+  <table class="master-table">
+    <thead><tr><th style="width:36px;">№</th><th>Bölüm</th><th style="width:62px;">Tip</th><th style="width:120px;">Travma</th><th style="width:60px; text-align:center;">Çapa</th><th style="width:50px; text-align:center;">Sayfa</th></tr></thead>
+    <tbody>
+      <tr><td class="col-num">I</td><td class="col-title">Çocukluk Elsinore<br><small>Babanı bir çocuk olarak görmek</small></td><td><span class="type-pill pill-B">B</span></td><td><span class="traum"><span class="traum-dot t-active t0"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-label">0</span></span></td><td style="text-align:center;">—</td><td class="col-pages">9</td></tr>
+      <tr><td class="col-num">II</td><td class="col-title">Wittenberg ve Horatio<br><small>Evden çıkış, ilk dostluk</small></td><td><span class="type-pill pill-B">B</span></td><td><span class="traum"><span class="traum-dot t-active t0"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-label">0</span></span></td><td style="text-align:center;">—</td><td class="col-pages">9</td></tr>
+      <tr><td class="col-num">III</td><td class="col-title">Ophelia ile Aşk<br><small>Yaz tatili, ilk dokunuş</small></td><td><span class="type-pill pill-B">B</span></td><td><span class="traum"><span class="traum-dot t-active t0"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-label">0</span></span></td><td style="text-align:center;">—</td><td class="col-pages">10</td></tr>
+      <tr style="background: var(--accent-pale);"><td class="col-num">IV</td><td class="col-title">Babanın Ölümü Haberi<br><small>Wittenberg'de bir sabah</small></td><td><span class="type-pill pill-A">A</span></td><td><span class="traum"><span class="traum-dot t-active t1"></span><span class="traum-dot t-active t1"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-label">1 — atıf</span></span></td><td style="text-align:center;"><span class="anchor-mark">№ 1</span></td><td class="col-pages">14</td></tr>
+      <tr><td colspan="6" style="background: var(--paper-deep); padding: 8px 12px; font-family: 'Geist', sans-serif; font-size: 10.5px; letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase; font-weight: 500;">→ Birinci bedensel yoklama (2 sayfa)</td></tr>
+      <tr><td class="col-num">V</td><td class="col-title">Eve Dönüş ve Cenaze<br><small>Toprak, anne, Claudius</small></td><td><span class="type-pill pill-B">B</span></td><td><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span><span class="traum-label">2 — tanıklık</span></span></td><td style="text-align:center;">—</td><td class="col-pages">10</td></tr>
+      <tr style="background: var(--accent-pale);"><td class="col-num">VI</td><td class="col-title">Saray Sahnesi ve İlk Monolog<br><small>"Kadın zaaf demekmiş meğer"</small></td><td><span class="type-pill pill-A">A</span></td><td><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span><span class="traum-label">2 — tanıklık</span></span></td><td style="text-align:center;"><span class="anchor-mark">№ 2</span></td><td class="col-pages">15</td></tr>
+      <tr><td class="col-num">VII</td><td class="col-title">Hayaletle Karşılaşma<br><small>Surlar, baba, görev</small></td><td><span class="type-pill pill-B">B</span></td><td><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span><span class="traum-label">2 — tanıklık</span></span></td><td style="text-align:center;">—</td><td class="col-pages">11</td></tr>
+      <tr><td class="col-num">VIII</td><td class="col-title">Delilik Numarası ve Oyuncuların Gelişi<br><small>Maske, Polonius, "Hekuba uğruna"</small></td><td><span class="type-pill pill-B">B</span></td><td><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span><span class="traum-label">2 — tanıklık</span></span></td><td style="text-align:center;">—</td><td class="col-pages">11</td></tr>
+      <tr style="background: var(--accent-pale);"><td class="col-num">IX</td><td class="col-title">Olmak ya da Olmamak<br><small>Koridor, Ophelia, "manastıra git"</small></td><td><span class="type-pill pill-A">A</span></td><td><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span><span class="traum-label">2 — tanıklık</span></span></td><td style="text-align:center;"><span class="anchor-mark">№ 3</span></td><td class="col-pages">15</td></tr>
+      <tr><td colspan="6" style="background: var(--paper-deep); padding: 8px 12px; font-family: 'Geist', sans-serif; font-size: 10.5px; letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase; font-weight: 500;">→ İkinci bedensel yoklama (2 sayfa)</td></tr>
+      <tr><td class="col-num">X</td><td class="col-title">Oyun İçinde Oyun<br><small>Tuzak, Claudius'un yüzü, ispat</small></td><td><span class="type-pill pill-B">B</span></td><td><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span><span class="traum-label">2 — tanıklık</span></span></td><td style="text-align:center;">—</td><td class="col-pages">10</td></tr>
+      <tr style="background: rgba(168,84,97,0.08);"><td class="col-num">XI</td><td class="col-title">Polonius'un Ölümü ve Anne Sahnesi<br><small>Kanlı oyun, ayna, hayalet</small></td><td><span class="type-pill pill-C">C</span></td><td><span class="traum"><span class="traum-dot t-active t3"></span><span class="traum-dot t-active t3"></span><span class="traum-dot t-active t3"></span><span class="traum-dot t-empty"></span><span class="traum-label">2–3 sınır</span></span></td><td style="text-align:center;">—</td><td class="col-pages">14</td></tr>
+      <tr style="background: var(--accent-pale);"><td class="col-num">XII</td><td class="col-title">Mezarlık ve Ophelia Cenazesi<br><small>Yorick, kayıp, "bin kardeş kadar"</small></td><td><span class="type-pill pill-A">A</span></td><td><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span><span class="traum-label">2 — tanıklık</span></span></td><td style="text-align:center;"><span class="anchor-mark">№ 4</span></td><td class="col-pages">15</td></tr>
+      <tr><td colspan="6" style="background: var(--paper-deep); padding: 8px 12px; font-family: 'Geist', sans-serif; font-size: 10.5px; letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase; font-weight: 500;">→ Üçüncü bedensel yoklama (2 sayfa)</td></tr>
+      <tr style="background: rgba(184,153,104,0.10);"><td class="col-num">XIII</td><td class="col-title">Düello, Son An ve Çıkış<br><small>Zehir, Horatio, sessizlik</small></td><td><span class="type-pill pill-D">D</span></td><td><span class="traum"><span class="traum-dot t-active t1"></span><span class="traum-dot t-active t1"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-label">1 — sönümlenme</span></span></td><td style="text-align:center;"><span class="anchor-mark">№ 5</span></td><td class="col-pages">15</td></tr>
+    </tbody>
+  </table>
+
+  <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13.5px; color: var(--ink-faint); margin: 8px 0 0;">Toplam Kısım III: 158 sayfa (13 bölüm + 3 yoklama).</p>
+
+  <div class="section-divider"></div>
+  <div class="section-num">Bölüm bölüm derinleşme</div>
+  <h2 class="section-h">On üç kart</h2>
+  <p class="section-intro">Aşağıda her bölümün tam haritası: sahne özeti, çapa cümlesi, hazırlık egzersizinin konusu, içsel kayıt odağı, karakter sesinden yazma türü, çıkış protokolü tipi. Karakter sesinden yazma her bölümde Hamlet'in zihninden, metnin susturduğu somut bir andan yazılır — sahnede gördüğümüz değil, görmediğimiz Hamlet.</p>
+
+  <div class="chapter-grid">
+
+    <div class="chapter-card type-B">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm I · Tip B · Geçiş</div><div class="chapter-title">Çocukluk Elsinore</div><div class="chapter-sub">Babanı bir çocuk olarak görmek</div></div><div class="chapter-head-r"><span class="type-pill pill-B">9 sayfa</span><span class="traum"><span class="traum-dot t-active t0"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Hamlet 7-10 yaşında bir çocuk. Elsinore kalesi onun tüm dünyası. Babasının yaklaşımı, sesi, onu tanıyan oğul refleksi — <em>bu daha kayıp olmadan önce.</em> Burada inşa edilen baba sevgisi, sonraki on iki bölümün üzerinde yükseleceği yatak.</p>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Çocuk Hamlet'in beden hatırasını kur: yaş, boy, üzerindeki kıyafet, oda. Yedi sorulu sezgisel kart.</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">"Babam" kelimesini söylediğinde bedeninde ne kıpırdandı? <em>İlk sözel kayıt — sonraki bölümlerin baz çizgisi.</em></div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Babanla geçirdiğin bir öğleden sonra. Birlikte ne yaptınız? Sen söyle.</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Kısa çıkış (3 nefes, adı söyle).</div>
+      </div>
+    </div>
+
+    <div class="chapter-card type-B">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm II · Tip B · Geçiş</div><div class="chapter-title">Wittenberg ve Horatio</div><div class="chapter-sub">Evden çıkış, ilk dostluk, ilk sorular</div></div><div class="chapter-head-r"><span class="type-pill pill-B">9 sayfa</span><span class="traum"><span class="traum-dot t-active t0"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Almanya, ilk kez evden uzakta. Saray gözleri yok. <em>İlk kez kendin oluyorsun.</em> Horatio'yla tanışma, felsefe dersleri, "ölümden sonra ne var?" sorusunun ilk kez aklına gelişi. Hamlet entelektüel olarak burada doğuyor.</p>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Wittenberg odanı kur: pencere, masa, kitaplar, ışık. Üç soru.</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">"Ben kimim?" sorusu ilk kez aklına gelişinde bedenin nasıl?</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Sınıftan çıkıp odana döndüğün bir akşam. Pencerenin önünde durdun. Aklından ne geçti?</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Kısa çıkış. Yaz tatili yaklaşıyor.</div>
+      </div>
+    </div>
+
+    <div class="chapter-card type-B">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm III · Tip B · Geçiş</div><div class="chapter-title">Ophelia ile Aşk</div><div class="chapter-sub">Yaz, ilk dokunuş, ilk şiir</div></div><div class="chapter-head-r"><span class="type-pill pill-B">10 sayfa</span><span class="traum"><span class="traum-dot t-active t0"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Elsinore'a dönüş. Ophelia çocukluktan tanıdığı bir kız ama bu yaz başka türlü bakıyor. Aşkın doğuş anı. Ona yazdığı şiirler. <em>"Beceriksizim şiir yazmakta…"</em> Hamlet'in en yumuşak bedensel yeri burada kazılıyor — sonraki kayıp için.</p>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Ophelia'nın yüzünü kur. Sesini, yürüyüşünü, kahkahasını. Aşkın doğuş anını sen seç.</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">Ona ilk dokunduğunda bedenin nasıl? "Seni seviyorum, Ophelia" cümlesini söylediğinde.</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Ophelia'yla bir bahçede, yaz öğleden sonrası. Kimsenin görmediği üç dakika. Ne oldu?</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Kısa çıkış. Yaz bitiyor, Wittenberg'e geri dönüyorsun.</div>
+      </div>
+    </div>
+
+    <div class="chapter-card type-A">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm IV · Tip A · Çapa</div><div class="chapter-title">Babanın Ölümü Haberi</div><div class="chapter-sub">Wittenberg'de bir sabah</div></div><div class="chapter-head-r"><span class="type-pill pill-A">14 sayfa</span><span class="traum"><span class="traum-dot t-active t1"></span><span class="traum-dot t-active t1"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Sıradan bir sabah. Hiçbir şey beklemiyorsun. <em>Sonra kapı çalıyor.</em> Saray habercisi, üç vuruş, "Babanız vefat etmiştir" cümlesi. Bu an Shakespeare'in metninde yok — ama oyuncunun bedeninde var olması gereken bir andır.</p>
+      <div class="anchor-callout"><span class="anchor-callout-tag">Çapa № 1</span><span class="anchor-callout-cue">"Babanız… vefat etmiştir."</span></div>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Senin Wittenberg odan — pencere, masa, üç nesne, sabah uyanışı.</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">Cümle bedeninde nereye düştü? Renk, yoğunluk, şekil-sıcaklık-hareket.</div>
+        <div class="detail-label">Çapa kaydı</div><div class="detail-value">Üç kapı: duygu, düşünce, davranış. İmza-jesti.</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Habercinin gittiği gece. Yatağa girdin. Uyku gelmedi. Karanlıkta ne düşündün?</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Birinci bedensel yoklama (sonraki sayfada).</div>
+      </div>
+    </div>
+
+    <div class="yoklama-divider"><span class="yoklama-tag">→ 1. bedensel yoklama</span><span class="yoklama-text">İki sayfa. Üç nefes, çapayı yoklama, bedeni serbest bırakma. Kitabın akışında zorunlu bir mola.</span></div>
+
+    <div class="chapter-card type-B">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm V · Tip B · Geçiş</div><div class="chapter-title">Eve Dönüş ve Cenaze</div><div class="chapter-sub">Toprak, anne, Claudius'un ilk gölgesi</div></div><div class="chapter-head-r"><span class="type-pill pill-B">10 sayfa</span><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Yas tutan kale. Anne sarılışı. Cenaze. Tabuta atılan toprak — <em>"Babam toprağın altında."</em> Claudius arkalarda, henüz bir gölge. Burada haberin somatik karşılığı tam yerine oturur.</p>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Geri dönüş yolu — at üstünde günlerce, ne düşündün? İki soru.</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">Annenle sarılışta ne hissettin? Toprağı atarken bedenin?</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Cenaze gecesi, kale uyurken. Sen babanın eski odasına gittin. Ne gördün, ne hissettin?</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Orta çıkış (3 nefes, ad, tarih, üç nesne).</div>
+      </div>
+    </div>
+
+    <div class="chapter-card type-A">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm VI · Tip A · Çapa</div><div class="chapter-title">Saray Sahnesi ve İlk Monolog</div><div class="chapter-sub">"Kadın zaaf demekmiş meğer"</div></div><div class="chapter-head-r"><span class="type-pill pill-A">15 sayfa</span><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">İki ay sonra. Saray salonu, taç, anne ve amca yan yana. Yas siyahı içinde tek sen. <em>"Düğünde cenaze, cenazede düğün."</em> Salon dağılır, sen kalırsın — ve patlama gelir. Hamlet'in zihninin ilk yaralı dökümü. <em>Bu monolog Hamlet karakterinin omurgasıdır.</em></p>
+      <div class="anchor-callout"><span class="anchor-callout-tag">Çapa № 2</span><span class="anchor-callout-cue">"Kadın zaaf demekmiş meğer."</span></div>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Saray salonunu kur — yüzlerce mum, kıyafetler, sen siyahta tek.</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">Anne-amca yan yana görüntüsü bedeninde nereyi tetikledi?</div>
+        <div class="detail-label">Çapa kaydı</div><div class="detail-value">Üç kapı. <em>İmza-jesti</em> burada özellikle önemli — bu çapa hayalet sahnesinde, anne sahnesinde, mezarlıkta tekrar çağrılacak.</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Saraydan o gece odana dönüş. Soyunurken aynaya baktın. Aynada gördüğün kim?</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Orta çıkış. Horatio'nun haberi geliyor.</div>
+      </div>
+    </div>
+
+    <div class="chapter-card type-B">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm VII · Tip B · Geçiş</div><div class="chapter-title">Hayaletle Karşılaşma</div><div class="chapter-sub">Surlar, baba, görev</div></div><div class="chapter-head-r"><span class="type-pill pill-B">11 sayfa</span><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Gece. Surlar. Rüzgâr. Babanın hayaleti. <em>"Amcam demek?"</em> Bilgiyi aldığın an. Yaşam tek seferde değişir — artık bir intikam yükü taşıyor olarak yaşıyorsun. Bu bölümde Çapa № 1 ve № 2 yoklanır, derinleşir.</p>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Surları kur. Soğuk, ay ışığı, deniz sesleri. Aşağıda saraydan müzik.</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">"Amcam demek?" cümlesinin değdiği yer. Çapa № 1 ve № 2'yi şimdi yokla — değiştiler mi?</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Şafak söktükten sonra, surları indin. Kahvaltıdan önce yarım saat. O yarım saatte sen ne yaptın?</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Orta çıkış. Şafak sökmüş.</div>
+      </div>
+    </div>
+
+    <div class="chapter-card type-B">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm VIII · Tip B · Geçiş</div><div class="chapter-title">Delilik Numarası ve Oyuncuların Gelişi</div><div class="chapter-sub">Maske, Polonius, "Hekuba uğruna"</div></div><div class="chapter-head-r"><span class="type-pill pill-B">11 sayfa</span><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Hamlet bilinçli olarak bir maske takıyor. Ophelia'nın odasına dağılmış girişin, Polonius'la "kelimeler, kelimeler", Rosencrantz ve Guildenstern. Sonra oyuncular — ve <em>"ne yaman bir uşak, ne aşağılık bir köleyim ben!"</em> Plan kuruluyor.</p>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Delilik kararının alındığı an — bedeninde nasıl bir yer? Maske takarken kayıp olan ne?</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">Hekuba monoloğu seyrederken bedensel kayıt: oyuncunun gerçek gözyaşları senin yokluğunla nasıl çarpışıyor?</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Oyuncularla anlaşmayı yapıp odana çekildiğin gece. Yarın oynanacak oyunun provasını sen kafanda nasıl gördün?</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Orta çıkış. Plan kuruldu.</div>
+      </div>
+    </div>
+
+    <div class="chapter-card type-A">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm IX · Tip A · Çapa</div><div class="chapter-title">Olmak ya da Olmamak</div><div class="chapter-sub">Koridor, Ophelia, "manastıra git"</div></div><div class="chapter-head-r"><span class="type-pill pill-A">15 sayfa</span><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Sabah erken. Boş bir koridor. Tek başına yürüyorsun. Sözcükler aklından geçer: <em>"Var olmak mı, yok olmak mı…"</em> Sonra Ophelia karşına çıkar. Mektupları, hediyeleri geri verir. <em>"Hayır, ben vermedim; hiçbir şey vermedim size."</em> Bu çapa Bölüm 12'de, Ophelia'nın mezarında uyanacak.</p>
+      <div class="anchor-callout"><span class="anchor-callout-tag">Çapa № 3</span><span class="anchor-callout-cue">"Bir bıçak saplayıp göğsüne kurtulmak varken?"</span></div>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Koridoru kur. Mavi sabah ışığı, mumlar sönmüş. Sen yalnızsın — ya da öyle sanıyorsun.</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">"Bir bıçak saplayıp göğsüne kurtulmak" cümlesi geçtiğinde bedenin? <em>Bu cümle Bölüm 12'deki Ophelia mezarında geri dönecek.</em></div>
+        <div class="detail-label">Çapa kaydı</div><div class="detail-value">Üç kapı. Bu çapanın özelliği: yaşam-ölüm hattı. Sahnede çağrıldığında oyuncuyu eşik üstüne taşıyor.</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Ophelia'yı odasına gönderdikten sonra sen nereye gittin? Gün doğumuna kadar ne yaptın?</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Orta çıkış. İkinci bedensel yoklama gelir.</div>
+      </div>
+    </div>
+
+    <div class="yoklama-divider"><span class="yoklama-tag">→ 2. bedensel yoklama</span><span class="yoklama-text">İki sayfa. Üç çapa noktasının (1, 2, 3) hâlâ bedeninde olduğunu yokla. Kitabın orta-noktası.</span></div>
+
+    <div class="chapter-card type-B">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm X · Tip B · Geçiş</div><div class="chapter-title">Oyun İçinde Oyun</div><div class="chapter-sub">Tuzak, Claudius'un yüzü, ispat</div></div><div class="chapter-head-r"><span class="type-pill pill-B">10 sayfa</span><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Akşam. Oyun oynanıyor. Sahnede babanın öldürülmesi — gerçek bir aynalama. Claudius'un yüzü değişir. <em>"Işık verin! Çekilelim!"</em> Hamlet için ispat geldi. Ama bilgi ile eylem arasındaki uçurum bu bölümle açılıyor.</p>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Salonu kur — saraylılar, mumlar, sen Horatio'yla yan yana, Claudius karşıda.</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">Claudius'un yüzü değişirken senin bedeninde olan: zafer mi, dehşet mi, soğuk bir rahatlık mı?</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Oyun bittikten sonra, salonun karanlığında, mumlar söndürülürken sen kalakaldığında. O sessizlik.</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Orta çıkış. Anne çağırıyor — bir sonraki bölüme hazırlık şart.</div>
+      </div>
+    </div>
+
+    <div class="chapter-card type-C">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm XI · Tip C · Derin yüzleşme</div><div class="chapter-title">Polonius'un Ölümü ve Anne Sahnesi</div><div class="chapter-sub">Kanlı oyun, ayna, hayalet</div></div><div class="chapter-head-r"><span class="type-pill pill-C">14 sayfa</span><span class="traum"><span class="traum-dot t-active t3"></span><span class="traum-dot t-active t3"></span><span class="traum-dot t-active t3"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary"><strong style="font-weight:500; color:var(--accent);">Bu kitabın en yoğun bölümüdür.</strong> Annenin odası. Perdenin arkasından bir ses. Kılıç. <em>"Geberdi, bir altına varım ölmediyse!"</em> Polonius. Yanlış adam. Sonra anneyle yüzleşme, ayna, ve odanın köşesinde — babanın hayaleti, sadece sen görüyorsun.</p>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Anne sahnesinin uzun hazırlığı. <em>Özel sayfa:</em> "Bu bölüm derin bir yere gider. Şiddet, suçluluk, anne yarası içerir. Hazır değilsen sonra gel — bölümler birbirini bekler."</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">Üç ayrı an: kılıcı saplama, perdeyi açıp Polonius'u görme, hayaletin görünüşü. Her birinde bedensel kayıt.</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Polonius'un cesedini sürükleyip bıraktıktan sonra. Eline baktın. Bir şey gördün.</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value"><strong style="font-weight:500; color:var(--accent);">Tam topraklanma protokolü.</strong> Altı adım, kitap dilinde tam metin. Ardından fiziksel aktivite önerisi.</div>
+      </div>
+    </div>
+
+    <div class="chapter-card type-A">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm XII · Tip A · Çapa</div><div class="chapter-title">Mezarlık ve Ophelia Cenazesi</div><div class="chapter-sub">Yorick, kayıp, "bin kardeş kadar"</div></div><div class="chapter-head-r"><span class="type-pill pill-A">15 sayfa</span><span class="traum"><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-active t2"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Aylar sonra Danimarka'ya geri döndün. Mezarlıktan geçiyorsun. <em>"Vah zavallı Yorick!"</em> Çocukluk geri geliyor — Bölüm I'in sessiz yankısı. Sonra cenaze alayı. Bu Ophelia'nın cenazesi. Mezara atlama. Laertes'le tutuşma. Ve <em>"Bin kardeşin sevgisi onu sevemez benim sevdiğim kadar!"</em> Bu cümle Bölüm IX'daki "sevmiyordum sizi"yi çürütüyor.</p>
+      <div class="anchor-callout"><span class="anchor-callout-tag">Çapa № 4</span><span class="anchor-callout-cue">"Bin kardeş kadar sevdim onu."</span></div>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Yolculuğun nasıl bıraktığını yokla — aylar geçti, sen değiştin. Bedeninde ne taşıyorsun şimdi?</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">Yorick kafatasını elinde tutarken bedenin? Ophelia'nın mezarına atlarken? "Bin kardeş kadar" derken?</div>
+        <div class="detail-label">Çapa kaydı</div><div class="detail-value">Üç kapı. Bu çapanın özelliği: aşk + suçluluk + kayıp. Çapa № 3'ün karşı kutbu.</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">İngiltere yolculuğundan döndüğün gece — gemi limana yanaşırken Danimarka'yı ilk gördüğünde bedeninde olan.</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value">Üçüncü bedensel yoklama gelir.</div>
+      </div>
+    </div>
+
+    <div class="yoklama-divider"><span class="yoklama-tag">→ 3. bedensel yoklama</span><span class="yoklama-text">İki sayfa. Dört çapa noktasının hepsini birlikte yokla. Düelloya hazır mıyız sorusu.</span></div>
+
+    <div class="chapter-card type-D">
+      <div class="chapter-head"><div class="chapter-head-l"><div class="chapter-num-tag">Bölüm XIII · Tip D · Kapanış</div><div class="chapter-title">Düello, Son An ve Çıkış</div><div class="chapter-sub">Zehir, Horatio, sessizlik</div></div><div class="chapter-head-r"><span class="type-pill pill-D">15 sayfa</span><span class="traum"><span class="traum-dot t-active t1"></span><span class="traum-dot t-active t1"></span><span class="traum-dot t-empty"></span><span class="traum-dot t-empty"></span></span></div></div>
+      <p class="chapter-summary">Düello. Annenin zehirli kadehi. Laertes'in itirafı. Claudius'un sonu. Hamlet'in son nefesi: <em>"Üst tarafı… sessiz bir dünya."</em> Bu bölümün özelliği <strong style="font-weight:500;">karakter ile oyuncu arasındaki ayrımı tekrar kurmak</strong>. Hamlet'in beden ölü, oyuncununki canlı.</p>
+      <div class="anchor-callout"><span class="anchor-callout-tag">Çapa № 5 · sönümlenme çapası</span><span class="anchor-callout-cue">"Üst tarafı… sessiz bir dünya."</span></div>
+      <div class="chapter-detail">
+        <div class="detail-label">Hazırlık</div><div class="detail-value">Hamlet'in son güne çıkışı. <em>"Bütün mesele hazır olmakta. Ne olacaksa olsun."</em> Bu kabul anının bedensel yeri.</div>
+        <div class="detail-label">İçsel kayıt</div><div class="detail-value">Annenin düştüğü an. Laertes'in itirafı. Claudius'un sonu. Yere düşüş.</div>
+        <div class="detail-label">Çapa kaydı</div><div class="detail-value">Sönümlenme çapası — bu Çapa № 1-4 gibi <em>çağrılan</em> bir çapa değil, <em>bırakılan</em> bir çapadır. Karakter ile oyuncu ayrımının başladığı yer.</div>
+        <div class="detail-label">Karakter sesi</div><div class="detail-value">Düellodan önceki sabah. Uyandın. İlk düşüncen ne oldu?</div>
+        <div class="detail-label">Çıkış</div><div class="detail-value"><strong style="font-weight:500;">Tam çıkış protokolü.</strong> Altı adım + kendi hayatından bir pozitif anın somatik kaydı + "Karakter orada — ben buradayım" cümlesi. Bedensel Hamlet Haritası bu çıkışın hemen ardından gelir.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-divider"></div>
+  <div class="section-num">Çerçeve kısımları</div>
+  <h2 class="section-h">Eşik, Kısım I, Kısım II, Bütünleşme</h2>
+  <p class="section-intro">Kısım III kitabın motoru, ama tek başına çalışamaz. Aşağıdaki dört kısım onu çevreler — oyuncuyu hazırlar, çerçeveler, ve sonunda kendine geri verir.</p>
+
+  <div class="outer-card">
+    <div class="outer-num">EŞİK</div>
+    <h3 class="outer-title">Bu kitap nasıl çalışır</h3>
+    <div class="outer-pages">~25 sayfa · 6 bölüm</div>
+    <p class="outer-body">Oyuncuyla yapılan içsel sözleşme. Beklenmedik bir şey değil, dürüst bir başlangıç.</p>
+    <ul class="outer-list">
+      <li>Bu kitap nedir, nasıl okunur, nasıl çalışılmaz</li>
+      <li>ITC ekosistemi: kitap, App, workshop'lar nasıl bağlanır</li>
+      <li>Etik sözleşme: oyuncuya verdiğimiz söz, oyuncudan istediğimiz dikkat</li>
+      <li>Kendi hayatına dönmeme ilkesi — kitap boyunca tekrar edecek</li>
+      <li>Travma seviyeleri ve çıkış protokolü — bilgilendirme dilinde</li>
+      <li>Eyüboğlu çevirisi notu</li>
+    </ul>
+  </div>
+
+  <div class="outer-card">
+    <div class="outer-num">KISIM I</div>
+    <h3 class="outer-title">Tanışma — Hamlet'le sezgisel temas</h3>
+    <div class="outer-pages">~15 sayfa · 4 bölüm</div>
+    <p class="outer-body">Test yok, puanlama yok. Bu Hamlet'i ilk düşündüğünde ne hissettiğini anlamaya yarayan kısa bir kısım. Kapıyı aralıyor, açmıyor.</p>
+    <ul class="outer-list">
+      <li>Hamlet'i nereden tanıyorsun? (bir film, bir performans, bir hatıra)</li>
+      <li>Karakteri ilk düşündüğünde bedenin nereye yöneliyor?</li>
+      <li>Ona yakın mı hissediyorsun, uzak mı? Hangi sahneye en yakın?</li>
+      <li>App'te kalibrasyon yaptıysan VAK profilini Kısım III'te kullanabilirsin</li>
+    </ul>
+  </div>
+
+  <div class="outer-card">
+    <div class="outer-num">KISIM II</div>
+    <h3 class="outer-title">Karakterini İnşa Et</h3>
+    <div class="outer-pages">~80 sayfa · 5 bölüm</div>
+    <p class="outer-body">Kitabın analitik beyni. Hamlet'in metinsel yapısı, oyun öncesi yaşam, sahne timeline'ı, yazılı sahneler ve boşluklar. Mevcut Hamlet ITC çalışman bu kısma oturuyor.</p>
+    <ul class="outer-list">
+      <li>Değiştirilemez Doğrular — Hamlet'in metinden gelen sabitleri</li>
+      <li>Oyun Öncesi Yaşam — kronoloji, anılar, ilişkiler</li>
+      <li>Sahne Timeline — yatay scroll formatında 14 sahne</li>
+      <li>Yazarın Çerçevesi — Shakespeare'in yazdığı kritik anlar</li>
+      <li>Senin Çerçeven — Shakespeare'in sustuğu boşluklar (eş-yazar pratiği)</li>
+    </ul>
+  </div>
+
+  <div class="outer-card" style="border-top-color: var(--gold);">
+    <div class="outer-num">BÜTÜNLEŞME</div>
+    <h3 class="outer-title">Karakterden çıkış, ekosistem köprüsü</h3>
+    <div class="outer-pages">~25 sayfa · 5 bölüm</div>
+    <p class="outer-body">Kitap bittiğinde elinde kalan şeyler. Bir tane fiziksel ürün — Bedensel Hamlet Haritası — kitabın imza ekidir.</p>
+    <ul class="outer-list">
+      <li><strong style="font-weight:500;">Bedensel Hamlet Haritası</strong> — tek sayfa, beş çapa noktası tek figürde renklerle</li>
+      <li>Beş çapa kartı — sahne provasında kullanmak için yırtılabilir formatta</li>
+      <li>Eğitmen Notları — bu kitabı sınıfta kullanmak isteyenlere</li>
+      <li>ITC Ekosistemi Köprüsü — App, Method kitabı, workshop'lar nasıl devam eder</li>
+      <li>Şükran ve kapanış sözü</li>
+    </ul>
+  </div>
+
+  <div class="totals">
+    <div class="totals-title">Master Plan · Toplam</div>
+    <div class="totals-grid">
+      <div class="total-item"><div class="total-num">~285</div><div class="total-label">Sayfa</div></div>
+      <div class="total-item"><div class="total-num">5</div><div class="total-label">Kısım</div></div>
+      <div class="total-item"><div class="total-num">13 + 5</div><div class="total-label">Yolculuk Bölümü + Çapa</div></div>
+      <div class="total-item"><div class="total-num">~95k</div><div class="total-label">Kelime (tahmini)</div></div>
+    </div>
+  </div>
+
+  <p class="footnote">Inside The Hamlet · Master Plan · Sürüm 2.0 · Mayıs 2026</p>
+
+</div>
+
+</body>
+</html>

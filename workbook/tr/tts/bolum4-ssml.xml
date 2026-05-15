@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<!--
+YOLCULUK MODU — BÖLÜM 4: BABANIN ÖLÜMÜ HABERİ
+ElevenLabs API SSML Test Versiyonu
+
+KULLANIM:
+- ElevenLabs API'ye doğrudan gönderilebilir
+- <break time="Ns"/> tag'leri otomatik duraklama
+- <prosody rate="slow"> kritik anlarda yavaş hız
+- <emphasis level="moderate"> önemli kelimelerde
+
+API çağrısı örneği (Python):
+
+import requests
+url = "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
+headers = {
+    "xi-api-key": "YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+data = {
+    "text": SSML_TEXT,
+    "model_id": "eleven_multilingual_v2",
+    "voice_settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.80,
+        "style": 0.20,
+        "use_speaker_boost": False
+    }
+}
+response = requests.post(url, json=data, headers=headers)
+
+NOT: ElevenLabs henüz tam SSML desteği vermiyor — sadece <break> tag'leri 
+çalışır. Aşağıdaki diğer tag'ler dökümantasyon amaçlıdır, fakat sadece 
+break tag'leri TTS engine tarafından okunacaktır.
+-->
+
+<speak>
+
+Wittenberg'de bir sabah.
+<break time="2s"/>
+
+Eylül belki. Belki ekim. Almanya'da hava soğumaya başlamış. Sabahları penceren buğulanıyor.
+<break time="3s"/>
+
+Wittenberg'deki odanı düşün.
+<break time="2s"/>
+
+Nasıl bir oda? Küçük mü, geniş mi? Kitaplar var mı, varsa nerede? Bir masa, bir yatak, bir pencere...
+<break time="5s"/>
+
+Sen kur o odayı.
+<break time="5s"/>
+
+Pencereden ne görüyorsun? Bir avlu mu, bir sokak mı, bir bahçe? Sabah ışığı içeri nasıl giriyor?
+<break time="8s"/>
+
+Bu sabah nasıl uyandın?
+<break time="5s"/>
+
+Geç mi kalktın, erken mi? Belki bir kâbus gördün, belki tatlı bir rüya. Sen söyle.
+<break time="5s"/>
+
+Sabah Wittenberg'i gözlerinin önüne getir. Kaldırımlar. Kütüphaneye yürüyen başka öğrenciler. Sabah ışığında bir at arabası. Yapraklar sararıyor.
+<break time="5s"/>
+
+Sabahın seslerini duy. Wittenberg'in çan kulesi mi çalıyor? Birinin merdivenlerden inişini, bir kapının kapanışını duyabilirsin. Belki birinin sana adınla seslendiğini.
+<break time="5s"/>
+
+Bu sabah bedenin nasıl?
+<break time="5s"/>
+
+Kahvaltını yapmış olabilirsin. Belki birazdan derse gideceksin. Belki Horatio ile buluşacaksın.
+<break time="3s"/>
+
+Sıradan bir gün. Hiçbir şey beklemiyorsun.
+<break time="5s"/>
+
+Şimdi kapın çalıyor.
+<break time="3s"/>
+
+Tok. Tok. Tok.
+<break time="5s"/>
+
+Üç vuruş. Ağır. Beklemediğin saatte.
+<break time="5s"/>
+
+Kapıyı açıyorsun.
+<break time="3s"/>
+
+Karşında bir adam. Tanımıyorsun. Bir saray habercisi. Yüzünde toz var — uzun yol gelmiş, atıyla. Nefes nefese.
+<break time="5s"/>
+
+Sana bakıyor.
+<break time="5s"/>
+
+Onun gözlerine bakıyorsun.
+<break time="5s"/>
+
+Ne görüyorsun orada?
+<break time="8s"/>
+
+"Prens Hamlet?"
+
+Sesi zayıf.
+<break time="3s"/>
+
+"Evet."
+<break time="3s"/>
+
+"Elsinore'dan geliyorum."
+<break time="8s"/>
+
+Henüz hiçbir şey söylemedi.
+<break time="5s"/>
+
+Ne hissediyorsun?
+<break time="10s"/>
+
+Adam yutkunuyor.
+<break time="3s"/>
+
+"Babanız..."
+<break time="3s"/>
+
+"Kralımız..."
+<break time="3s"/>
+
+"...vefat etmiştir."
+<break time="12s"/>
+
+Bu cümle.
+<break time="5s"/>
+
+Birkaç kelime. Beş kelime belki.
+<break time="8s"/>
+
+Şu an ne hissediyorsun?
+<break time="10s"/>
+
+Bu cümle aklından geçerken bedeninde bir değişiklik var mı?
+<break time="8s"/>
+
+Eğer evet ise burada biraz duralım.
+<break time="10s"/>
+
+Bu hissi unutma — olur mu?
+<break time="10s"/>
+
+İçinden bu kelimeleri geçir:
+
+"Babam..."
+<break time="5s"/>
+
+"Babam gitti."
+<break time="8s"/>
+
+Şimdi sana bir şey soracağım.
+
+Babanı en son ne zaman gördün?
+<break time="8s"/>
+
+Son konuşmanız neydi?
+<break time="8s"/>
+
+Ona söylemek isteyip de söyleyemediğin bir şey var mı?
+<break time="8s"/>
+
+Sordun mu adama?
+
+"Nasıl?" dedin.
+<break time="5s"/>
+
+Adam dedi ki:
+
+"Bahçede uyurken bir yılan tarafından sokulmuş."
+<break time="8s"/>
+
+Yılan.
+<break time="5s"/>
+
+Adam başını eğdi. "Başınız sağ olsun, prens." dedi.
+<break time="8s"/>
+
+Şimdi babanı son kez hatırla. Hayattayken.
+<break time="5s"/>
+
+En son nasıl gördün onu? Bir kıyafetinde, bir ayağa kalkışında, bir gülüşünde...
+<break time="8s"/>
+
+Onun kokusunu hatırla.
+<break time="8s"/>
+
+Onun sesini hatırla. Sana adınla seslendiğinde nasıl çıkardı sesinden — "Hamlet!"
+<break time="10s"/>
+
+İçinden geçir:
+
+"Babam gitti."
+<break time="5s"/>
+
+"Bir daha onu göremeyeceğim."
+<break time="10s"/>
+
+Wittenberg'den ayrılman gerek.
+
+</speak>

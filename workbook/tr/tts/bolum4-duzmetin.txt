@@ -1,0 +1,277 @@
+YOLCULUK MODU — BÖLÜM 4: BABANIN ÖLÜMÜ HABERİ
+ElevenLabs Studio TTS Test Versiyonu — Düz Metin
+
+═══════════════════════════════════════════════════════════════
+KILAVUZ
+═══════════════════════════════════════════════════════════════
+
+Bu metin ElevenLabs Studio'ya doğrudan yapıştırılabilir.
+
+Duraklamalar nokta sayısıyla işaretlenmiştir:
+  ...      = ~3 saniye
+  ......   = ~5 saniye
+  .........  = ~8 saniye
+  ............ = ~10-12 saniye
+
+Her satır sonunda doğal nefes vardır. Paragraf araları daha uzun.
+
+Önerilen ses ayarları:
+  Stability:        50-60 (orta — duygusal nüans için)
+  Similarity:       75-85
+  Style:            10-30 (düşük — sakin, kontrollü)
+  Speaker boost:    Kapalı
+  Hız:              %85-90 (yavaş, hipnotik)
+  
+Önerilen ses (Türkçe):
+  - Burcu, Deniz veya benzeri kadın ses (yumuşak)
+  - Veya derin tonlu erkek ses (rehber tonunda)
+
+═══════════════════════════════════════════════════════════════
+METİN BAŞLANGICI
+═══════════════════════════════════════════════════════════════
+
+
+Wittenberg'de bir sabah.
+
+Eylül belki. Belki ekim. Almanya'da hava soğumaya başlamış. Sabahları penceren buğulanıyor.
+
+...
+
+
+Wittenberg'deki odanı düşün.
+
+Nasıl bir oda? Küçük mü, geniş mi? Kitaplar var mı, varsa nerede? Bir masa, bir yatak, bir pencere...
+
+......
+
+Sen kur o odayı.
+
+......
+
+Pencereden ne görüyorsun? Bir avlu mu, bir sokak mı, bir bahçe? Sabah ışığı içeri nasıl giriyor?
+
+.........
+
+
+Bu sabah nasıl uyandın?
+
+......
+
+Geç mi kalktın, erken mi? Belki bir kâbus gördün, belki tatlı bir rüya. Sen söyle.
+
+......
+
+
+Sabah Wittenberg'i gözlerinin önüne getir. Kaldırımlar. Kütüphaneye yürüyen başka öğrenciler. Sabah ışığında bir at arabası. Yapraklar sararıyor.
+
+......
+
+
+Sabahın seslerini duy. Wittenberg'in çan kulesi mi çalıyor? Birinin merdivenlerden inişini, bir kapının kapanışını duyabilirsin. Belki birinin sana adınla seslendiğini.
+
+......
+
+
+Bu sabah bedenin nasıl?
+
+......
+
+
+Kahvaltını yapmış olabilirsin. Belki birazdan derse gideceksin. Belki Horatio ile buluşacaksın.
+
+...
+
+Sıradan bir gün. Hiçbir şey beklemiyorsun.
+
+......
+
+
+Şimdi kapın çalıyor.
+
+...
+
+Tok. Tok. Tok.
+
+......
+
+Üç vuruş. Ağır. Beklemediğin saatte.
+
+......
+
+
+Kapıyı açıyorsun.
+
+...
+
+Karşında bir adam. Tanımıyorsun. Bir saray habercisi. Yüzünde toz var — uzun yol gelmiş, atıyla. Nefes nefese.
+
+......
+
+Sana bakıyor.
+
+......
+
+
+Onun gözlerine bakıyorsun.
+
+......
+
+Ne görüyorsun orada?
+
+.........
+
+
+"Prens Hamlet?"
+
+Sesi zayıf.
+
+...
+
+"Evet."
+
+...
+
+"Elsinore'dan geliyorum."
+
+.........
+
+
+Henüz hiçbir şey söylemedi.
+
+......
+
+Ne hissediyorsun?
+
+............
+
+
+Adam yutkunuyor.
+
+...
+
+"Babanız..."
+
+...
+
+"Kralımız..."
+
+...
+
+"...vefat etmiştir."
+
+............
+
+
+Bu cümle.
+
+......
+
+Birkaç kelime. Beş kelime belki.
+
+.........
+
+Şu an ne hissediyorsun?
+
+............
+
+
+Bu cümle aklından geçerken bedeninde bir değişiklik var mı?
+
+.........
+
+Eğer evet ise burada biraz duralım.
+
+............
+
+
+Bu hissi unutma — olur mu?
+
+............
+
+
+İçinden bu kelimeleri geçir:
+
+"Babam..."
+
+......
+
+"Babam gitti."
+
+.........
+
+
+Şimdi sana bir şey soracağım.
+
+Babanı en son ne zaman gördün?
+
+.........
+
+Son konuşmanız neydi?
+
+.........
+
+Ona söylemek isteyip de söyleyemediğin bir şey var mı?
+
+.........
+
+
+Sordun mu adama?
+
+"Nasıl?" dedin.
+
+......
+
+Adam dedi ki:
+
+"Bahçede uyurken bir yılan tarafından sokulmuş."
+
+.........
+
+
+Yılan.
+
+......
+
+Adam başını eğdi. "Başınız sağ olsun, prens." dedi.
+
+.........
+
+
+Şimdi babanı son kez hatırla. Hayattayken.
+
+......
+
+En son nasıl gördün onu? Bir kıyafetinde, bir ayağa kalkışında, bir gülüşünde...
+
+.........
+
+Onun kokusunu hatırla.
+
+.........
+
+Onun sesini hatırla. Sana adınla seslendiğinde nasıl çıkardı sesinden — "Hamlet!"
+
+............
+
+
+İçinden geçir:
+
+"Babam gitti."
+
+......
+
+"Bir daha onu göremeyeceğim."
+
+............
+
+
+Wittenberg'den ayrılman gerek.
+
+
+═══════════════════════════════════════════════════════════════
+METİN SONU
+═══════════════════════════════════════════════════════════════
+
+Tahmini süre: 8-9 dakika (hız %85'te)
+Karakter sayısı: ~3500
+ElevenLabs maliyet tahmini: ~3500 karakter × ~$0.18/1000 = ~$0.65
