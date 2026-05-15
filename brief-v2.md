@@ -112,11 +112,16 @@ ITC oyuncunun kendi biyografik travmalarına dönmesini istemez. Karakterin veri
 
 Şiddet · Kayıp · İhanet · Cinsel · Zihinsel Kırılma · Çocukluk · Ahlaki Yara · Varoluşsal. Yoğunluk: 0 Yok · 1 Atıf · 2 Tanıklık · 3 İcra. *(Spine v1.3 ile teyit; v2.0 brief metni "3 yoğunluk" diyorsa düzeltilir.)*
 
-### 3.3 Yıldız Profil Eşleşme Matrisi
+### 3.3 Sahne-Level Etik Uyarı (REVİZE — Karar 21, Spine v1.9)
 
-- ≥5: Tüm seviyeler açık
-- 3–5: Uyarılı
-- <3: "Hazır olduğunda" — kilit değil bekleyiş
+§3.2 Travma Matrisi'nin sınıflandırması sahnelere atanır ve oyuncuya **uyarı** olarak gösterilir. Sistem oyuncu profilini (Yıldız Matrisi §3.9) hesaba katmaz; karakterin verisi karakterden çıkarılır, oyuncudan değil.
+
+- Hiçbir sahne profile göre kilitlenmez (gate yok)
+- Yoğunluk 2 (Tanıklık) ve 3 (İcra) sahneler sonrası §3.4 Topraklanma Protokolü otomatik tetiklenir (kategori- ve profil-bağımsız)
+
+**Tarihsel kayıt (Karar 21 öncesi):** v1.0–v1.8 arası "Yıldız Profil Eşleşme Matrisi" (≥5: tüm seviyeler açık · 3–5: uyarılı · <3: bekleyiş) yapısı kullanılıyordu — Filiz Kaya Ataklı'nın kanonik klinik tasarımı. Karar 21 ile (15 Mayıs 2026) Filiz'in eş kurucu onayıyla geri çekildi; gerekçe Substitution Yasağı (§3.1) ile yapısal uyum.
+
+> **Brief sürüm notu:** Bu alt-bölüm Karar 21 ile hizalandı (Spine v1.9, 15 Mayıs 2026). Brief'in genel sürüm referansı (üst meta §Spine Sürümü Referansı v1.7) v2.3 kompoze yedirmesinde Karar 17-21 birlikte güncellenir — sonraki tura ertelendi.
 
 ### 3.4 Topraklanma Protokolü (6 adım)
 
