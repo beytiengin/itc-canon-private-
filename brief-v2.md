@@ -1,12 +1,12 @@
 # ITC EKOSİSTEM — Geliştirici Brief'i
 
-**v2.2**
+**v2.3**
 
 **Eş Kurucular ve Eş Eğitmenler:** Beyti Engin & Filiz Kaya Ataklı (Klinik Psikolog)
 **Operasyonel Eş Yazar (AI):** Claude (Anthropic)
-**Tarih:** Mayıs 2026 (v2.1: 12 Mayıs 2026 HMDK tarih düzeltmesi · v2.2: 12 Mayıs 2026 Karar 16 — Filiz Kaya Ataklı Eş Kurucu statüsü kanon, Filiz yazılı onayı bekleniyor)
+**Tarih:** 15 Mayıs 2026 (v2.1: 12 Mayıs 2026 HMDK tarih düzeltmesi · v2.2: 12 Mayıs 2026 Karar 16 — FKA Eş Kurucu · v2.3: 15 Mayıs 2026 Karar 17-21 kompoze yedirme)
 **Hedef:** Mayıs 2028 (24 aylık yol haritası)
-**Spine Sürümü Referansı:** v1.7 (12 Mayıs 2026 itibarıyla) — dört katmanlı yapı (Method Book / Workbook / App / Workshop) operasyonel, §3'te dört yeni kanon alt-bölümü (§3.13–3.16) eklendi, Karar 16 ile eş kurucu statüsü kanonlandı.
+**Spine Sürümü Referansı:** v1.9 (15 Mayıs 2026 itibarıyla) — dört katmanlı yapı (Method Book / Workbook / App / Workshop) operasyonel; §3'te sekiz yeni kanon alt-bölümü (§3.10–3.17, son §3.17 Yöntem Tarihsel Çizgisi); Karar 16 ile eş kurucu statüsü kanonlandı; Karar 21 ile Yıldız Oyuncu Matrisi pedagojik araç olarak ayrıldı, travma sistemi sahne-level çalışıyor.
 
 ---
 
@@ -28,21 +28,46 @@ Brief'in stratejik tonu bilinçli olarak "vizyon-ön planda, teknik detay yedek"
 
 **v2.2 revizyon notu (12 Mayıs 2026, Karar 16):** Filiz Kaya Ataklı'nın **Eş Kurucu ve Eş Eğitmen** statüsü ekosistem genelinde kanonlandı. Üst meta'da "Klinik & Akademik Eş Sahip" formülasyonu "Eş Kurucular ve Eş Eğitmenler" olarak güncellendi; yazar/kurucu bağlamında "×" → "&"; §2.4 risk profilinde "Beyti tek-kişi-bağımlılığı" azaltma sütununa Karar 16 atfı; §10.4'te "FKA klinik onayı" formülasyonu "eş yazar imzası" düzeyine yükseltildi; §1.4 Milestone 1.4 hedef formülasyonu "Eş Kurucu ve Eş Eğitmen" olarak güncellendi. Spine v1.7 referansı. **Filiz yazılı onayı bekleniyor — provisional.**
 
+**v2.3 revizyon notu (15 Mayıs 2026, Karar 17-21 kompoze paket):** Workshop Sonuç Paketi (13 Mayıs 2026) ve Yıldız–Travma Ayrılması (15 Mayıs 2026) Brief'e bütünleşik tek paket olarak yedirildi:
+
+- **Karar 17 (HMDK Stuttgart 13 madde bağlam):** Milestone 2.7 detaylandı — 25-29 Ocak 2027, A2-intensive ilk akademik kurumsal uygulama. Açık [DOLDUR] alanları §9.4'e taşındı.
+- **Karar 18 (Berlin Chubbuck Studio Eylül 2026 pilotu):** Yeni Milestone 1.6.5 eklendi — Workshop katmanının ilk gerçek pilotu, A2-Berlin-Variant'ın kurucu uygulaması. Marka geçişi kanon: "Character Design" emekliye, **"Inside The Character Berlin"**.
+- **Karar 19 (Yolculuk süresi 45-60 dk + Karakter spektrumu sınırı yok + Ses kayıt etiği):** §3 atıfları güncel; Karar 19 B+C Filiz klinik onayı bekleyen olarak §9.4'te kayıtlı.
+- **Karar 20 (Yöntem Tarihsel Çizgisi + Sıralama Kuralı + Özgeçmiş Sabit Hâlleri):** Önsöz/§1.1'e tarihsel çizgi entegre edildi, yan kanonlar (NIPAI yok, "1000+" iddiası verilmez, "eş yürütücü"/"birincil yürütücü" kullanılmaz) belgelendi. BE & FKA özgeçmiş sabit hâlleri **yeni EK D** olarak eklendi. Tüm Brief'te sıralama her zaman **Beyti Engin önce, Filiz Kaya Ataklı sonra** (tarihsel kanıt alıntıları istisna).
+- **Karar 21 (Yıldız Oyuncu Matrisi ve Travma Sistemi Ayrılması):** §3.3 hizalandı (Sahne-Level Etik Uyarı, Spine v1.9). §2.3 App durumu Yıldız konumlandırması revize. §3.4 Topraklanma tetikleyicisi yoğunluk 2-3 olarak güncellendi. §9.4'e app refactor açık kararları eklendi.
+
+Spine v1.7 → v1.9 referans güncellemesi tüm Brief'e yansıdı. Detay arşiv: `kararlar/2026-05-13-workshop-sonuc-paketi/` + `kararlar/2026-05-15-yildiz-travma-ayrismasi/`. **Filiz yazılı onayı bekleniyor — provisional** (Karar 16 + Karar 19 B+C için; Karar 17, 18, 20, 21 onaylı).
+
 ---
 
 ## 1. STRATEJİK ÖZET
 
-### 1.1 ITC Nedir? (Spine v1.1 §1'den)
+### 1.1 ITC Nedir? (Spine v1.9 §1'den)
 
-ITC tek bir ürün değil — üç katmanı olan bir sistemdir:
+**Yöntem tarihsel çizgisi (Karar 20, v1.8 — kanonik ifade):**
+
+> Inside The Character (ITC), 20 yılı aşkın araştırma ve pratiğin sentezidir. Beyti Engin ve Filiz Kaya Ataklı tarafından 2005'ten bu yana birlikte geliştirilen yöntem, İstanbul'da Pozitif Atölye'de pratik temelini attı; 2022'den bu yana HMDK Stuttgart ve Chubbuck Studio Berlin'de profesyonel oyunculara aktarılmaktadır.
+
+**Yan kanonlar (uyulması zorunlu negatif kurallar):**
+- **NIPAI ile çalışma YOK.** NIPAI görüşme aşamasındadır; tanıtım metinlerinde "ortaklık" veya "bağlantı" ifadesi kullanılmaz.
+- **2021 veya sonrasında basılmış kitap YOK** (ITC marka altında). Method Book ITC ekosisteminin ilk kanonik akademik yayını olacak (Faz 3 Milestone 3.4).
+- **"1000+ profesyonel oyuncu" iddiası doğrulanmamış** — rakam verilmez, "20 yılı aşkın pratik sentezi" ifadesi kullanılır.
+- **"Eş yürütücü" / "birincil yürütücü" / "primary practitioner" kullanılmaz** (Karar 16). Doğru kanonik unvan: "Eş Kurucu ve Eş Eğitmen" (TR), "Co-Founder & Co-Instructor" (EN), "Mitbegründer/in & Co-Trainer/in" (DE).
+
+**Sıralama Kuralı (Karar 20, v1.8):** Tüm Brief'te ve dış iletişimde isim sıralaması her zaman **Beyti Engin önce, Filiz Kaya Ataklı sonra**. Tarihsel kanıt alıntıları (Karakter Tasarım 2021 kapağı, Chubbuck Studio Berlin sitesi eski formülasyonu) istisna; retroaktif değiştirilmez.
+
+**Dört katmanlı yapı:**
+
+ITC tek bir ürün değil — dört katmanı olan bir sistemdir:
 
 | Katman | Form | Hedef Kitle | İşlev |
 |---|---|---|---|
 | Method Kitabı | Basılı kuramsal+pratik kitap (~320 sf) | Eğitmenler, ileri oyuncular, akademi | Foundation. Yöntemin kavramsal otoritesi. |
 | Hamlet Workbook | Basılı uygulamalı çalışma kitabı (314 sf) | Tek başına çalışan oyuncu, prova öncesi | Yöntemin tek karaktere derinleşmiş hâli. |
 | ITC App | Web uygulaması, mobil uyumlu | Günlük antrenman yapan oyuncu | Dijital günlük pratik. Kalibrasyon + kısa antrenman. |
+| Workshop | Program şablonları + eğitmen kiti | Eğitmen, kurum (akademi, atölye) | Yöntemin operasyonel mimarisi. Kurumsal ölçeklenme. |
 
-*Not: Spine v1.3 (8 Mayıs 2026) sonrası Workshop dördüncü katman olarak eklendi. Bu brief'in 24 aylık yol haritasında Workshop pilotu Faz 3 Milestone 3.1 (HMDK Stuttgart) altında.*
+*Not: Workshop dördüncü katman olarak Spine v1.3 (8 Mayıs 2026) sonrası eklendi. İlk gerçek pilot **Milestone 1.6.5 Berlin Eylül 2026** (Karar 18, A2-Berlin-Variant kurucu uygulaması); ikinci dalga **Milestone 2.7 HMDK Stuttgart 25-29 Ocak 2027** (Karar 15 + Karar 17, A2-intensive akademik kurumsal uygulama).*
 
 ### 1.2 Konumlandırma Sentezi — "Ticari ama akademik duran"
 
@@ -77,7 +102,7 @@ Method Book akademik prestiji taşır; App+Workbook ticari geliri sağlar; bu se
 
 **Durum:** Canlı (erken beta). itc-app-six.vercel.app
 
-- **Modül I — Kendini Tanı:** ✅ CANLI · 3 test (VAK 27, MBTI 12, Yıldız 37) · ~15 dk
+- **Modül I — Kendini Tanı:** ✅ CANLI · 3 test (VAK 27, MBTI 12, Yıldız 37 — Karar 21 ile pedagojik öz-farkındalık haritası + karaktere yaklaşım katmanı; travma erişim eşiği kaldırıldı) · ~15 dk
 - **Modül II — Karakterini İnşa Et:** ✅ CANLI · 4 karakter · 30 antrenman · 25-30 dk/antrenman
 
 **Modül II Hamlet Refactor (v1.1 yeni karar):**
@@ -102,7 +127,7 @@ Method Book akademik prestiji taşır; App+Workbook ticari geliri sağlar; bu se
 
 ---
 
-## 3. SABİT İLKELER (Spine v1.1 §3'ten Özet)
+## 3. SABİT İLKELER (Spine v1.9 §3'ten Özet)
 
 ### 3.1 Substitution Kullanılmaz
 
@@ -132,7 +157,7 @@ ITC oyuncunun kendi biyografik travmalarına dönmesini istemez. Karakterin veri
 5. Mekân (5 farklı renk/nesne)
 6. Kapanış cümlesi: "Karakter orada — ben buradayım."
 
-Hamlet'e özel adaptasyon Workbook s.288-289'da. App Modül III otomatik overlay olarak kullanır.
+Hamlet'e özel adaptasyon Workbook s.288-289'da. App'te yoğunluk 2 (Tanıklık) veya 3 (İcra) sahneler sonrası otomatik overlay olarak kullanılır (kategori- ve oyuncu profili-bağımsız, Karar 21 v1.9).
 
 ### 3.5 Karakter Sayfası Mimarisi
 
@@ -259,6 +284,32 @@ Bu, brief'in stratejik kalbi. Diğer her şey buna bağlı.
 - → Method Book Bölüm V (Çağdaş Karakter): vaka çalışmaları akademik yazıma kaynaklık eder
 - → Workbook ikinci baskı: vaka örnekleri ek olarak eklenebilir
 
+#### Milestone 1.6.5 — Berlin Chubbuck Studio Pilot (Eylül 2026, Karar 18) ← v2.3'te eklendi
+
+**Stratejik niyet:** Workshop katmanının **ilk gerçek pilotu**. A2-Berlin-Variant kurucu uygulaması — üç kademeli yapı (Auditor + Participant + Participant Advance). HMDK Stuttgart (Milestone 2.7, Ocak 2027) öncesi prototipleme katmanı; FKA Eş Kurucu sahasındaki ilk profesyonel oyuncu stüdyosu uygulaması.
+
+**Marka geçişi (Karar 18, kanonik):**
+- "Character Design" markası **emekliye** (Chubbuck Studio Berlin sitesinde tarihsel kayıt olarak korunur)
+- Yeni kanonik marka: **"Inside The Character Berlin"**
+
+**Ön Koşullar (Faz 1 başı/orta):**
+- Chubbuck Studio Berlin web sitesi marka geçişi güncellemesi (kanonik geçiş için bekleyen — §9.4)
+- Üç kademeli pilot tasarım paketi tamamlanmış (`workshop/kurumsal-pilot-paketleri/berlin-eylul-2026/`)
+- FKA klinik koruma protokolü uygulamada (§3.13 transmisyon mimarisi + §3.16 yolculuk geometrisi)
+
+**Çıktılar:**
+- Üç kademeli pilot uygulaması Eylül 2026'da gerçekleştirildi
+- A2-Berlin-Variant formatı valide edildi (HMDK için ön-test)
+- Marka geçişi iletişim materyalleri yayında (web + sosyal medya)
+- Yeni karakter kayıtları toplandı (`workshop/karakter-dosyalari/tarihsel-kayit-referanslari/`)
+
+**Kabul kriteri:** Pilot tamamlandı, her üç kademede en az 4-6 katılımcı, geri bildirim ≥4/5; HMDK Stuttgart (Milestone 2.7) için en az 3 vaka hammaddesi.
+
+**Çapraz etki:**
+- → HMDK Stuttgart pilotu (Milestone 2.7) Berlin verisinden besleniyor
+- → A2-Berlin-Variant formatı Workshop spine'da kanonik kayıt
+- → Method Book Bölüm E (Faz 2) Berlin + HMDK kombine veri seti üzerinden yazılır
+
 #### Milestone 1.7 — Method Book Bölüm III Prototip Yazımı (Ay 4-6, paralel)
 
 **Çıktılar:**
@@ -330,7 +381,9 @@ Bu, brief'in stratejik kalbi. Diğer her şey buna bağlı.
 
 **Kabul kriteri:** En az 5 ödeme yapan eğitmen, ortalama 8-10 öğrenci ile.
 
-#### Milestone 2.7 — HMDK Stuttgart Pilot (Ay 7–9 — Yeni Konum, Karar 15) ← v2.1'de eklendi
+#### Milestone 2.7 — HMDK Stuttgart Pilot (Ay 7–9 — Yeni Konum, Karar 15) ← v2.1'de eklendi · v2.3'te detaylandı (Karar 17)
+
+**v2.3 notu (Karar 17, 13 madde operasyonel bağlam):** Pilot tasarımı 13 maddeyle kanonlandı — A2-intensive ilk akademik kurumsal uygulama; FKA Eş Kurucu sahasındaki ilk akademik test. Pilot, Berlin Eylül 2026 pilotu (Milestone 1.6.5) verilerinden besleniyor. Detay arşiv: `kararlar/2026-05-13-workshop-sonuc-paketi/01-karar-17-hmdk-stuttgart.md` + `workshop/kurumsal-pilot-paketleri/hmdk-stuttgart-ocak-2027/`. Açık [DOLDUR] alanları (Prof. Katherina soyadı, anlık DE çevirmen kararı, saatlik tutar, pre-work temas anketi tasarımı) §9.4'te takipte.
 
 **Stratejik niyet:** Ekosistemin Faz 2 ortasında akademik meşruiyet enjeksiyonu. HMDK Stuttgart'taki yarıyıl atölyesinde pilot gerçekleştirilir.
 
@@ -417,7 +470,7 @@ Bu, brief'in stratejik kalbi. Diğer her şey buna bağlı.
 
 ## 6. ÇAPRAZ GÜNCELLEME PROTOKOLÜ
 
-Bu brief'in stratejik kalbi. Spine v1.1 §6'yı operasyonel hale getirir.
+Bu brief'in stratejik kalbi. Spine §6'yı operasyonel hale getirir.
 
 ### 6.1 Karar Tipleri
 
@@ -662,6 +715,14 @@ Beyti yalnız çalıştığı için Claude operasyonel olarak ekibin parçası:
 - Ekosistemin tek bir markası mı (Inside The Character) yoksa üç ayrı isim mi?
 - **İkinci dalga akademik kurum kararı** (Faz 3 Milestone 3.1 için): Royal Central, RADA, Stella Adler arasından hangisi — HMDK pilot raporu sonrası karar
 
+**v2.3'te eklenenler (Karar 17-21):**
+
+- **HMDK Stuttgart pilot [DOLDUR] alanları (Karar 17):** Prof. Katherina soyadı, anlık DE çevirmen kararı, saatlik tutar, pre-work temas anketi tasarımı — pilot öncesi Ekim 2026'ya kadar netleşmesi gerek
+- **Chubbuck Studio Berlin site güncellemesi (Karar 18):** Marka geçişi web sitesi yazımı ("Character Design" → "Inside The Character Berlin") — Eylül 2026 pilotundan önce tamamlanması gerek
+- **Karar 19 B (karakter spektrumu sınırı yok):** ITC karakter konusunda sınır koymaz; etik filtre sahne-içeriği temelli işler — **Filiz klinik onayı bekleniyor, provisional**
+- **Karar 19 C (ses kayıtları çift onaylı arşivleme etiği):** Heidrich + Eva Braun gibi tarihsel kayıtların ITC arşivinde çift onaylı (kişisel + arşiv için ayrı imza) saklanması — **Filiz klinik onayı bekleniyor, provisional**
+- **Karar 21 sonrası app refactor (İş 2):** `app/lib/travma.js` `sahneErisimi` → `sahneUyarisi` + `topraklanmaGerekli`; karakter sayfası (willy/macbeth/biff) 6 boyut entegrasyonu; yeni `yildizYaklasimi(yildiz, karakter)` katmanı (`lib/kalibrasyon.js`). Detay: `kararlar/2026-05-15-yildiz-travma-ayrismasi/04-app-degisiklik-listesi.md`. UX framing metinleri zaten uygulandı; kod refactor sonraki iş paketinde.
+
 ### 9.5 Operasyonel Kararlar
 
 - Domain ve marka: itcactorsgym.com mi, başka bir isim mi?
@@ -740,7 +801,8 @@ v2.1 revizyon hatırlatması: HMDK Stuttgart pilotu artık Faz 3 hedefi değil, 
 
 ## EK A — Kullanılacak Kaynaklar
 
-- Spine v1.1 (kanon — sürekli güncellenir; v1.3 itibarıyla son sürüm 8 Mayıs 2026)
+- Spine (kanon — sürekli güncellenir; **v1.9 itibarıyla son sürüm 15 Mayıs 2026** — Karar 21 Yıldız-Travma Ayrılması sonrası)
+- Decision Log (kanon — her karar burada kayıtlı; Karar 1-21 arası kapsamlı)
 - Hamlet Yolculuk Modu Final metni (`Yolculuk_Modu_Hamlet_Final.md`)
 - 8 Bölüm Denetim Raporu
 - ITC Filiz Briefing dokümanı
@@ -785,12 +847,30 @@ v2.1 revizyon hatırlatması: HMDK Stuttgart pilotu artık Faz 3 hedefi değil, 
 
 ---
 
+## EK D — BE & FKA Özgeçmiş Sabit Hâlleri (Karar 20 C — v1.8, v2.3)
+
+Aşağıdaki iki metin **birebir** kullanılır — varyasyon yapılmaz. Method Book yazımı (Faz 2-3), akademik başvurular, atölye tanıtım belgeleri, yayıncı teklifleri, üç dilli paketler (TR + EN + DE) ve App tanıtım ekranları bu sabit hâlleri referans alır. Çeviri sırasında EN/DE versiyonları FKA onay turunda ayrı kanonlanır (Faz 2 Milestone 2.2 boyunca).
+
+**Beyti Engin (TR):**
+
+> Oyuncu ve oyunculuk eğitmeni. Yöntemin pedagojik omurgasının ve karakter inşası araçlarının mimarı. Filiz Kaya Ataklı ile birlikte Inside The Character'ı 2005'ten bu yana geliştirmektedir. İstanbul'da Pozitif Atölye'yi birlikte kurarak yöntemin pratik temelini attı; 2022'den bu yana HMDK Stuttgart ve Chubbuck Studio Berlin'de profesyonel oyunculara yöntemi aktarmaktadır.
+
+**Filiz Kaya Ataklı (TR):**
+
+> Klinik psikolog. Inside The Character'ın 2005'ten bu yana etik ve klinik altyapısını yaratan eş kurucu. Karakter inşası süreçlerinde oyuncunun kişisel deneyimini koruyan yapısal çerçevenin geliştiricisi. Beyti Engin ile birlikte İstanbul'da Pozitif Atölye'de yöntemin pratik geliştirmesini yürüttü; 2022'den bu yana HMDK Stuttgart ve Chubbuck Studio Berlin'de profesyonel oyunculara yöntemi aktarmaktadır.
+
+**EN ve DE çevirileri:** Method Book Faz 2 yazım fazında (Milestone 2.2) FKA klinik onay turuyla birlikte yapılır. Faz 3'te yayıncı sözleşmesi ile birlikte sabit hâle gelir.
+
+Detay arşiv: `kararlar/2026-05-13-workshop-sonuc-paketi/04-karar-20-tarihsel-cizgi-siralamasi.md` + Spine §3.17.
+
+---
+
 *Brief sonu.*
 
 *Eş Kurucular ve Eş Eğitmenler: Beyti Engin & Filiz Kaya Ataklı (Klinik Psikolog)*
 *Operasyonel Eş Yazar: Claude (Anthropic)*
-*Versiyon: v2.2*
-*Tarih: Mayıs 2026 (v2.1: 12 Mayıs 2026 — HMDK pilotu Faz 3 → Faz 2 taşındı; v2.2: 12 Mayıs 2026 — Karar 16, Filiz Kaya Ataklı Eş Kurucu statüsü kanon, Filiz yazılı onayı bekleniyor)*
+*Versiyon: v2.3*
+*Tarih: 15 Mayıs 2026 (v2.1: 12 Mayıs 2026 — HMDK pilotu Faz 3 → Faz 2 taşındı; v2.2: 12 Mayıs 2026 — Karar 16, FKA Eş Kurucu, Filiz yazılı onayı bekleniyor; v2.3: 15 Mayıs 2026 — Karar 17-21 kompoze yedirme, Karar 19 B+C Filiz onayı bekleyen, diğerleri onaylı)*
 *Önerilen revizyon: Çeyreklik (üç ayda bir)*
 
 > *"Karakter orada — ben buradayım." — ITC Topraklanma Protokolü §3.4 kapanış cümlesi*
