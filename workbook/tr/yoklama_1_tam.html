@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Inside The Hamlet — Bedensel Yoklama № 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F5F0E5;
+    --paper-edge: #E8E0CE;
+    --ink: #1F1A14;
+    --ink-soft: #4A3F30;
+    --ink-faint: #8B7F6B;
+    --rule: #BFB29A;
+    --accent: #6B2731;
+    --accent-soft: #A85461;
+    --accent-pale: rgba(107, 39, 49, 0.06);
+    --bg: #2A2622;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body { font-family: 'Cormorant Garamond', Georgia, serif; padding: 50px 20px 80px; min-height: 100vh; color: var(--ink); }
+  .gallery-header { max-width: 1000px; margin: 0 auto 40px; color: #C9BFAA; font-family: 'Geist', sans-serif; text-align: center; }
+  .gallery-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 30px; color: #E5DCC8; margin-bottom: 6px; letter-spacing: 0.01em; }
+  .gallery-header .sub { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #9F9580; }
+  .gallery-header .tag { display: inline-block; margin-top: 12px; padding: 3px 10px; background: rgba(168, 84, 97, 0.2); color: #D9A3AC; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; }
+  .spread-label { max-width: 1000px; margin: 50px auto 16px; color: #B8AC93; font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; padding-left: 8px; }
+  .spread-label .title { color: #E5DCC8; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px; text-transform: none; letter-spacing: 0; margin-left: 12px; }
+  .spread { display: flex; max-width: 1000px; margin: 0 auto; box-shadow: 0 22px 50px rgba(0,0,0,0.5), 0 8px 22px rgba(0,0,0,0.3); background: var(--paper); }
+  .page { width: 500px; height: 720px; background: var(--paper); color: var(--ink); position: relative; overflow: hidden; flex-shrink: 0; }
+  .page.left { background: linear-gradient(to right, var(--paper) 92%, var(--paper-edge) 100%); }
+  .page.right { background: linear-gradient(to left, var(--paper) 92%, var(--paper-edge) 100%); }
+
+  /* Yoklama özel iç padding — daha bol beyaz alan */
+  .yoklama-inner { padding: 90px 60px 90px; height: 100%; position: relative; display: flex; flex-direction: column; }
+  .page.left .yoklama-inner { padding-right: 70px; }
+  .page.right .yoklama-inner { padding-left: 70px; }
+
+  .folio { position: absolute; bottom: 30px; font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.22em; color: var(--ink-faint); }
+  .page.left .folio { left: 60px; }
+  .page.right .folio { right: 60px; }
+  .running-head { position: absolute; top: 24px; font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink-faint); }
+  .page.left .running-head { left: 60px; }
+  .page.right .running-head { right: 60px; }
+
+  .yoklama-tag {
+    font-family: 'Geist', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .yoklama-meta {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--ink-faint);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .yoklama-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 38px;
+    text-align: center;
+    color: var(--ink-soft);
+    margin: 24px 0;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+
+  .ornament-soft {
+    text-align: center;
+    color: var(--accent-soft);
+    font-size: 11px;
+    letter-spacing: 1.4em;
+    margin: 22px 0;
+    opacity: 0.7;
+  }
+
+  .yoklama-instruction {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    text-align: center;
+    color: var(--ink);
+    line-height: 1.7;
+    max-width: 320px;
+    margin: 18px auto;
+  }
+
+  .yoklama-soft {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    text-align: center;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    max-width: 320px;
+    margin: 8px auto;
+  }
+
+  .yoklama-soft em { color: var(--accent); font-style: italic; }
+
+  /* Üç nefes ikonografisi */
+  .breath-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: 36px 0;
+  }
+  .breath-mark {
+    border-radius: 50%;
+    background: var(--accent-soft);
+    opacity: 0.85;
+  }
+  .breath-mark.small { width: 9px; height: 9px; opacity: 0.55; }
+  .breath-mark.large { width: 18px; height: 18px; opacity: 0.9; }
+  .breath-row-label {
+    text-align: center;
+    font-family: 'Geist', sans-serif;
+    font-size: 9.5px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-top: -16px;
+    margin-bottom: 28px;
+  }
+
+  /* Yoklama recall blok */
+  .yoklama-recall {
+    background: var(--accent-pale);
+    border-top: 0.5px solid var(--accent-soft);
+    border-bottom: 0.5px solid var(--accent-soft);
+    padding: 26px 24px 22px;
+    margin: 30px -8px;
+    text-align: center;
+  }
+  .yoklama-recall-tag {
+    font-family: 'Geist', sans-serif;
+    font-size: 9.5px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .yoklama-recall-cue {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16.5px;
+    color: var(--ink);
+    line-height: 1.55;
+    margin-bottom: 18px;
+  }
+  .yoklama-recall-prompt {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .yoklama-recall .write-line {
+    border-bottom: 0.5px solid var(--accent-soft);
+    height: 22px;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .next-note {
+    text-align: center;
+    font-family: 'Geist', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding: 10px 12px;
+    border-top: 0.5px solid var(--accent-soft);
+    border-bottom: 0.5px solid var(--accent-soft);
+    margin-top: 30px;
+  }
+  .next-note .arrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .commentary { max-width: 1000px; margin: 30px auto 0; color: #B8AC93; font-family: 'Geist', sans-serif; font-size: 13px; line-height: 1.65; padding: 24px 32px; background: rgba(255,255,255,0.03); border-left: 2px solid #6B2731; }
+  .commentary strong { color: #E5DCC8; font-weight: 500; }
+  .commentary em { font-family: 'Cormorant Garamond', serif; color: #DBC8AA; font-style: italic; font-size: 14.5px; }
+</style>
+</head>
+<body>
+
+<div class="gallery-header">
+  <h1>Inside The Hamlet — Bedensel Yoklama № 1</h1>
+  <div class="sub">Bölüm IV ile Bölüm V arasında · 2 sayfa · 1 spread · zorunlu mola</div>
+  <span class="tag">Yolculuk Modu metnine sadık</span>
+</div>
+
+<!-- ============================ SPREAD ============================ -->
+<div class="spread-label">SPREAD<span class="title">Bedensel yoklama · üç nefes · çapa yoklama</span></div>
+<div class="spread">
+
+  <!-- Sayfa 98 -->
+  <div class="page left">
+    <div class="yoklama-inner">
+      <div class="running-head">üçüncü kısım · yolculuk · mola</div>
+
+      <div class="yoklama-tag">Bedensel Yoklama № 1</div>
+      <div class="yoklama-meta">Bölüm IV ile Bölüm V arasında</div>
+
+      <div class="ornament-soft">∙ ∙ ∙ ∙ ∙</div>
+
+      <div class="yoklama-headline">Bir an dur.</div>
+
+      <div class="ornament-soft">∙ ∙ ∙</div>
+
+      <div class="yoklama-instruction">
+        Üç nefes al.<br>
+        Yavaşça.
+      </div>
+
+      <div class="breath-row">
+        <span class="breath-mark small"></span>
+        <span class="breath-mark large"></span>
+        <span class="breath-mark small"></span>
+      </div>
+      <div class="breath-row-label">üç nefes</div>
+
+      <div class="yoklama-soft">
+        Burnundan içeri.
+      </div>
+      <div class="yoklama-soft">
+        Ağzından dışarı.
+      </div>
+
+      <div class="ornament-soft" style="margin-top: 30px;">∙ ∙ ∙</div>
+    </div>
+    <div class="folio">98</div>
+  </div>
+
+  <!-- Sayfa 99 -->
+  <div class="page right">
+    <div class="yoklama-inner">
+      <div class="running-head">bedensel yoklama · devam</div>
+
+      <div class="yoklama-recall">
+        <div class="yoklama-recall-tag">Önceki çapayı yokla — № 1</div>
+        <div class="yoklama-recall-cue">
+          Az önce — kapıdaki adamın <em>"Babanız vefat etmiştir"</em> cümlesini söylediğinde — bedeninde bir yer bulmuştun.
+        </div>
+        <div class="yoklama-recall-prompt">Şimdi orada nasıl?</div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="ornament-soft">∙ ∙ ∙</div>
+
+      <div class="yoklama-instruction">
+        Bir nefes al — derin.
+      </div>
+
+      <div class="yoklama-soft">
+        Nefesin o noktaya gitsin.<br>
+        O noktayı zorlamadan, sadece nefesle bir kez yumuşat.
+      </div>
+
+      <div class="ornament-soft" style="margin: 26px 0;">∙ ∙ ∙</div>
+
+      <div class="yoklama-instruction">
+        Nefesini bırak.
+      </div>
+
+      <div class="ornament-soft" style="margin: 28px 0;">∙ ∙ ∙ ∙ ∙</div>
+
+      <div class="yoklama-headline" style="font-size: 26px; color: var(--accent);">
+        Yolculuk devam ediyor.
+      </div>
+
+      <div class="next-note">
+        <span class="arrow">→</span> Devam: Bölüm V · Eve Dönüş ve Cenaze · sayfa 100
+      </div>
+    </div>
+    <div class="folio">99</div>
+  </div>
+</div>
+
+<div class="commentary">
+  <strong>Bedensel Yoklama № 1</strong> · 2 sayfa · 1 spread · zorunlu mola.<br><br>
+  Bu sayfa bir egzersiz değil — bilinçli bir <em>mola.</em> Bölüm IV'te kurulan Çapa № 1 (Wittenberg, sabah, "Babanız vefat etmiştir") burada yokleniyor; ama "yokla, kaydet" değil, <em>"yokla, yumuşat, bırak."</em> Tek bir kayıt satırı (ne hissediyorsun şimdi orada?) yeterli, daha fazlası bu sayfanın işini bozar. Egzersiz değil, nefes.<br><br>
+  <strong>Tasarım kararları:</strong> Bol beyaz alan (90px iç padding, ana metin 320px max-width), büyük italik tipografi ("Bir an dur."), düşük doygunluk aksent. Üç nefes ikonografisi — küçük/büyük/küçük dolu daire — nefesin doğal hacim grafiğidir: hafif giriş, derin tutma, hafif çıkış. <em>.breath-mark</em> sınıfı sonraki iki yoklamada da (№ 2 ve № 3) tekrar kullanılacak, ama her yoklamanın <em>çapa-recall</em> bloğu farklı çapaları yokleyecek.<br><br>
+  Bu yoklama Bölüm IV'le V arasında. Bölüm IV'ün çapasını oluşturduğu yer — bedeninde bir yer — sahnede ilk kez burada <em>tek başına</em> ele alınıyor. Bölüm V'in toprak ve cenazesi gelmeden önce, oyuncunun bir nefeslik durup, "burada bir yer var, bunu biliyorum" demesi gerekiyor. Bu sayfa o demenin sayfasıdır.
+</div>
+
+</body>
+</html>

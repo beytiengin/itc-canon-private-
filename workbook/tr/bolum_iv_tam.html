@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Inside The Hamlet — Bölüm IV Tam Hali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F5F0E5;
+    --paper-edge: #E8E0CE;
+    --ink: #1F1A14;
+    --ink-soft: #4A3F30;
+    --ink-faint: #8B7F6B;
+    --rule: #BFB29A;
+    --accent: #6B2731;
+    --accent-soft: #A85461;
+    --bg: #2A2622;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    padding: 50px 20px 80px;
+    min-height: 100vh;
+    color: var(--ink);
+  }
+  .gallery-header {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    color: #C9BFAA;
+    font-family: 'Geist', sans-serif;
+    text-align: center;
+  }
+  .gallery-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #E5DCC8;
+    margin-bottom: 6px;
+    letter-spacing: 0.01em;
+  }
+  .gallery-header .sub {
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #9F9580;
+  }
+  .gallery-header .tag {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 3px 10px;
+    background: rgba(168, 84, 97, 0.2);
+    color: #D9A3AC;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border-radius: 2px;
+  }
+  .spread-label {
+    max-width: 1000px;
+    margin: 50px auto 16px;
+    color: #B8AC93;
+    font-family: 'Geist', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding-left: 8px;
+  }
+  .spread-label .title {
+    color: #E5DCC8;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-left: 12px;
+  }
+  .spread {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 22px 50px rgba(0,0,0,0.5), 0 8px 22px rgba(0,0,0,0.3);
+    background: var(--paper);
+  }
+  .page {
+    width: 500px;
+    height: 720px;
+    background: var(--paper);
+    color: var(--ink);
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .page.left {
+    background: linear-gradient(to right, var(--paper) 92%, var(--paper-edge) 100%);
+  }
+  .page.right {
+    background: linear-gradient(to left, var(--paper) 92%, var(--paper-edge) 100%);
+  }
+  .page-inner {
+    padding: 50px 44px 60px;
+    height: 100%;
+    position: relative;
+  }
+  .page.left .page-inner { padding-right: 52px; }
+  .page.right .page-inner { padding-left: 52px; }
+  .folio {
+    position: absolute;
+    bottom: 30px;
+    font-family: 'Geist', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: var(--ink-faint);
+  }
+  .page.left .folio { left: 44px; }
+  .page.right .folio { right: 44px; }
+  .running-head {
+    position: absolute;
+    top: 24px;
+    font-family: 'Geist', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .page.left .running-head { left: 44px; }
+  .page.right .running-head { right: 44px; }
+
+  /* Typography */
+  .section-tag {
+    font-family: 'Geist', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .chapter-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .chapter-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .chapter-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+  }
+  .ornament {
+    text-align: center;
+    color: var(--accent-soft);
+    font-size: 13px;
+    letter-spacing: 1.2em;
+    margin: 16px 0;
+  }
+  .small-heading {
+    font-family: 'Geist', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .body-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .body-text-soft {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+  }
+  .meta-line {
+    font-family: 'Geist', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 0.5px solid var(--rule);
+  }
+
+  .exercise-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 14px;
+    letter-spacing: -0.005em;
+  }
+  .exercise-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+  .question {
+    margin-bottom: 18px;
+  }
+  .question-number {
+    font-family: 'Geist', sans-serif;
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-bottom: 5px;
+  }
+  .question-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--ink);
+    margin-bottom: 7px;
+  }
+  .write-line {
+    border-bottom: 0.5px solid var(--rule);
+    height: 20px;
+    margin-bottom: 5px;
+  }
+  .stage-call-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .stage-call-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--accent);
+    font-size: 14px;
+    width: 18px;
+  }
+  .stage-call-line .write-line {
+    flex: 1;
+    margin-bottom: 0;
+    height: 18px;
+  }
+
+  /* VAK channels */
+  .vak-block {
+    margin: 14px 0;
+    padding: 12px 14px;
+    border-left: 2px solid var(--accent-soft);
+    background: rgba(107, 39, 49, 0.04);
+  }
+  .vak-tag {
+    font-family: 'Geist', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .vak-tag .channel {
+    color: var(--accent-soft);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-left: 8px;
+  }
+  .vak-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+
+  /* Journey text */
+  .journey-block {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+  .journey-block p { margin-bottom: 12px; }
+  .pause-mark {
+    text-align: center;
+    color: var(--accent-soft);
+    font-size: 11px;
+    letter-spacing: 1.2em;
+    margin: 18px 0;
+  }
+  .knock {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink);
+    letter-spacing: 0.4em;
+    margin: 22px 0 26px;
+  }
+  .news-line {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    font-style: italic;
+    color: var(--accent);
+    line-height: 1.5;
+    margin: 22px 32px 8px;
+  }
+  .news-line span { display: block; }
+  .margin-note {
+    position: absolute;
+    right: 14px;
+    font-family: 'Geist', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+  }
+  .quote-cue {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--accent);
+    margin: 18px 12px;
+    line-height: 1.4;
+  }
+
+  /* Form prompts */
+  .form-prompt {
+    font-family: 'Geist', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 22px 0 6px;
+    font-weight: 500;
+  }
+  .form-prompt:first-of-type { margin-top: 0; }
+  .form-instruction {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .sub-prompt {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    color: var(--ink);
+    margin: 12px 0 4px;
+    padding-left: 14px;
+    border-left: 1.5px solid var(--accent-soft);
+    line-height: 1.4;
+  }
+
+  /* Anchor page */
+  .anchor-header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .anchor-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 30px;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
+  .anchor-num strong { font-style: normal; font-weight: 600; }
+  .anchor-meta {
+    font-family: 'Geist', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    text-align: right;
+  }
+  .anchor-meta-line { margin-bottom: 4px; }
+  .anchor-meta-line .blank {
+    display: inline-block;
+    width: 50px;
+    border-bottom: 0.5px solid var(--rule);
+    height: 12px;
+    margin-left: 4px;
+  }
+  .anchor-cue {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--ink);
+    background: rgba(107, 39, 49, 0.06);
+    border-top: 0.5px solid var(--accent-soft);
+    border-bottom: 0.5px solid var(--accent-soft);
+    padding: 16px 12px;
+    margin: 6px -8px 14px;
+  }
+  .scene-tag {
+    font-family: 'Geist', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .doors-block {
+    background: rgba(107, 39, 49, 0.05);
+    border-left: 2px solid var(--accent);
+    padding: 12px 14px;
+    margin: 12px 0;
+  }
+  .doors-block-title {
+    font-family: 'Geist', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .doors-block-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .door-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .door-label {
+    font-family: 'Geist', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    width: 80px;
+    flex-shrink: 0;
+    font-weight: 500;
+  }
+  .door-line {
+    flex: 1;
+    border-bottom: 0.5px solid var(--rule);
+    height: 18px;
+  }
+
+  .ethics-callout {
+    background: rgba(31, 26, 20, 0.03);
+    border: 0.5px solid var(--ink-faint);
+    border-left: 2px solid var(--ink-soft);
+    padding: 12px 14px;
+    margin: 14px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .ethics-callout strong {
+    font-family: 'Geist', sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .signature-block {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 0.5px solid var(--rule);
+  }
+  .signature-prompt {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin-bottom: 10px;
+  }
+  .signature-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-family: 'Geist', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .signature-row .write-line { flex: 1; height: 16px; margin-bottom: 0; }
+
+  /* Big writing area for character voice */
+  .free-write-area {
+    border: 0.5px solid var(--rule);
+    background: rgba(255,255,255,0.3);
+    padding: 14px 16px;
+    min-height: 480px;
+    margin-top: 16px;
+    background-image: repeating-linear-gradient(
+      transparent,
+      transparent 26px,
+      rgba(191, 178, 154, 0.4) 26px,
+      rgba(191, 178, 154, 0.4) 26.5px
+    );
+  }
+  .free-write-prompt {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    text-align: center;
+    border-bottom: 0.5px solid var(--rule);
+    padding-bottom: 12px;
+  }
+
+  .next-note {
+    position: absolute;
+    bottom: 60px;
+    left: 44px;
+    right: 52px;
+    text-align: center;
+    font-family: 'Geist', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding: 8px 12px;
+    border-top: 0.5px solid var(--accent-soft);
+    border-bottom: 0.5px solid var(--accent-soft);
+  }
+  .next-note .arrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .commentary {
+    max-width: 1000px;
+    margin: 30px auto 0;
+    color: #B8AC93;
+    font-family: 'Geist', sans-serif;
+    font-size: 13px;
+    line-height: 1.65;
+    padding: 24px 32px;
+    background: rgba(255,255,255,0.03);
+    border-left: 2px solid #6B2731;
+  }
+  .commentary strong { color: #E5DCC8; font-weight: 500; }
+  .commentary em { font-family: 'Cormorant Garamond', serif; color: #DBC8AA; font-style: italic; font-size: 14.5px; }
+</style>
+</head>
+<body>
+
+<div class="gallery-header">
+  <h1>Inside The Hamlet — Bölüm IV</h1>
+  <div class="sub">Babanın Ölümü Haberi · 14 sayfa · 7 spread · altın şablon</div>
+  <span class="tag">Aşama 1 · Tam Bölüm</span>
+</div>
+
+<!-- ============================ SPREAD 1 ============================ -->
+<div class="spread-label">SPREAD 1 / 7<span class="title">Bölüm girişi · oyuncu için bağlam</span></div>
+<div class="spread">
+
+  <!-- Sayfa 84 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">üçüncü kısım · yolculuk</div>
+      <div class="section-tag">Bölüm dört</div>
+      <div class="chapter-num">IV</div>
+      <div class="chapter-title">Babanın Ölümü Haberi</div>
+      <div class="chapter-subtitle">Wittenberg'de bir sabah</div>
+
+      <div class="ornament">∙ ∙ ∙</div>
+
+      <div class="small-heading">Bu bölümde şu an ne oluyor?</div>
+      <p class="body-text">
+        Hamlet bu sabah uyandığında babasının öldüğünü bilmiyor. Sıradan bir sabah. Wittenberg'de derslere geç kalmamak telaşı, kahvaltı, soğuk pencere camı. Hayat olağan akışında.
+      </p>
+      <p class="body-text-soft" style="margin-bottom: 14px;">Sonra kapı çalıyor.</p>
+      <p class="body-text">
+        Bu bölüm o kapı çalışını çalışıyor — öncesini, anını, sonrasını. Beden yol gösterecek.
+      </p>
+
+      <p class="body-text" style="margin-top: 18px; font-size: 14.5px; color: var(--ink-soft);">
+        Burada önemli bir şey var: bu an Shakespeare'in metninde yazılı değildir. Hamlet sahneye Eylem I, Sahne II'de — yas tutan oğul olarak — çıkar; yani haberi çoktan almıştır. Biz oyunun başlamadığı bir noktadayız.
+      </p>
+      <p class="body-text" style="font-size: 14.5px; color: var(--ink-soft);">
+        Babanın ölüm haberinin Hamlet'e ulaştığı sabah, oyuncunun bedeninde yaşanması gereken ama metinde olmayan bir andır. ITC bu boşlukları doldurmaya çalışır — çünkü oyuncu sahneye çıktığında bu sabahı yaşamış bir adam olarak çıkar.
+      </p>
+    </div>
+    <div class="folio">84</div>
+  </div>
+
+  <!-- Sayfa 85 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">üçüncü kısım · yolculuk</div>
+
+      <div class="small-heading" style="margin-top: 4px;">Çapa noktası</div>
+      <p class="body-text">
+        Bu bölüm, yolculuğunun beş büyük çapa noktasından <em>ilkidir</em>. Bölümün sonunda bedeninde bir yer bulacaksın — onu kaydedeceksin. Sahnede o yere döneceksin: yas sahnesinde, hayalete bakarken, anneyle yüzleşmede, mezarlık başında.
+      </p>
+      <p class="body-text">
+        Çapa, karakterin bedensel hafızasıdır. Bir kez doğru kurulduğunda, sahnede oyuncunun çağırmasını bekleyen bir kapı gibi durur.
+      </p>
+
+      <div class="ornament" style="margin: 26px 0;">∙ ∙ ∙</div>
+
+      <div class="small-heading">Bu bölümde ne yapacaksın</div>
+      <p class="body-text" style="font-size: 14.5px;">
+        Önce hazırlık: Hamlet'in Wittenberg odasını ve o sabahını sen kuracaksın. Metin sana her şeyi vermiyor. Doldurduğun her detay artık sana ait olacak.
+      </p>
+      <p class="body-text" style="font-size: 14.5px;">
+        Sonra yolculuk: o sabahtan kapının çalınmasına, haberin gelmesine kadar. Sayfa rehber, beden tanık.
+      </p>
+      <p class="body-text" style="font-size: 14.5px;">
+        Sonra içsel kayıt ve çapa: bedenin sana söylediği yeri kayda geçireceksin. Üç kapıdan dolaşacaksın — duygu, düşünce, davranış.
+      </p>
+      <p class="body-text" style="font-size: 14.5px;">
+        En sonunda imgesel doldurma: Hamlet'in zihnine girip, metnin susturduğu bir gece anını yazacaksın.
+      </p>
+
+      <div class="meta-line">çalışma süresi yaklaşık 35–45 dakika · sessiz bir alan önerilir</div>
+    </div>
+    <div class="folio">85</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 2 ============================ -->
+<div class="spread-label">SPREAD 2 / 7<span class="title">Hazırlık · oda inşası ve sabahın bedeni</span></div>
+<div class="spread">
+
+  <!-- Sayfa 86 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">hazırlık · oda inşası</div>
+      <div class="section-tag">Hazırlık no. 1</div>
+      <div class="exercise-title">Senin Wittenberg odan</div>
+      <div class="exercise-intro">
+        Hamlet'in odası senin kuracağın bir oda. Metin sana her şeyi vermiyor. Boş bırakılan her detayı sen dolduracaksın — ve doldurduğun an artık sana ait olacak.
+      </div>
+
+      <div class="question">
+        <div class="question-number">01</div>
+        <div class="question-text">Pencereden ne görünüyor? Bir avlu, bir sokak, bir bahçe?</div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="question">
+        <div class="question-number">02</div>
+        <div class="question-text">Masanın üzerinde duran üç nesne:</div>
+        <div class="stage-call-line"><div class="stage-call-num">i.</div><div class="write-line"></div></div>
+        <div class="stage-call-line"><div class="stage-call-num">ii.</div><div class="write-line"></div></div>
+        <div class="stage-call-line"><div class="stage-call-num">iii.</div><div class="write-line"></div></div>
+      </div>
+
+      <div class="question">
+        <div class="question-number">03</div>
+        <div class="question-text">Yatağın nerede, kapı nerede? Oda büyük mü, küçük mü? Tavan yüksek mi?</div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+    </div>
+    <div class="folio">86</div>
+  </div>
+
+  <!-- Sayfa 87 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">hazırlık · sabahın bedeni</div>
+      <div class="section-tag">Hazırlık no. 2</div>
+      <div class="exercise-title">Bu sabah nasıl uyandın?</div>
+      <div class="exercise-intro">
+        Şimdi o odadasın. Sabah. Hangi sabah olduğunu sen seç — ama belirli bir sabah olsun. Mevsim, ışık, sıcaklık. Ardından bedenine soruyorsun.
+      </div>
+
+      <div class="question">
+        <div class="question-number">04</div>
+        <div class="question-text">Kâbus mu gördün, hiçbir şey hatırlamadan mı uyandın, geç mi kalktın?</div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="question">
+        <div class="question-number">05</div>
+        <div class="question-text">Kahvaltıda ne yedin? Yedin mi?</div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="question">
+        <div class="question-number">06</div>
+        <div class="question-text">Bugün ne yapacaktın? Ders var mı, randevu var mı, Horatio ile bir buluşma?</div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="question">
+        <div class="question-number">07</div>
+        <div class="question-text">Sabah uyandığında bedenin nasıl? Yorgun mu, sakin mi, hafif mi, gergin mi?</div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="exercise-intro" style="margin-top: 20px; font-size: 13px;">
+        Yazdığın hiçbir şey yanlış değil. Kendi Hamlet'in için bir oda ve bir sabah yaratıyorsun.
+      </div>
+    </div>
+    <div class="folio">87</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 3 ============================ -->
+<div class="spread-label">SPREAD 3 / 7<span class="title">Yolculuk · sabah ve üç duyu kanalı</span></div>
+<div class="spread">
+
+  <!-- Sayfa 88 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · sabah</div>
+      <div class="section-tag">Bölüm IV · sahne 1</div>
+
+      <div class="journey-block">
+        <p>Wittenberg'de bir sabah.</p>
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 15px;">
+          Eylül belki. Belki ekim. Almanya'da hava soğumaya başlamış. Sabahları penceren buğulanıyor.
+        </p>
+
+        <p style="margin-top: 18px;">Az önce kurduğun odadasın. O odaya geri dön.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-size: 14.5px; color: var(--ink-soft);">Şimdi üç kapıdan giriyoruz — gözlerinden, kulaklarından, derinden.</p>
+      </div>
+
+      <div class="vak-block">
+        <div class="vak-tag">Görsel <span class="channel">— mavi</span></div>
+        <div class="vak-text">
+          Sabah Wittenberg'i gözlerinin önüne getir. Kaldırımlar. Kütüphaneye yürüyen başka öğrenciler. Sabah ışığında bir at arabası. Yapraklar sararıyor.
+        </div>
+      </div>
+
+      <div class="vak-block">
+        <div class="vak-tag">İşitsel <span class="channel">— sarı</span></div>
+        <div class="vak-text">
+          Sabahın seslerini duy. Çan kulesi mi çalıyor? Birinin merdivenlerden inişini, bir kapının kapanışını duyabilirsin. Belki birinin sana adınla seslendiğini.
+        </div>
+      </div>
+
+      <div class="vak-block">
+        <div class="vak-tag">Dokunsal <span class="channel">— yeşil</span></div>
+        <div class="vak-text">
+          Bu sabah bedenin nasıl? Yatağa basan ayakların, yüzüne çarpan soğuk, kıyafetinin kumaşı.
+        </div>
+      </div>
+    </div>
+    <div class="folio">88</div>
+  </div>
+
+  <!-- Sayfa 89 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · sıradan bir gün</div>
+
+      <div class="journey-block" style="margin-top: 8px;">
+        <p>Sıradan bir gün.</p>
+        <p>Hiçbir şey beklemiyorsun.</p>
+        <p style="font-style: italic; color: var(--ink-soft);">Belki birazdan derse gideceksin. Belki Horatio ile buluşacaksın.</p>
+        <p style="margin-top: 14px;">Hayat olağan akışında.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 17px; margin: 28px 0;">Sonra —</p>
+
+        <p style="text-align: center; font-size: 14.5px; color: var(--ink-soft);">Sayfayı çevir.</p>
+      </div>
+
+      <div class="margin-note" style="bottom: 80px;">acele etme</div>
+    </div>
+    <div class="folio">89</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 4 ============================ -->
+<div class="spread-label">SPREAD 4 / 7<span class="title">Yolculuk · kapı ve haber</span></div>
+<div class="spread">
+
+  <!-- Sayfa 90 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · kapı</div>
+      <div class="section-tag">Bölüm IV · sahne 2</div>
+
+      <div class="journey-block">
+
+        <div class="knock">Tak.&nbsp;&nbsp;Tak.&nbsp;&nbsp;Tak.</div>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-size: 15px;">Üç vuruş. Ağır.</p>
+        <p style="font-size: 15px;">Beklemediğin saatte.</p>
+
+        <p style="margin-top: 22px;">Kapıyı açıyorsun.</p>
+
+        <p style="margin-top: 14px; font-size: 15.5px;">Karşında bir adam. Tanımıyorsun. Bir saray habercisi. Yüzünde toz var — uzun yol gelmiş, atıyla. Nefes nefese.</p>
+
+        <p style="font-style: italic; color: var(--ink-soft);">Sana bakıyor. Onun gözlerine bakıyorsun.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="text-align: center; font-size: 15.5px; margin: 4px 0;">"Prens Hamlet?"</p>
+        <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 14px; margin-bottom: 8px;">Sesi zayıf.</p>
+        <p style="text-align: center; font-size: 15.5px; margin: 4px 0;">"Evet."</p>
+        <p style="text-align: center; font-size: 15.5px; margin: 4px 0;">"Elsinore'dan geliyorum."</p>
+
+      </div>
+    </div>
+    <div class="folio">90</div>
+  </div>
+
+  <!-- Sayfa 91 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · haber</div>
+
+      <div class="journey-block" style="margin-top: 8px;">
+        <div class="pause-mark" style="margin-top: 0;">∙ ∙ ∙</div>
+
+        <p style="font-style: italic; color: var(--ink-soft); text-align: center; font-size: 14.5px;">Adam yutkunuyor.</p>
+
+        <div class="news-line">
+          <span>"Babanız…"</span>
+          <span>"Kralımız…"</span>
+          <span>"…vefat etmiştir."</span>
+        </div>
+
+        <div class="pause-mark" style="margin: 28px 0;">∙ ∙ ∙ ∙ ∙</div>
+
+        <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 15px;">Bu cümle.</p>
+        <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 15px; margin-top: 8px;">Birkaç kelime. Beş kelime belki.</p>
+
+        <div class="pause-mark" style="margin: 28px 0;">∙ ∙ ∙</div>
+
+        <p style="text-align: center; font-size: 16px; color: var(--accent);">Burada kal.</p>
+        <p style="text-align: center; font-size: 14px; color: var(--ink-soft); font-style: italic; margin-top: 12px;">Sayfayı bırak. Üç nefes al.</p>
+        <p style="text-align: center; font-size: 14px; color: var(--ink-soft); font-style: italic;">Bedenini yokla.</p>
+        <p style="text-align: center; font-size: 14px; color: var(--ink-soft); font-style: italic;">Hazır olduğunda yan sayfaya geç.</p>
+      </div>
+
+      <div class="margin-note" style="bottom: 80px;">acele etme</div>
+    </div>
+    <div class="folio">91</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 5 ============================ -->
+<div class="spread-label">SPREAD 5 / 7<span class="title">İçsel kayıt + yolculuk son</span></div>
+<div class="spread">
+
+  <!-- Sayfa 92 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">içsel kayıt · haber</div>
+      <div class="section-tag">Yazma no. 1</div>
+      <div class="exercise-title">Bedenin ne dedi?</div>
+
+      <div class="exercise-intro">
+        Cümleyi içinden tekrar et — kendi sesinle, Hamlet'in sesinle:
+      </div>
+      <div class="quote-cue">"Babanız… vefat etmiştir."</div>
+      <div class="exercise-intro" style="margin-bottom: 16px;">
+        Bedeninde nereyi buldun? Ne hissettin? Yaz.
+      </div>
+
+      <div class="form-prompt">Bedenimde bulduğum yer</div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+
+      <div class="form-prompt">Hangi renk?</div>
+      <div class="form-instruction">Bir adlandırma, bir doku, iki rengin karışımı, ışık. Yazılı.</div>
+      <div class="write-line"></div>
+
+      <div class="form-prompt">Yoğunluk</div>
+      <div class="form-instruction">Bu yoğunluğu nasıl tarif edersin? Neye benziyordu?</div>
+      <div class="write-line"></div>
+
+      <div class="form-prompt">Tarif et</div>
+      <div class="sub-prompt">Şekli</div>
+      <div class="write-line"></div>
+      <div class="sub-prompt">Sıcaklığı</div>
+      <div class="write-line"></div>
+      <div class="sub-prompt">Hareketi</div>
+      <div class="write-line"></div>
+    </div>
+    <div class="folio">92</div>
+  </div>
+
+  <!-- Sayfa 93 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · son hatıralar</div>
+      <div class="section-tag">Bölüm IV · sahne 3</div>
+
+      <div class="journey-block" style="margin-top: 8px;">
+        <p style="font-size: 14.5px; color: var(--ink-soft);">Sözel kaydı yaptın. Şimdi yolculuk devam ediyor.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-style: italic; color: var(--ink-soft);">Adama soruyorsun: "Nasıl?"</p>
+        <p style="font-size: 15px;">Adam diyor ki:</p>
+        <p style="text-align: center; font-style: italic; color: var(--ink); margin: 14px 0; font-size: 16px;">"Bahçede uyurken bir yılan tarafından sokulmuş."</p>
+
+        <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 15px;">Yılan.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-size: 14.5px;">Adam başını eğdi. <em style="color: var(--ink-soft);">"Başınız sağ olsun, prens."</em> dedi.</p>
+
+        <p style="margin-top: 18px;">Şimdi babanı son kez hatırla. Hayattayken.</p>
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 14.5px;">En son nasıl gördün onu? Bir kıyafetinde, bir ayağa kalkışında, bir gülüşünde…</p>
+
+        <p style="margin-top: 14px; font-size: 14.5px;">Onun kokusunu hatırla.</p>
+        <p style="font-size: 14.5px;">Onun sesini hatırla. Sana adınla seslendiğinde nasıl çıkardı sesinden — <em style="color: var(--accent-soft);">"Hamlet!"</em></p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="text-align: center; font-style: italic; color: var(--accent); font-size: 17px; margin: 18px 0 6px;">"Babam gitti."</p>
+        <p style="text-align: center; font-style: italic; color: var(--accent); font-size: 16px; margin-bottom: 14px;">"Bir daha onu göremeyeceğim."</p>
+
+        <p style="text-align: center; font-size: 13px; color: var(--ink-soft); margin-top: 14px;">Wittenberg'den ayrılman gerek.</p>
+      </div>
+    </div>
+    <div class="folio">93</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 6 ============================ -->
+<div class="spread-label">SPREAD 6 / 7<span class="title">Çapa kaydı № 1 — üç kapı</span></div>
+<div class="spread">
+
+  <!-- Sayfa 94 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">çapa kaydı no. 1</div>
+
+      <div class="anchor-header">
+        <div class="anchor-num">çapa <strong>№ 1</strong></div>
+        <div class="anchor-meta">
+          <div class="anchor-meta-line">Tarih<span class="blank"></span> / <span class="blank" style="width:24px;"></span> / <span class="blank" style="width:24px;"></span></div>
+          <div class="anchor-meta-line">Saat<span class="blank" style="width:24px;"></span> : <span class="blank" style="width:24px;"></span></div>
+        </div>
+      </div>
+
+      <div class="anchor-cue">
+        "Babanız…<br>vefat etmiştir."
+      </div>
+
+      <div class="scene-tag">Wittenberg · sabah · kapıdaki adam</div>
+
+      <p class="body-text" style="font-size: 14px; margin-bottom: 12px;">
+        Bedenin az önce sana bir şey söyledi. Onu sözel olarak kaydettin. Şimdi bu çapayı <em>üç kapıdan</em> dolaşacağız — duygu, düşünce, davranış. Aynı bedensel his üç farklı dile çeviriliyor. Sahnede o his geri çağrıldığında, üç kapıdan biri açılır.
+      </p>
+
+      <div class="ethics-callout">
+        <strong>Hatırla</strong>
+        Bu sayfada kendi hayatından bir an, bir kişi, bir kayıp aramıyoruz. Hamlet'in dünyasında kalıyoruz. Cevaplar Hamlet'ten gelsin — senden değil.
+      </div>
+
+      <div class="doors-block">
+        <div class="doors-block-title">Birinci kapı · duygu</div>
+        <div class="doors-block-intro">Bu hisle birlikte hangi duygu geliyor?</div>
+        <div class="door-row"><div class="door-label">Adı</div><div class="door-line"></div></div>
+        <div class="door-row"><div class="door-label">Yoğunluğu</div><div class="door-line"></div></div>
+        <div class="door-row"><div class="door-label">Rengi</div><div class="door-line"></div></div>
+      </div>
+    </div>
+    <div class="folio">94</div>
+  </div>
+
+  <!-- Sayfa 95 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">çapa kaydı no. 1 · devam</div>
+
+      <div class="doors-block" style="margin-top: 0;">
+        <div class="doors-block-title">İkinci kapı · düşünce</div>
+        <div class="doors-block-intro">Bu his hangi düşünceye dönüşüyor? Hamlet'in zihninden hangi cümle geçiyor?</div>
+        <div class="door-row"><div class="door-label">Cümle</div><div class="door-line"></div></div>
+        <div class="door-row"><div class="door-label">&nbsp;</div><div class="door-line"></div></div>
+        <div class="door-row"><div class="door-label">Tekrar</div><div class="door-line"></div></div>
+      </div>
+
+      <div class="doors-block">
+        <div class="doors-block-title">Üçüncü kapı · davranış</div>
+        <div class="doors-block-intro">Bu his bedeninden nasıl bir davranış olarak çıkıyor? Bir mikro-jest, bir duruş, bir bakış, bir tutuş.</div>
+        <div class="door-row"><div class="door-label">Davranış</div><div class="door-line"></div></div>
+        <div class="door-row"><div class="door-label">&nbsp;</div><div class="door-line"></div></div>
+        <div class="door-row"><div class="door-label">İmza-jesti</div><div class="door-line"></div></div>
+      </div>
+
+      <div class="form-prompt" style="margin-top: 18px;">Bu çapaya nasıl döneceğim</div>
+      <div class="form-instruction">Bir kelime, bir nefes, bir gestus, bir imge — kendi formülün.</div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+
+      <div class="signature-block">
+        <div class="signature-prompt">Bu çapayı tanıdım, kaydettim, hatırlayacağım.</div>
+        <div class="signature-row">
+          <span>imza</span>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="folio">95</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 7 ============================ -->
+<div class="spread-label">SPREAD 7 / 7<span class="title">Karakter sesi · imgesel doldurma</span></div>
+<div class="spread">
+
+  <!-- Sayfa 96 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">karakter sesi · gece</div>
+      <div class="section-tag">Yazma no. 2 · imgesel</div>
+      <div class="exercise-title">Habercinin gittiği gece</div>
+
+      <p class="body-text" style="font-size: 15px;">
+        Yolculuk metnindeki adam gitti. Onun arkasından kapıyı kapadın. Saatler geçti. Yemek yedin mi, yemedin mi — sen seç. Akşam oldu. Gece.
+      </p>
+      <p class="body-text" style="font-size: 15px;">
+        Yatağına girdin.
+      </p>
+      <p class="body-text" style="font-size: 15px;">
+        Şimdi karanlıktasın. Tavanı görmüyorsun.
+      </p>
+
+      <div class="ornament" style="margin: 24px 0;">∙ ∙ ∙</div>
+
+      <p class="body-text-soft" style="font-size: 15.5px;">
+        Hamlet o gece ne yaşadı?
+      </p>
+
+      <p class="body-text" style="font-size: 14.5px;">
+        Bu sayfa Hamlet'in zihninden, birinci tekil kişiden yazılır. Sen bir şey kurguluyorsun: o gece — uyumadan önceki o boşluk anı — Hamlet ne düşündü, neyi gördü, neye dokundu, neyi kokladı?
+      </p>
+
+      <div class="ethics-callout" style="margin-top: 20px;">
+        <strong>İlke</strong>
+        Sahnede gördüğümüz Hamlet, görmediğimiz Hamlet'in üstünde durur. Burada görmediğimiz Hamlet'i yazıyoruz — ama hep onun zihninden, hep onun gözünden.
+      </div>
+
+      <p class="body-text-soft" style="text-align: center; font-size: 14px; margin-top: 18px;">
+        Cümleyi bitirmek zorunda değilsin.<br>
+        Bir paragraf, bir cümle, bir kelime — sen seç.
+      </p>
+    </div>
+    <div class="folio">96</div>
+  </div>
+
+  <!-- Sayfa 97 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">hamlet'in zihninden · gece</div>
+
+      <div class="free-write-prompt">
+        <em>"Karanlıktayım. Tavana baktım…"</em>
+        <div style="font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-faint); margin-top: 8px; font-style: normal;">Hamlet, birinci tekil</div>
+      </div>
+
+      <div class="free-write-area"></div>
+
+      <div class="next-note">
+        <span class="arrow">→</span> Devam: birinci bedensel yoklama · sayfa 98
+      </div>
+    </div>
+    <div class="folio">97</div>
+  </div>
+</div>
+
+<div class="commentary">
+  <strong>Bölüm IV — altın şablon</strong> · 14 sayfa · 7 spread.<br><br>
+  Yapı bu modeli izleyen 4 Tip A bölüm (VI saray monoloğu, IX olmak ya da olmamak, XII mezarlık, XIII düello) için aynı şekilde kopyalanır — sadece içerik değişir, çerçeve aynıdır. <em>"Tip B Geçiş Bölümleri"</em> aynı şablonun çapa kaydı sayfası olmayan kısaltılmış (8–11 sayfa) hâlidir; <em>Tip C ve D</em> ek hazırlık ve uzun çıkış protokolü sayfalarıyla 14–15 sayfaya genişler.<br><br>
+  Karakter sesinden yazma alanı (sayfa 96–97) kitabın imzasıdır: oyuncuyu kendi hayatına geri çekmiyor, başka karakterin perspektifine taşımıyor, meta-katmana çıkarmıyor. Sadece <strong>Hamlet'in zihninde, metnin susturduğu somut bir anda</strong> bırakıyor. Bu, ITC'nin "eş-yazar oyuncu" prensibinin sayfada en saf hâli.
+</div>
+
+</body>
+</html>

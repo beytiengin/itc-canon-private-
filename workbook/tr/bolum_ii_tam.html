@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Inside The Hamlet — Bölüm II Tam Hali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F5F0E5;
+    --paper-edge: #E8E0CE;
+    --ink: #1F1A14;
+    --ink-soft: #4A3F30;
+    --ink-faint: #8B7F6B;
+    --rule: #BFB29A;
+    --accent: #6B2731;
+    --accent-soft: #A85461;
+    --accent-pale: rgba(107, 39, 49, 0.06);
+    --bg: #2A2622;
+    --vak-blue-bg: #DCE3EA;
+    --vak-blue-line: #6B85A0;
+    --vak-blue-ink: #3D5874;
+    --vak-yellow-bg: #ECE0BC;
+    --vak-yellow-line: #A8945A;
+    --vak-yellow-ink: #6E5E2A;
+    --vak-green-bg: #D4DCC4;
+    --vak-green-line: #7A8C5E;
+    --vak-green-ink: #4D5C32;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body { font-family: 'Cormorant Garamond', Georgia, serif; padding: 50px 20px 80px; min-height: 100vh; color: var(--ink); }
+  .gallery-header { max-width: 1000px; margin: 0 auto 40px; color: #C9BFAA; font-family: 'Geist', sans-serif; text-align: center; }
+  .gallery-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 30px; color: #E5DCC8; margin-bottom: 6px; letter-spacing: 0.01em; }
+  .gallery-header .sub { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #9F9580; }
+  .gallery-header .tag { display: inline-block; margin-top: 12px; padding: 3px 10px; background: rgba(168, 84, 97, 0.2); color: #D9A3AC; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; }
+  .spread-label { max-width: 1000px; margin: 50px auto 16px; color: #B8AC93; font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; padding-left: 8px; }
+  .spread-label .title { color: #E5DCC8; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px; text-transform: none; letter-spacing: 0; margin-left: 12px; }
+  .spread { display: flex; max-width: 1000px; margin: 0 auto; box-shadow: 0 22px 50px rgba(0,0,0,0.5), 0 8px 22px rgba(0,0,0,0.3); background: var(--paper); }
+  .single-page-right { display: flex; max-width: 500px; margin: 0 0 0 auto; box-shadow: 0 22px 50px rgba(0,0,0,0.5), 0 8px 22px rgba(0,0,0,0.3); background: var(--paper); }
+  .page { width: 500px; height: 720px; background: var(--paper); color: var(--ink); position: relative; overflow: hidden; flex-shrink: 0; }
+  .page.left { background: linear-gradient(to right, var(--paper) 92%, var(--paper-edge) 100%); }
+  .page.right { background: linear-gradient(to left, var(--paper) 92%, var(--paper-edge) 100%); }
+  .page-inner { padding: 50px 44px 60px; height: 100%; position: relative; }
+  .page.left .page-inner { padding-right: 52px; }
+  .page.right .page-inner { padding-left: 52px; }
+  .folio { position: absolute; bottom: 30px; font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.22em; color: var(--ink-faint); }
+  .page.left .folio { left: 44px; }
+  .page.right .folio { right: 44px; }
+  .running-head { position: absolute; top: 24px; font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink-faint); }
+  .page.left .running-head { left: 44px; }
+  .page.right .running-head { right: 44px; }
+
+  .section-tag { font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; font-weight: 500; }
+  .chapter-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: var(--ink-soft); margin-bottom: 4px; }
+  .chapter-title { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 36px; line-height: 1.1; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.01em; }
+  .chapter-subtitle { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px; color: var(--ink-soft); margin-bottom: 24px; }
+  .ornament { text-align: center; color: var(--accent-soft); font-size: 13px; letter-spacing: 1.2em; margin: 16px 0; }
+  .small-heading { font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; font-weight: 500; }
+  .body-text { font-family: 'Cormorant Garamond', serif; font-size: 15.5px; line-height: 1.6; color: var(--ink); margin-bottom: 12px; }
+  .body-text-soft { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; line-height: 1.55; color: var(--ink-soft); margin-bottom: 14px; }
+  .meta-line { font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-faint); margin-top: 22px; padding-top: 14px; border-top: 0.5px solid var(--rule); }
+
+  .exercise-title { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 26px; margin-bottom: 14px; letter-spacing: -0.005em; }
+  .exercise-intro { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14.5px; line-height: 1.55; color: var(--ink-soft); margin-bottom: 20px; }
+  .question { margin-bottom: 18px; }
+  .question-number { font-family: 'Geist', sans-serif; font-size: 11px; color: var(--accent); font-weight: 500; letter-spacing: 0.1em; margin-bottom: 5px; }
+  .question-text { font-family: 'Cormorant Garamond', serif; font-size: 15px; line-height: 1.4; color: var(--ink); margin-bottom: 7px; }
+  .write-line { border-bottom: 0.5px solid var(--rule); height: 20px; margin-bottom: 5px; }
+
+  .vak-block { margin: 14px 0; padding: 12px 14px; border-left: 2px solid; }
+  .vak-block.gorsel { background: var(--vak-blue-bg); border-left-color: var(--vak-blue-line); }
+  .vak-block.isitsel { background: var(--vak-yellow-bg); border-left-color: var(--vak-yellow-line); }
+  .vak-block.dokunsal { background: var(--vak-green-bg); border-left-color: var(--vak-green-line); }
+  .vak-tag { font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 500; margin-bottom: 6px; }
+  .vak-block.gorsel .vak-tag { color: var(--vak-blue-ink); }
+  .vak-block.isitsel .vak-tag { color: var(--vak-yellow-ink); }
+  .vak-block.dokunsal .vak-tag { color: var(--vak-green-ink); }
+  .vak-text { font-family: 'Cormorant Garamond', serif; font-size: 14.5px; line-height: 1.55; color: var(--ink); }
+
+  .journey-block { font-family: 'Cormorant Garamond', serif; font-size: 16px; line-height: 1.8; color: var(--ink); }
+  .journey-block p { margin-bottom: 12px; }
+  .pause-mark { text-align: center; color: var(--accent-soft); font-size: 11px; letter-spacing: 1.2em; margin: 18px 0; }
+  .single-word { text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: var(--accent); margin: 14px 0; letter-spacing: 0.04em; }
+  .margin-note { position: absolute; right: 14px; font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); transform: rotate(180deg); writing-mode: vertical-rl; }
+  .quote-cue { text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: var(--accent); margin: 18px 12px; line-height: 1.4; }
+
+  .form-prompt { font-family: 'Geist', sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin: 22px 0 6px; font-weight: 500; }
+  .form-prompt:first-of-type { margin-top: 0; }
+  .form-instruction { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13.5px; color: var(--ink-soft); margin-bottom: 10px; line-height: 1.5; }
+  .sub-prompt { font-family: 'Cormorant Garamond', serif; font-size: 14px; color: var(--ink); margin: 12px 0 4px; padding-left: 14px; border-left: 1.5px solid var(--accent-soft); line-height: 1.4; }
+
+  .ethics-callout { background: rgba(31, 26, 20, 0.03); border: 0.5px solid var(--ink-faint); border-left: 2px solid var(--ink-soft); padding: 12px 14px; margin: 14px 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13px; line-height: 1.55; color: var(--ink-soft); }
+  .ethics-callout strong { font-family: 'Geist', sans-serif; font-style: normal; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 4px; font-weight: 500; }
+
+  .free-write-area { border: 0.5px solid var(--rule); background: rgba(255,255,255,0.3); padding: 14px 16px; min-height: 280px; margin-top: 14px; background-image: repeating-linear-gradient(transparent, transparent 26px, rgba(191, 178, 154, 0.4) 26px, rgba(191, 178, 154, 0.4) 26.5px); }
+  .free-write-prompt { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: var(--ink-soft); margin-bottom: 12px; text-align: center; border-bottom: 0.5px solid var(--rule); padding-bottom: 10px; }
+
+  /* Title page (solo opening) */
+  .title-page { text-align: center; padding-top: 100px; }
+  .title-page .chapter-num { font-size: 40px; margin-bottom: 16px; color: var(--accent); }
+  .title-page .chapter-title { font-size: 44px; margin-bottom: 14px; }
+  .title-page .chapter-subtitle { font-size: 18px; margin-bottom: 36px; }
+  .title-page .ornament { font-size: 16px; letter-spacing: 1.5em; margin: 32px 0; }
+  .title-page .opening-cue { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; line-height: 1.55; color: var(--ink-soft); max-width: 320px; margin: 28px auto; }
+  .title-page .opening-cue strong { font-style: normal; font-weight: 500; color: var(--accent); }
+
+  .next-note { position: absolute; bottom: 60px; left: 44px; right: 52px; text-align: center; font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); padding: 8px 12px; border-top: 0.5px solid var(--accent-soft); border-bottom: 0.5px solid var(--accent-soft); }
+  .next-note .arrow { font-family: 'Cormorant Garamond', serif; font-style: italic; text-transform: none; letter-spacing: 0; }
+
+  .commentary { max-width: 1000px; margin: 30px auto 0; color: #B8AC93; font-family: 'Geist', sans-serif; font-size: 13px; line-height: 1.65; padding: 24px 32px; background: rgba(255,255,255,0.03); border-left: 2px solid #6B2731; }
+  .commentary strong { color: #E5DCC8; font-weight: 500; }
+  .commentary em { font-family: 'Cormorant Garamond', serif; color: #DBC8AA; font-style: italic; font-size: 14.5px; }
+</style>
+</head>
+<body>
+
+<div class="gallery-header">
+  <h1>Inside The Hamlet — Bölüm II</h1>
+  <div class="sub">Wittenberg ve Horatio · 9 sayfa · 1 solo açılış + 4 spread · tip B geçiş</div>
+  <span class="tag">Yolculuk Modu metnine sadık</span>
+</div>
+
+<!-- ============================ SOLO OPENING (sağ sayfa) ============================ -->
+<div class="spread-label">SAYFA 65 (sağ, solo)<span class="title">Bölüm II açılışı · title page</span></div>
+<div class="single-page-right">
+
+  <!-- Sayfa 65 -->
+  <div class="page right">
+    <div class="page-inner title-page">
+      <div class="running-head">üçüncü kısım · yolculuk</div>
+
+      <div class="section-tag" style="text-align: center;">Bölüm iki</div>
+      <div class="chapter-num">II</div>
+      <div class="chapter-title">Wittenberg ve Horatio</div>
+      <div class="chapter-subtitle">Evden çıkış · ilk dostluk · ilk sorular</div>
+
+      <div class="ornament">∙ ∙ ∙</div>
+
+      <p class="opening-cue">
+        İlk kez evden ayrıldın.<br>
+        <strong>Sarayın gözleri yok üzerinde.</strong><br>
+        Sadece kendin.
+      </p>
+
+      <div class="ornament">∙ ∙ ∙</div>
+    </div>
+    <div class="folio">65</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 1 ============================ -->
+<div class="spread-label">SPREAD 1 / 4<span class="title">Bağlam · ne yapacaksın · hazırlık</span></div>
+<div class="spread">
+
+  <!-- Sayfa 66 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">üçüncü kısım · yolculuk</div>
+
+      <div class="small-heading" style="margin-top: 4px;">Bu bölümde şu an ne oluyor?</div>
+      <p class="body-text">
+        Hamlet ilk kez evden uzakta. Wittenberg, Almanya — bir üniversite şehri. Bir kralın oğlu, bir prens — ama burada sıradan bir öğrenci. Saray protokolü yok, "şehzade" hitabı yok. Adı Hamlet. Sadece o.
+      </p>
+      <p class="body-text-soft" style="margin-bottom: 14px;">Bu, Hamlet'in <em>kendisi olduğu</em> zaman. Sahnede gördüğümüz Hamlet, bu Hamlet'in üstünde duruyor.</p>
+
+      <p class="body-text" style="font-size: 14.5px; color: var(--ink-soft);">
+        Bu sahne de Shakespeare'in metninde yazılı değildir — Hamlet oyun başlamadan önce Wittenberg'den dönmüştür. Ama burada inşa edeceğin <em>Horatio dostluğu</em>, oyun boyunca Hamlet'in tek güvenilir bağıdır. Kitabın sonunda Horatio'ya söyleyeceği <em>"benim hikâyemi anlat"</em> cümlesi, bu sayfada attığın temelden yükselir.
+      </p>
+      <p class="body-text" style="font-size: 14.5px; color: var(--ink-soft);">
+        Bir de bu bölümde ilk kez sorular geliyor — Hamlet'i Hamlet yapan sorular. <em>"Ölümden sonra ne var? Ben kimim?"</em> Bunlar Bölüm IX'da ("Olmak ya da olmamak") patlayacak.
+      </p>
+    </div>
+    <div class="folio">66</div>
+  </div>
+
+  <!-- Sayfa 67 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">üçüncü kısım · yolculuk</div>
+
+      <div class="small-heading" style="margin-top: 4px;">Bu bölümde ne yapacaksın</div>
+      <p class="body-text" style="font-size: 14.5px;">
+        Tip B Geçiş. Çapa yok, önceki çapayı yokla yok. Ama iki bedensel temel daha kuruluyor: <em>Horatio dostluğu</em> ve <em>felsefi sorgu.</em>
+      </p>
+      <p class="body-text" style="font-size: 14.5px;">
+        Önce kısa hazırlık. Sonra yolculuk: Wittenberg sokakları, kütüphane, ilk kez kendin olmak. Üç duyu kanalı.
+      </p>
+      <p class="body-text" style="font-size: 14.5px;">
+        Sonra Horatio'yla karşılaşma — onun bedensel kaydı. Ardından üç soru: ölüm, kötülük, kendilik. Bu üçü bedeninde nereye gidiyor?
+      </p>
+      <p class="body-text" style="font-size: 14.5px;">
+        En sonunda imgesel doldurma: Horatio'yla geçirdiğin bir gece — bir şarap, bir tartışma. Hangi sözünü hâlâ hatırlıyorsun?
+      </p>
+
+      <div class="ornament" style="margin: 16px 0;">∙ ∙ ∙</div>
+
+      <div class="section-tag" style="margin-bottom: 10px;">Hazırlık no. 1</div>
+      <div class="exercise-title" style="font-size: 22px;">Genç adam</div>
+      <div class="exercise-intro" style="margin-bottom: 12px;">
+        Wittenberg'e geleli kaç ay olmuş? Şimdi bu Hamlet'i kur — çocuktan büyümüş ama henüz prens değil.
+      </div>
+
+      <div class="question">
+        <div class="question-number">01</div>
+        <div class="question-text">Yaş — kaç? Boy — değişti mi? Sesi — kalınlaştı mı?</div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="question">
+        <div class="question-number">02</div>
+        <div class="question-text">Wittenberg sana ne hissettiriyor — bir kelime?</div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="meta-line">çalışma süresi yaklaşık 25–30 dakika</div>
+    </div>
+    <div class="folio">67</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 2 ============================ -->
+<div class="spread-label">SPREAD 2 / 4<span class="title">Yolculuk · Wittenberg · üç duyu kanalı</span></div>
+<div class="spread">
+
+  <!-- Sayfa 68 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · wittenberg</div>
+      <div class="section-tag">Bölüm II · sahne 1</div>
+
+      <div class="journey-block">
+        <p>İlk kez evden ayrıldın.</p>
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 15px;">Wittenberg. Almanya. Bir üniversite şehri.</p>
+
+        <p style="margin-top: 14px;">Bir kralın oğlu, bir prens — ama burada sıradan bir öğrenci.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-size: 15px;">Şu an neredesin?</p>
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 14.5px;">Bir derste mi, bir kütüphanede mi, bir arkadaşınla yürürken mi? Daracık taş bir sokakta mı?</p>
+
+        <p style="text-align: center; margin-top: 10px; font-style: italic; color: var(--accent); font-size: 16px;">Sen seç o yeri.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="text-align: center; font-size: 16px; color: var(--ink); margin-top: 4px;">İlk kez —</p>
+        <p style="text-align: center; font-size: 14.5px; color: var(--ink-soft); font-style: italic; margin-top: 6px;">Sarayın gözleri yok üzerinde.<br>Babanın gözleri yok.<br>Annenin gözleri yok.</p>
+        <p style="text-align: center; font-size: 16px; color: var(--accent); margin-top: 10px; font-style: italic;">Sadece kendin.</p>
+      </div>
+    </div>
+    <div class="folio">68</div>
+  </div>
+
+  <!-- Sayfa 69 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · üç kanal</div>
+
+      <div class="vak-block gorsel" style="margin-top: 6px;">
+        <div class="vak-tag">Görsel</div>
+        <div class="vak-text">
+          Wittenberg'i zihninde gör. Eski binalar, daracık sokaklar, mum ışığında bir kütüphane. Bir masaya eğilmişsin, bir kitabın üstüne. Kâğıdın rengi, mürekkebin akışı. Pencereden ne görüyorsun?
+        </div>
+      </div>
+
+      <div class="vak-block isitsel">
+        <div class="vak-tag">İşitsel</div>
+        <div class="vak-text">
+          Kütüphanenin sessizliği. Kâğıt sesleri. Mum çıtırtısı. Bir başka öğrencinin yumuşak bir mırıltısı. Bir kapı açılıyor. Birinin sesi.
+        </div>
+      </div>
+
+      <div class="vak-block dokunsal">
+        <div class="vak-tag">Dokunsal</div>
+        <div class="vak-text">
+          Bedenin nasıl şu an? Soğuk Alman havası yüzünde. Kalemini tutan parmakların. Kitabın kâğıdına dokunan başparmağın.
+        </div>
+      </div>
+
+      <div class="pause-mark" style="margin: 16px 0;">∙ ∙ ∙</div>
+
+      <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 14.5px;">Burada bir arkadaş edindin.</p>
+      <p style="text-align: center; font-style: italic; color: var(--accent); font-size: 17px; margin-top: 6px;">Horatio.</p>
+
+      <div class="margin-note" style="bottom: 80px;">acele etme</div>
+    </div>
+    <div class="folio">69</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 3 ============================ -->
+<div class="spread-label">SPREAD 3 / 4<span class="title">Horatio · felsefi sorular</span></div>
+<div class="spread">
+
+  <!-- Sayfa 70 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · horatio</div>
+      <div class="section-tag">Bölüm II · sahne 2</div>
+
+      <div class="journey-block">
+        <p style="font-size: 15.5px;">Onunla nasıl tanıştın?</p>
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 14.5px;">Bir derste mi? Bir tartışmada mı? Ortak bir kitap üzerinde mi? Sen söyle.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-size: 15px;">Onun yüzünü görüyor musun şu an?</p>
+        <p style="font-size: 15px;">Nasıl bakıyor sana?</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 14.5px; text-align: center;">Etrafındaki diğer insanlarla konuşman ile<br>Horatio ile konuşman arasında<br>bir fark var mı?</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 14.5px; text-align: center;">İçinden geçir:</p>
+
+        <div class="single-word">"Horatio benim arkadaşım."</div>
+
+        <div class="pause-mark" style="margin: 18px 0;">∙ ∙ ∙</div>
+
+        <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 14px;">Bu cümleyi söylediğinde ne hissediyorsun?</p>
+      </div>
+    </div>
+    <div class="folio">70</div>
+  </div>
+
+  <!-- Sayfa 71 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · ilk sorular</div>
+
+      <div class="journey-block" style="margin-top: 8px;">
+        <p style="font-size: 15px;">Burada ne öğreniyorsun?</p>
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 14.5px;">Felsefe. İlahiyat. Yeni fikirler. Eski inançları sallıyor.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-size: 14.5px;">Sana şu sorular ilk kez geliyor:</p>
+
+        <div style="margin: 16px 0; padding-left: 18px; border-left: 1.5px solid var(--accent-soft);">
+          <p style="font-style: italic; color: var(--accent); font-size: 17px; margin-bottom: 14px;">"Ölümden sonra ne var?"</p>
+          <p style="font-style: italic; color: var(--accent); font-size: 17px; margin-bottom: 14px;">"Kötülük nereden gelir?"</p>
+          <p style="font-style: italic; color: var(--accent); font-size: 17px; margin-bottom: 0;">"Ben kimim?"</p>
+        </div>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 14.5px;">Bu sorular aklından geçerken<br>bedeninde ne oluyor?</p>
+
+        <div class="pause-mark" style="margin: 16px 0 12px;">∙ ∙ ∙</div>
+
+        <p style="text-align: center; font-size: 13.5px; color: var(--ink-soft); font-style: italic;">Burada kal. İçsel kayıt yan sayfada.</p>
+      </div>
+
+      <div class="margin-note" style="bottom: 80px;">acele etme</div>
+    </div>
+    <div class="folio">71</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 4 ============================ -->
+<div class="spread-label">SPREAD 4 / 4<span class="title">İçsel kayıt + karakter sesi</span></div>
+<div class="spread">
+
+  <!-- Sayfa 72 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">içsel kayıt · horatio + sorular</div>
+      <div class="section-tag">Yazma no. 1</div>
+      <div class="exercise-title">İki kayıt</div>
+
+      <div class="exercise-intro" style="margin-bottom: 14px;">
+        Bu bölümde bedeninde iki ayrı işaret oluştu: bir dostlukta, bir soruda. İkisini ayrı ayrı yokla.
+      </div>
+
+      <div class="ethics-callout" style="margin: 0 0 16px;">
+        <strong>Hatırla</strong>
+        Bu sayfada kendi dostluklarından bir şey aramıyoruz. Hamlet'in Horatio'su. Cevaplar Hamlet'ten gelsin — senden değil.
+      </div>
+
+      <div class="quote-cue" style="margin-top: 4px; font-size: 16px;">"Horatio benim arkadaşım."</div>
+
+      <div class="form-prompt" style="margin-top: 0;">Bu cümle bedenimde nereyi açtı?</div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+
+      <div class="quote-cue" style="margin-top: 18px; font-size: 16px;">"Ben kimim?"</div>
+
+      <div class="form-prompt">Bu soru bedenimde nereye gitti?</div>
+      <div class="form-instruction">Aynı yer mi Horatio ile, farklı bir yer mi?</div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+
+      <div class="form-prompt">Tek bir kelimeyle Horatio</div>
+      <div class="form-instruction">İlk gelen.</div>
+      <div class="write-line"></div>
+    </div>
+    <div class="folio">72</div>
+  </div>
+
+  <!-- Sayfa 73 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">karakter sesi · horatio'yla bir gece</div>
+      <div class="section-tag">Yazma no. 2 · imgesel</div>
+      <div class="exercise-title">Horatio'yla bir gece</div>
+
+      <p class="body-text" style="font-size: 14.5px;">
+        Wittenberg'de bir gece. Belki bir han, belki bir öğrenci odası. Bir şarap. Bir tartışma. Bir sessizlik. Hangi gece, sen seç. Birlikte ne konuştunuz?
+      </p>
+
+      <p class="body-text" style="font-size: 14.5px;">
+        Bu sayfa Hamlet'in zihninden, birinci tekil kişiden yazılır. <em>Horatio'nun o gece söylediği bir şey</em> — bir cümle, bir bakış, bir sessizlik — Hamlet'in zihninde kaldı. Hangisi?
+      </p>
+
+      <div class="ethics-callout" style="margin-top: 12px;">
+        <strong>İlke</strong>
+        Sahnede gördüğümüz Hamlet, görmediğimiz Hamlet'in üstünde durur. Burada görmediğimiz Hamlet'i yazıyoruz — ama hep onun zihninden, hep onun gözünden.
+      </div>
+
+      <div class="free-write-prompt" style="margin-top: 14px;">
+        <em>"Horatio'yla o gece… Bir şey söyledi…"</em>
+        <div style="font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-faint); margin-top: 8px; font-style: normal;">Hamlet, Wittenberg · birinci tekil</div>
+      </div>
+
+      <div class="free-write-area"></div>
+
+      <div class="next-note" style="margin-top: 14px; position: static;">
+        <span class="arrow">→</span> Devam: Bölüm III · Ophelia ile Aşk · sayfa 74
+      </div>
+    </div>
+    <div class="folio">73</div>
+  </div>
+</div>
+
+<div class="commentary">
+  <strong>Bölüm II — tip B geçiş · sağ sayfa açılışı</strong> · 9 sayfa · 1 solo açılış + 4 spread.<br><br>
+  Bölüm sayfa 65 (sağ) <em>title page</em> olarak açılıyor — sol tarafında Bölüm I'in karakter sesi sayfası (64) var. Bu kitap akışında doğal bir nefes molası: bölüm IX'da geri dönecek olan Horatio dostluğu ve Bölüm IX'daki monoloğun (Olmak ya da olmamak) tohumlarını taşıyan üç soru — burada başlıyor. Açılış sayfasının ortasında <em>"Sarayın gözleri yok üzerinde. Sadece kendin."</em> cümlesi: Hamlet'in <em>kendisi olduğu</em> tek dönem.<br><br>
+  <strong>Yapı kararları:</strong> İçsel kayıt iki ayrı bedensel işareti yokluyor — dostluk (Horatio) ve soru ("Ben kimim?"). Bu, kitabın sonraki Tip B'lerinde de tekrar edecek bir yapı: bir bölümde birden fazla bedensel temel kurulduğunda, içsel kayıt sayfası onları ayrı sözel kutulara böler. Karakter sesi sayfası "Horatio'yla bir gece" — Bölüm V'in "babanın eski odası"yla aynı strüktürel role sahip: oyuna kadar olan ama sahnede görmediğimiz, oyuncunun bedenine yazması gereken bir an.<br><br>
+  Bu bölümün ITC dramaturjik işi: <strong>Hamlet'in zihinsel kapasitesini görünür kılmak.</strong> "Olmak ya da olmamak" sahnede Hamlet için ani bir patlama değil, Wittenberg'de başlayan uzun bir sorunun kendini açtığı an olur. Bu bölüm o sorunun başladığı yerdir.
+</div>
+
+</body>
+</html>

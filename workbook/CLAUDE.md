@@ -77,7 +77,16 @@ itc-canon/
 - `translation_manual_v04.md` — Translation Manual v0.4 (locked terminoloji + felsefe + kaynaklar)
 - `threshold_pilot_v01.html` — Threshold ilk 11 sayfa İngilizce pilot
 
-> **Not — Fiziksel dosya durumu:** Yukarıdaki dosyalar (PDF, HTML batch'ler, çeviri pilotu) Claude.ai project knowledge'da üretilmişti. **Şu an local repo'da fiziksel olarak yok** — Claude.ai sohbetinden indirilip workbook/ altına kopyalanmalı (ya da ayrı bir storage/build pipeline kurulmalı). Bu açık iş §5'te.
+> **Not — Fiziksel dosya durumu (15 Mayıs 2026 kısmi yedirme):** Aşağıdaki dosyalar `workbook/tr/` altında local repo'da:
+> - Aşama 1 (Yolculuk Modu Kısım III): `bolum_ii`, `bolum_iii`, `bolum_iv`, `bolum_v`, `bolum_vi`, `bolum_viii`, `bolum_ix`, `bolum_x`, `bolum_xi` — 9 bölüm
+> - Yoklama: `yoklama_1_tam.html`, `yoklama_2_tam.html`
+>
+> **Hâlâ eksik (Claude.ai sohbetinden indirilip alınmalı):**
+> - Aşama 1 bölümler: `bolum_i_tam.html` (Tanışma), `bolum_vii_tam.html` (Hayalet), `bolum_xii_tam.html` (Mezarlık — Çapa 4), `bolum_xiii_tam.html` (Düello — Çapa 5)
+> - `yoklama_3_tam.html`
+> - Aşama 2: `batch9_esik.html` (Eşik), `batch10_kisim1.html`, `batch11_kisim2_dogrular_oyunoncesi.html`, `batch11_kisim2_timeline.html`, `batch12_yazarin_cercevesi.html`, `batch12_senin_cerceven.html`, `batch13_butunlesme.html`
+> - Ana dosyalar: `inside_hamlet.pdf`, `galeri_butun.html`, `icindekiler.html`
+> - İngilizce: `translation_manual_v04.md`, `threshold_pilot_v01.html` (`workbook/en/`'e)
 
 ---
 

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Inside The Hamlet — Bölüm X Tam Hali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F5F0E5;
+    --paper-edge: #E8E0CE;
+    --ink: #1F1A14;
+    --ink-soft: #4A3F30;
+    --ink-faint: #8B7F6B;
+    --rule: #BFB29A;
+    --accent: #6B2731;
+    --accent-soft: #A85461;
+    --accent-pale: rgba(107, 39, 49, 0.06);
+    --bg: #2A2622;
+    --vak-blue-bg: #DCE3EA;
+    --vak-blue-line: #6B85A0;
+    --vak-blue-ink: #3D5874;
+    --vak-yellow-bg: #ECE0BC;
+    --vak-yellow-line: #A8945A;
+    --vak-yellow-ink: #6E5E2A;
+    --vak-green-bg: #D4DCC4;
+    --vak-green-line: #7A8C5E;
+    --vak-green-ink: #4D5C32;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body { font-family: 'Cormorant Garamond', Georgia, serif; padding: 50px 20px 80px; min-height: 100vh; color: var(--ink); }
+  .gallery-header { max-width: 1000px; margin: 0 auto 40px; color: #C9BFAA; font-family: 'Geist', sans-serif; text-align: center; }
+  .gallery-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 30px; color: #E5DCC8; margin-bottom: 6px; letter-spacing: 0.01em; }
+  .gallery-header .sub { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #9F9580; }
+  .gallery-header .tag { display: inline-block; margin-top: 12px; padding: 3px 10px; background: rgba(168, 84, 97, 0.2); color: #D9A3AC; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; }
+  .spread-label { max-width: 1000px; margin: 50px auto 16px; color: #B8AC93; font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; padding-left: 8px; }
+  .spread-label .title { color: #E5DCC8; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px; text-transform: none; letter-spacing: 0; margin-left: 12px; }
+  .spread { display: flex; max-width: 1000px; margin: 0 auto; box-shadow: 0 22px 50px rgba(0,0,0,0.5), 0 8px 22px rgba(0,0,0,0.3); background: var(--paper); }
+  .page { width: 500px; height: 720px; background: var(--paper); color: var(--ink); position: relative; overflow: hidden; flex-shrink: 0; }
+  .page.left { background: linear-gradient(to right, var(--paper) 92%, var(--paper-edge) 100%); }
+  .page.right { background: linear-gradient(to left, var(--paper) 92%, var(--paper-edge) 100%); }
+  .page-inner { padding: 50px 44px 60px; height: 100%; position: relative; }
+  .page.left .page-inner { padding-right: 52px; }
+  .page.right .page-inner { padding-left: 52px; }
+  .folio { position: absolute; bottom: 30px; font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.22em; color: var(--ink-faint); }
+  .page.left .folio { left: 44px; }
+  .page.right .folio { right: 44px; }
+  .running-head { position: absolute; top: 24px; font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink-faint); }
+  .page.left .running-head { left: 44px; }
+  .page.right .running-head { right: 44px; }
+
+  .section-tag { font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; font-weight: 500; }
+  .chapter-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: var(--ink-soft); margin-bottom: 4px; }
+  .chapter-title { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 36px; line-height: 1.1; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.01em; }
+  .chapter-subtitle { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px; color: var(--ink-soft); margin-bottom: 24px; }
+  .ornament { text-align: center; color: var(--accent-soft); font-size: 13px; letter-spacing: 1.2em; margin: 16px 0; }
+  .small-heading { font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; font-weight: 500; }
+  .body-text { font-family: 'Cormorant Garamond', serif; font-size: 15.5px; line-height: 1.6; color: var(--ink); margin-bottom: 12px; }
+  .body-text-soft { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; line-height: 1.55; color: var(--ink-soft); margin-bottom: 14px; }
+  .meta-line { font-family: 'Geist', sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-faint); margin-top: 22px; padding-top: 14px; border-top: 0.5px solid var(--rule); }
+
+  .exercise-title { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 26px; margin-bottom: 14px; letter-spacing: -0.005em; }
+  .exercise-intro { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14.5px; line-height: 1.55; color: var(--ink-soft); margin-bottom: 18px; }
+  .question { margin-bottom: 14px; }
+  .question-number { font-family: 'Geist', sans-serif; font-size: 11px; color: var(--accent); font-weight: 500; letter-spacing: 0.1em; margin-bottom: 5px; }
+  .question-text { font-family: 'Cormorant Garamond', serif; font-size: 14.5px; line-height: 1.4; color: var(--ink); margin-bottom: 6px; }
+  .write-line { border-bottom: 0.5px solid var(--rule); height: 19px; margin-bottom: 4px; }
+
+  .vak-block { margin: 12px 0; padding: 11px 14px; border-left: 2px solid; }
+  .vak-block.gorsel { background: var(--vak-blue-bg); border-left-color: var(--vak-blue-line); }
+  .vak-block.isitsel { background: var(--vak-yellow-bg); border-left-color: var(--vak-yellow-line); }
+  .vak-block.dokunsal { background: var(--vak-green-bg); border-left-color: var(--vak-green-line); }
+  .vak-tag { font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 500; margin-bottom: 6px; }
+  .vak-block.gorsel .vak-tag { color: var(--vak-blue-ink); }
+  .vak-block.isitsel .vak-tag { color: var(--vak-yellow-ink); }
+  .vak-block.dokunsal .vak-tag { color: var(--vak-green-ink); }
+  .vak-text { font-family: 'Cormorant Garamond', serif; font-size: 14px; line-height: 1.55; color: var(--ink); }
+
+  .journey-block { font-family: 'Cormorant Garamond', serif; font-size: 15.5px; line-height: 1.75; color: var(--ink); }
+  .journey-block p { margin-bottom: 10px; }
+  .pause-mark { text-align: center; color: var(--accent-soft); font-size: 11px; letter-spacing: 1.2em; margin: 14px 0; }
+  .single-word { text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: var(--accent); margin: 12px 0; letter-spacing: 0.04em; }
+  .margin-note { position: absolute; right: 14px; font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); transform: rotate(180deg); writing-mode: vertical-rl; }
+  .quote-cue { text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: var(--accent); margin: 14px 12px; line-height: 1.4; }
+
+  .eyuboglu-block { margin: 12px 0; padding: 12px 16px 10px; border-left: 2px solid var(--accent); background: rgba(107, 39, 49, 0.025); position: relative; }
+  .eyuboglu-tag { font-family: 'Geist', sans-serif; font-size: 9.5px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 8px; }
+  .eyuboglu-text { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; line-height: 1.6; color: var(--ink); }
+  .eyuboglu-text p { margin-bottom: 3px; }
+  .eyuboglu-text p.gap { margin-bottom: 10px; }
+  .eyuboglu-source { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 11px; color: var(--ink-faint); text-align: right; margin-top: 8px; letter-spacing: 0.02em; }
+
+  .anchor-recall { background: var(--accent-pale); border: 0.5px solid var(--accent-soft); border-left: 2.5px solid var(--accent); padding: 12px 14px 10px; margin: 14px 0; position: relative; }
+  .anchor-recall-tag { font-family: 'Geist', sans-serif; font-size: 9.5px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 8px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .anchor-recall-tag .num { font-family: 'Cormorant Garamond', serif; font-style: italic; text-transform: none; letter-spacing: 0; font-size: 13px; color: var(--accent); }
+  .anchor-recall-cue { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14px; line-height: 1.55; color: var(--ink); margin-bottom: 8px; }
+  .anchor-recall .write-line { border-bottom: 0.5px solid var(--accent-soft); height: 17px; margin-bottom: 3px; }
+
+  .form-prompt { font-family: 'Geist', sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin: 18px 0 6px; font-weight: 500; }
+  .form-prompt:first-of-type { margin-top: 0; }
+  .form-instruction { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13.5px; color: var(--ink-soft); margin-bottom: 8px; line-height: 1.5; }
+
+  .ethics-callout { background: rgba(31, 26, 20, 0.03); border: 0.5px solid var(--ink-faint); border-left: 2px solid var(--ink-soft); padding: 11px 14px; margin: 12px 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13px; line-height: 1.55; color: var(--ink-soft); }
+  .ethics-callout strong { font-family: 'Geist', sans-serif; font-style: normal; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 4px; font-weight: 500; }
+
+  .free-write-area { border: 0.5px solid var(--rule); background: rgba(255,255,255,0.3); padding: 12px 14px; min-height: 380px; margin-top: 12px; background-image: repeating-linear-gradient(transparent, transparent 26px, rgba(191, 178, 154, 0.4) 26px, rgba(191, 178, 154, 0.4) 26.5px); }
+  .free-write-prompt { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14.5px; color: var(--ink-soft); margin-bottom: 12px; text-align: center; border-bottom: 0.5px solid var(--rule); padding-bottom: 10px; }
+
+  /* Özel: Hamlet seyirci konumu */
+  .observer-block {
+    background: rgba(168, 84, 97, 0.06);
+    border-top: 1px dashed var(--accent-soft);
+    border-bottom: 1px dashed var(--accent-soft);
+    padding: 14px 16px;
+    margin: 16px -8px;
+  }
+  .observer-block-tag {
+    font-family: 'Geist', sans-serif;
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .observer-block-prompt {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14.5px;
+    color: var(--ink);
+    line-height: 1.55;
+  }
+
+  .next-note { text-align: center; font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); padding: 8px 12px; border-top: 0.5px solid var(--accent-soft); border-bottom: 0.5px solid var(--accent-soft); margin-top: 14px; }
+  .next-note .arrow { font-family: 'Cormorant Garamond', serif; font-style: italic; text-transform: none; letter-spacing: 0; }
+
+  .commentary { max-width: 1000px; margin: 30px auto 0; color: #B8AC93; font-family: 'Geist', sans-serif; font-size: 13px; line-height: 1.65; padding: 24px 32px; background: rgba(255,255,255,0.03); border-left: 2px solid #6B2731; }
+  .commentary strong { color: #E5DCC8; font-weight: 500; }
+  .commentary em { font-family: 'Cormorant Garamond', serif; color: #DBC8AA; font-style: italic; font-size: 14.5px; }
+</style>
+</head>
+<body>
+
+<div class="gallery-header">
+  <h1>Inside The Hamlet — Bölüm X</h1>
+  <div class="sub">Oyun İçinde Oyun · 10 sayfa · 5 spread · tip B geçiş</div>
+  <span class="tag">Hamlet seyirci konumunda · özel observer-block</span>
+</div>
+
+<!-- ============================ SPREAD 1 ============================ -->
+<div class="spread-label">SPREAD 1 / 5<span class="title">Bölüm girişi · ne yapacaksın · plan teyidi</span></div>
+<div class="spread">
+
+  <!-- Sayfa 164 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">üçüncü kısım · yolculuk</div>
+      <div class="section-tag">Bölüm on</div>
+      <div class="chapter-num">X</div>
+      <div class="chapter-title">Oyun İçinde Oyun</div>
+      <div class="chapter-subtitle">Tuzak · seyirci · doğrulama</div>
+
+      <div class="ornament">∙ ∙ ∙</div>
+
+      <div class="small-heading">Bu bölümde şu an ne oluyor?</div>
+      <p class="body-text">
+        Bölüm IX'un sabahından bir gün geçti. Akşam. <em>Bu akşam oyun oynanacak.</em> Bölüm VIII'in sonunda kurduğun planı uygulamanın günü.
+      </p>
+      <p class="body-text-soft" style="margin-bottom: 12px;">Bu bölümde Hamlet alışılmış konumundan çıkıyor — seyirci olacak. Sahneyi izleyen, yüzleri okuyan, vicdan kıstıran.</p>
+
+      <p class="body-text" style="font-size: 14px; color: var(--ink-soft);">
+        Bu Hamlet'in III.2 sahnesidir — oyuncularla son konuşma, oyunun başlaması, Claudius'un patlaması, "Gonzago Cinayeti"nin Danimarka tarihinde nasıl yankılandığı. Hamlet'in <em>doğrulama</em> bölümüdür: Hayalet doğru söyledi mi?
+      </p>
+      <p class="body-text" style="font-size: 14px; color: var(--ink-soft);">
+        Bölüm sonunda annenin haberi geliyor — bir sonraki bölümün (XI) kapısı. Bu bölüm Hamlet'in <em>karara giden son nefesi</em>: oyun bitti, doğrulama tamam, şimdi anneye.
+      </p>
+    </div>
+    <div class="folio">164</div>
+  </div>
+
+  <!-- Sayfa 165 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">üçüncü kısım · yolculuk</div>
+
+      <div class="small-heading" style="margin-top: 4px;">Bu bölümde ne yapacaksın</div>
+      <p class="body-text" style="font-size: 14px;">
+        Tip B Geçiş. Çapa kaydı yok. Bu bölümde özel bir yapı var: Hamlet seyirci konumunda olduğu için sayfada <em>"şimdi bak"</em> blokları var — Claudius'a, anneye, Ophelia'ya.
+      </p>
+      <p class="body-text" style="font-size: 14px;">
+        Önce kısa hazırlık. Sonra yolculuk: oyuncularla son talimat, Horatio'ya yemin, salon doluyor, oyun başlıyor.
+      </p>
+      <p class="body-text" style="font-size: 14px;">
+        Sonra zirve: Claudius'un patlaması. Doğrulama. <em>"Hayalet doğru söylemişti."</em>
+      </p>
+      <p class="body-text" style="font-size: 14px;">
+        Anchor-recall: oyun sırasında № 1 ve № 2'yi yokluyoruz — sahnede gördüğün cinayet onları nasıl etkiliyor.
+      </p>
+      <p class="body-text" style="font-size: 14px;">
+        En sonunda annenin haberi + karakter sesi: oyun bittikten sonra, anneye gitmeden önce odanda son nefes.
+      </p>
+
+      <div class="meta-line">çalışma süresi yaklaşık 30–35 dakika</div>
+    </div>
+    <div class="folio">165</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 2 ============================ -->
+<div class="spread-label">SPREAD 2 / 5<span class="title">Yolculuk · oyuncularla son talimat · Horatio'ya yemin</span></div>
+<div class="spread">
+
+  <!-- Sayfa 166 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · oyuncular</div>
+      <div class="section-tag">Bölüm X · sahne 1</div>
+
+      <div class="journey-block">
+        <p>Akşam. Sarayda bir odada. Oyuncularla yalnızsın.</p>
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 14.5px;">Onlara sahnede nasıl oynayacaklarını anlatıyorsun — sözlerin akışından, abartmamaktan, ama kuru kalmamaktan.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 14px; text-align: center;">Bu oyuncularla konuşurken bedenin nasıl?</p>
+        <p style="font-style: italic; color: var(--ink-soft); font-size: 13.5px; text-align: center; margin-top: 4px;">Wittenberg'den önce de tanıdığın oyuncular —<br>burada sen <em>kendinsin</em>.</p>
+
+        <div class="pause-mark">∙ ∙ ∙</div>
+
+        <p style="font-size: 14.5px;">Sonra Horatio geliyor. Onu yanına çekiyorsun. Sesini alçaltıyorsun.</p>
+      </div>
+
+      <div class="eyuboglu-block" style="background: transparent;">
+        <div class="eyuboglu-tag">Hamlet · Horatio'ya, fısıltıyla</div>
+        <div class="eyuboglu-text" style="font-size: 14.5px;">
+          <p>Bu akşam kralın önünde bir sahne oynanacak.</p>
+          <p class="gap">Bir tanesi babamın ölümüne çok benziyor.</p>
+          <p>Sana yalvarıyorum, gözünü amcamdan ayırma.</p>
+          <p>Bir suç gizliyse içinde, yüzünden okunur.</p>
+        </div>
+      </div>
+
+      <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 13.5px;">Horatio'ya bunu söylerken<br>ne hissediyorsun?</p>
+    </div>
+    <div class="folio">166</div>
+  </div>
+
+  <!-- Sayfa 167 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · salon doluyor</div>
+
+      <div class="eyuboglu-block" style="margin-top: 8px;">
+        <div class="eyuboglu-tag">Horatio</div>
+        <div class="eyuboglu-text" style="font-size: 14.5px;">
+          <p>Bana güvenebilirsin, efendimiz.</p>
+        </div>
+      </div>
+
+      <p style="font-size: 14.5px; font-style: italic; color: var(--ink-soft);">Boru sesleri. Saray geliyor.</p>
+
+      <div class="vak-block gorsel">
+        <div class="vak-tag">Görsel</div>
+        <div class="vak-text">
+          Salon dolmaya başlıyor. Kraliyet sandalyeleri. Mumlar. Kadehler. Saraylılar yer alıyor.
+          <br><br>Claudius giriyor. Annen yanında. Polonius arkalarında. Ophelia da.
+        </div>
+      </div>
+
+      <div class="vak-block isitsel">
+        <div class="vak-tag">İşitsel</div>
+        <div class="vak-text">
+          Konuşmalar. Kahkahalar. Müzisyenler hazırlanıyor — yayların telde gerilmesi.
+        </div>
+      </div>
+
+      <div class="vak-block dokunsal">
+        <div class="vak-tag">Dokunsal</div>
+        <div class="vak-text">
+          Bedenin nasıl şu an? Kalbin nasıl atıyor?
+        </div>
+      </div>
+
+      <div class="margin-note" style="bottom: 80px;">acele etme</div>
+    </div>
+    <div class="folio">167</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 3 ============================ -->
+<div class="spread-label">SPREAD 3 / 5<span class="title">Oyun başlıyor · Hamlet seyirci · "şimdi bak" blokları</span></div>
+<div class="spread">
+
+  <!-- Sayfa 168 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · sahnede</div>
+      <div class="section-tag">Bölüm X · sahne 2</div>
+
+      <div class="journey-block" style="font-size: 15px;">
+        <p>Müzik başlıyor.</p>
+        <p>Sahnede oyuncular.</p>
+      </div>
+
+      <div class="pause-mark">∙ ∙ ∙</div>
+
+      <p style="font-size: 14.5px;">Bir kral ve bir kraliçe — sevgi içinde. Birbirine sarılıyorlar. Kraliçe gidiyor.</p>
+      <p style="font-size: 14.5px;">Kral bahçesinde uyuyor.</p>
+
+      <div class="pause-mark">∙ ∙ ∙</div>
+
+      <p style="font-size: 14.5px;">Bir adam giriyor — kralın kardeşi. Kralın kulağına bir şişeden bir şey damlatıyor.</p>
+
+      <div class="single-word" style="margin: 14px 0; font-size: 18px;">Kral ölüyor.</div>
+
+      <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 13.5px;">Bu sahneyi izlerken<br>bedeninde ne oluyor?</p>
+
+      <div class="anchor-recall" style="margin-top: 14px;">
+        <div class="anchor-recall-tag">Yokla şimdi<span class="num">№ 1 — Wittenberg, sabah</span></div>
+        <div class="anchor-recall-cue">
+          Sahnede babanın ölümünü <em>yeniden gördüğünde</em>, Wittenberg'deki o yer şimdi nasıl?
+        </div>
+        <div class="write-line"></div>
+      </div>
+    </div>
+    <div class="folio">168</div>
+  </div>
+
+  <!-- Sayfa 169 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · "claudius'a bak"</div>
+
+      <div class="observer-block" style="margin-top: 6px;">
+        <div class="observer-block-tag">Şimdi bak — Claudius'a</div>
+        <div class="observer-block-prompt">
+          Bu kritik anda — sahnede kralın öldüğü an —<br><em>Claudius'un yüzü nasıl?</em>
+        </div>
+      </div>
+
+      <div class="pause-mark">∙ ∙ ∙</div>
+
+      <p style="font-size: 14.5px;">Sahnede kralı öldüren adam, kraliçeyi baştan çıkarmaya başlıyor. Onu kucaklıyor. Kraliçe direniyor önce. Sonra teslim oluyor.</p>
+
+      <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 13.5px; margin-top: 10px;">Bu görüntüyü izlerken ne hissediyorsun?</p>
+
+      <div class="observer-block">
+        <div class="observer-block-tag">Şimdi bak — annene</div>
+        <div class="observer-block-prompt">
+          Annenin yüzünde ne var?<br><em>Onun bu görüntüye bakışı nasıl?</em>
+        </div>
+      </div>
+
+      <div class="anchor-recall" style="margin-top: 12px;">
+        <div class="anchor-recall-tag">Yokla<span class="num">№ 2 — saray salonu</span></div>
+        <div class="anchor-recall-cue">
+          Sahnede kraliçenin "teslim olması" — <em>"Kadın zaaf demekmiş meğer"</em> yerinde şimdi ne var?
+        </div>
+        <div class="write-line"></div>
+      </div>
+    </div>
+    <div class="folio">169</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 4 ============================ -->
+<div class="spread-label">SPREAD 4 / 5<span class="title">Claudius'un patlaması · doğrulama</span></div>
+<div class="spread">
+
+  <!-- Sayfa 170 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · "ışık verin!"</div>
+      <div class="section-tag">Bölüm X · sahne 3</div>
+
+      <div class="journey-block" style="font-size: 15.5px;">
+        <p>Claudius ayağa kalkıyor.</p>
+        <p style="font-style: italic; color: var(--accent);">Yüzü değişmiş.</p>
+      </div>
+
+      <div class="eyuboglu-block">
+        <div class="eyuboglu-tag">Claudius · sert sesle</div>
+        <div class="eyuboglu-text">
+          <p>Işık verin! Çekilelim!</p>
+        </div>
+      </div>
+
+      <div class="eyuboglu-block">
+        <div class="eyuboglu-tag">Polonius · bağırarak</div>
+        <div class="eyuboglu-text">
+          <p>Oyunu durdurun! Işık verin, ışık!</p>
+        </div>
+      </div>
+
+      <p style="font-size: 14.5px; font-style: italic; color: var(--ink-soft);">Salon karışıyor. Saray dağılıyor. Mumlar taşınıyor. Müzik kesiliyor.</p>
+
+      <div class="pause-mark">∙ ∙ ∙</div>
+
+      <p style="text-align: center; font-style: italic; color: var(--accent); font-size: 15px;">Sen kalıyorsun.<br>Horatio yanında.</p>
+
+      <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 13.5px; margin-top: 8px;">İçinde bir sevinç.<br><em>Hayalet doğru söylemişti.</em></p>
+    </div>
+    <div class="folio">170</div>
+  </div>
+
+  <!-- Sayfa 171 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">yolculuk · doğrulama · annenin haberi</div>
+
+      <div class="eyuboglu-block" style="margin-top: 6px;">
+        <div class="eyuboglu-tag">Horatio</div>
+        <div class="eyuboglu-text">
+          <p>Çok iyi gördüm, efendimiz.</p>
+        </div>
+      </div>
+
+      <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 13.5px;">Şu an ne hissediyorsun?</p>
+
+      <div class="anchor-recall" style="margin-top: 14px;">
+        <div class="anchor-recall-tag">Birlikte yokla<span class="num">№ 1 ve № 2</span></div>
+        <div class="anchor-recall-cue">
+          Wittenberg'de aldığın haberden sonra bedeninde bulduğun yer ve saray salonunda monologun gittiği yer — şimdi orada ne oluyor? Aynı yerde mi, ayrılmışlar mı?
+        </div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="pause-mark">∙ ∙ ∙</div>
+
+      <p style="font-size: 14px;">Bir hizmetkâr geliyor.</p>
+
+      <div class="eyuboglu-block">
+        <div class="eyuboglu-tag">Hizmetkâr</div>
+        <div class="eyuboglu-text" style="font-size: 14px;">
+          <p>Efendimiz, anneniz sizi odasına çağırıyor.</p>
+          <p>Acele konuşmak istiyor.</p>
+        </div>
+      </div>
+
+      <p style="text-align: center; font-style: italic; color: var(--ink-soft); font-size: 13.5px;">Bu haberi aldığında<br>ne hissediyorsun?</p>
+    </div>
+    <div class="folio">171</div>
+  </div>
+</div>
+
+<!-- ============================ SPREAD 5 ============================ -->
+<div class="spread-label">SPREAD 5 / 5<span class="title">Anneye gitmeden önce · iç söz · karakter sesi</span></div>
+<div class="spread">
+
+  <!-- Sayfa 172 -->
+  <div class="page left">
+    <div class="page-inner">
+      <div class="running-head">"hançer gibi konuşayım"</div>
+
+      <div class="exercise-intro" style="margin-top: 6px; margin-bottom: 14px;">
+        Annene gitmeden önce — odanda, son bir nefes. İçinden geçirdiğin söz:
+      </div>
+
+      <div class="eyuboglu-block" style="background: transparent; margin-top: 6px;">
+        <div class="eyuboglu-tag">Hamlet · iç ses · kendine</div>
+        <div class="eyuboglu-text" style="font-size: 15.5px;">
+          <p>Bırak sert olmasına sert,</p>
+          <p>ama insan kalayım.</p>
+          <p class="gap">Hançer gibi konuşayım,</p>
+          <p>hançer olmadan.</p>
+        </div>
+        <div class="eyuboglu-source">Hamlet, III.2 sonu · çev. Eyüboğlu</div>
+      </div>
+
+      <div class="form-prompt" style="margin-top: 18px;">Bu sözü kendine söylediğinde bedeninde ne oluyor?</div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+
+      <div class="form-prompt">Hangi <em>hançer</em>i bırakman gerekiyor?</div>
+      <div class="form-instruction">Bir kelime, bir görüntü.</div>
+      <div class="write-line"></div>
+
+      <p style="font-size: 13.5px; font-style: italic; color: var(--ink-soft); text-align: center; margin-top: 16px;">Annene gidiyorsun.</p>
+    </div>
+    <div class="folio">172</div>
+  </div>
+
+  <!-- Sayfa 173 -->
+  <div class="page right">
+    <div class="page-inner">
+      <div class="running-head">karakter sesi · oyun bittikten sonra</div>
+      <div class="section-tag">Yazma · imgesel</div>
+      <div class="exercise-title" style="font-size: 24px;">Salon dağıldıktan sonra</div>
+
+      <p class="body-text" style="font-size: 14px;">
+        Salon boşaldı. Mumlar taşındı. Müzik kesildi. Sen ortadasın — Horatio gitti. Saray gitti. Oyuncular dağıldı. Bir an, bir başına. Annenin haberi henüz gelmedi.
+      </p>
+      <p class="body-text" style="font-size: 14px;">
+        O kısacık an — anneye gitmeden, odana çekilmeden, kararını koymadan önce. Bedenin ne diyor sana?
+      </p>
+
+      <div class="ethics-callout" style="margin-top: 12px;">
+        <strong>İlke</strong>
+        Bu sayfa Hamlet'in <em>doğrulanmış</em> hâlinin son nefesi. Birinci tekil, onun zihninden. Bir cümle, bir kelime, bir karar.
+      </div>
+
+      <div class="free-write-prompt" style="margin-top: 12px;">
+        <em>"Salon boşaldı. Şimdi…"</em>
+        <div style="font-family: 'Geist', sans-serif; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-faint); margin-top: 8px; font-style: normal;">Hamlet, oyun sonrası · birinci tekil</div>
+      </div>
+
+      <div class="free-write-area"></div>
+
+      <div class="next-note">
+        <span class="arrow">→</span> Devam: Bölüm XI · Polonius'un Ölümü ve Anne Sahnesi · sayfa 174
+      </div>
+    </div>
+    <div class="folio">173</div>
+  </div>
+</div>
+
+<div class="commentary">
+  <strong>Bölüm X — tip B geçiş · seyirci konumu</strong> · 10 sayfa · 5 spread.<br><br>
+  Bu bölümün dramaturjik özelliği: Hamlet alışılmış aktör konumundan çıkıyor, <em>seyirci</em> oluyor. Sahnede babanın ölümünü yeniden görüyor, Claudius'un yüzünü okuyor, annenin teslim olmasını izliyor. Bu sayfalarda metin onun gözlerini başka yüzlere yönlendiriyor.<br><br>
+  <strong>Yeni tipografik eleman: <em>.observer-block</em></strong> — "Şimdi bak —" blokları. Kesik çizgili kenarlık (kesintili dikkat), hafif accent-soft arka plan, küçük tag, italik soru. Bu blok Hamlet'in dikkat akışını sayfada görünür kılıyor: önce Claudius'a, sonra anneye. Tipografik olarak <em>.pov-shift</em>'ten farklı — burada bakış değişmiyor, dikkat değişiyor.<br><br>
+  <strong>Anchor-recall yerleşimi:</strong> Bu bölümde anchor-recall <em>üç</em> ayrı yerde — kralın ölümünü gördüğünde (№ 1), kraliçenin teslim olmasını gördüğünde (№ 2), ve oyun bittikten sonra (№ 1 ve № 2 birlikte). İlk iki yokla <em>tetikleyici</em>: oyun çapaları zaten sarsıyor; bilinçli yokla onları kayıt altına alıyor. Üçüncü yokla <em>doğrulayıcı</em>: oyun bitti, çapalar şimdi nasıl?<br><br>
+  Karakter sesi sayfası "Salon boşaldıktan sonra" — Hamlet'in <em>doğrulanmış</em> hâlinin son nefesi. Bölüm XI'in (anne sahnesi, Tip C) eşiği. Bu sayfada yazılan cümle, sonraki bölümde Hamlet'in annesini sarsalama anına hangi ruhla gittiğini belirleyecek.
+</div>
+
+</body>
+</html>
