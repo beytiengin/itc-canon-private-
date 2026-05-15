@@ -133,7 +133,7 @@ Hangi format olursa olsun aşağıdaki ilkeler değişmez. Bunlar ITC Ekosistem 
 
 - **FKA eş eğitmen pratiği (Karar 12):** Filiz Kaya Ataklı eş kurucu ve eş eğitmendir. A2 ve B1 atölyeleri her iki kurucunun fiziksel mevcudiyetiyle verilir; diğer formatlarda eş eğitmen rolü açık karar (§8).
 
-- **Karakter spektrumu sınırı yok (Karar 19 B):** ITC karakter konusunda sınır koymaz; etik filtre Spine §3.3 Travma Matrisi (8×4) ve Yıldız Profil Eşleşme üzerinden işler, karakter kimliği üzerinden değil. Tarihsel karanlık figürler (Eva Braun, Heidrich gibi) ITC çerçevesinde çalışılabilir; etik koruma içerikle (travma yoğunluğu) ve oyuncuyla (psikolojik puan eşiği) belirlenir. **Filiz klinik onayı bekleniyor — provisional.**
+- **Karakter spektrumu sınırı yok (Karar 19 B):** ITC karakter konusunda sınır koymaz; etik filtre Spine §3.2 Travma Matrisi (8×4) ve §3.3 Sahne-Level Etik Uyarı üzerinden işler, karakter kimliği üzerinden değil. Tarihsel karanlık figürler (Eva Braun, Heidrich gibi) ITC çerçevesinde çalışılabilir; etik koruma **sahne içeriğiyle** (travma yoğunluğu ve kategorisi) belirlenir, oyuncu profili üzerinden değil. (v1.9 — Karar 21 sonrası: eski "psikolojik puan eşiği" gate mekanizması kaldırıldı; yoğunluk 2-3 sahneler sonrası §3.4 Topraklanma Protokolü otomatik tetiklenir.) **Filiz klinik onayı bekleniyor — provisional.**
 
 - **Kendi başına değer testi:** Bir atölye tek başına anlamlı eğitim verir mi? Vermiyorsa kendi başına satılmaz; daha geniş bir formatın parçası olarak konumlanır.
 

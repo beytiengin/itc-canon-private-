@@ -48,7 +48,7 @@ Bu klasördeki kayıtlar üç ana kategoriye yayılır:
 - **Tarihsel / dramatik:** [DOLDUR: ek örnekler]
 - **Kurgu:** Hamlet, Macbeth, Willy Loman, Biff Loman (ITC kanonik karakterleri) + diğer kurgusal roller
 
-**Kanon ilkesi:** ITC karakter konusunda sınır koymaz. Etik filtre §3.3 Travma Matrisi (8×4) ve Yıldız Profil Eşleşme üzerinden işler, karakter kimliği üzerinden değil. (**Filiz klinik onayı bekleniyor — Karar 19 B provisional.**)
+**Kanon ilkesi:** ITC karakter konusunda sınır koymaz. Etik filtre §3.2 Travma Matrisi (8×4) ve §3.3 Sahne-Level Etik Uyarı üzerinden işler, karakter kimliği üzerinden değil. Etik koruma sahne içeriğiyle (travma yoğunluğu ve kategorisi) belirlenir; yoğunluk 2-3 sahneler sonrası §3.4 Topraklanma Protokolü otomatik tetiklenir. (v1.9 — Karar 21 sonrası: eski "Yıldız Profil Eşleşme" gate mekanizması kaldırıldı.) (**Filiz klinik onayı bekleniyor — Karar 19 B provisional.**)
 
 ## Planlanan Materyaller (iskelet)
 
@@ -70,7 +70,7 @@ Bu klasördeki kayıtlar üç ana kategoriye yayılır:
 
 - **Karar 19 paketi:** `kararlar/2026-05-13-workshop-sonuc-paketi/03-karar-19-yolculuk-suresi-arsiv.md`
 - **Ana Spine §3.16:** Yolculuk Geometrisi (Karar 19 A — 45-60 dk süre kanonu)
-- **Ana Spine §3.3:** Travma Matrisi 8×4 + Yıldız Profil Eşleşme (Karar 19 B — etik filtre çerçevesi)
+- **Ana Spine §3.2 + §3.3:** Travma Matrisi 8×4 + Sahne-Level Etik Uyarı (Karar 19 B — etik filtre çerçevesi; v1.9/Karar 21 sonrası Yıldız Profil Eşleşme kaldırıldı, sahne-içerik temelli koruma)
 - **Workshop Spine §2:** Tasarım İlkeleri (Karar 19 B karakter spektrumu maddesi)
 - **Workshop Spine §8:** Açık Kararlar — Eğitmen ve klinik altyapı (Karar 19 C ses kayıtları onay formu maddesi)
 - **Berlin Eylül 2026 pilotu (Karar 18):** `workshop/kurumsal-pilot-paketleri/berlin-eylul-2026/` (yeni kayıtlar için kaynak pilot)

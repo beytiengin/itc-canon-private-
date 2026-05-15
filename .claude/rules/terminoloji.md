@@ -32,7 +32,7 @@ Tüm ekosistemde bu terimler tutarlı kullanılır. Yeni terim eklenirken önce 
 
 - **İçsel Timeline · Dönüşüm Haritası**
 - **Yaratıcı Boşluk · Zihinsel Boşluk**
-- **Yıldız Oyuncu Matrisi**
+- **Yıldız Oyuncu Matrisi** — 6 boyutlu pedagojik öz-farkındalık haritası (Modül I, Kalibrasyon). Karaktere yaklaşım önerileri üretir (VAK örüntüsünde, `yildizYaklasimi`); **travma erişimini etkilemez** (Karar 21, v1.9). Boyutlar: Teknik · Psikolojik · Mesleki · Yaratıcı · Entelektüel · İlişkisel.
 
 ## Kalibrasyon
 

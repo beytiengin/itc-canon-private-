@@ -1,7 +1,27 @@
 # ITC EKOSİSTEM — SPINE
 
 **Dört projenin paylaştığı omurga**
-**v1.8 · 13 Mayıs 2026 · Beyti Engin & Filiz Kaya Ataklı — Eş Kurucular ve Eş Eğitmenler · Claude (operasyonel eş yazım)**
+**v1.9 · 15 Mayıs 2026 · Beyti Engin & Filiz Kaya Ataklı — Eş Kurucular ve Eş Eğitmenler · Claude (operasyonel eş yazım)**
+
+---
+
+## v1.9'da neler değişti? (Yıldız–Travma Ayrılması — Karar 21)
+
+15 Mayıs 2026 oturumunda **Yıldız Oyuncu Matrisi ile Travma Sistemi arasındaki bağ tamamen koparıldı** (Karar 21). Mevcut "Yıldız Profil Eşleşme Matrisi" (v1.0'dan beri kanonik FKA klinik tasarımı) geri çekildi; yerine üç bağımsız sistem konuldu.
+
+- **§3.3 yeniden tanımlandı** — "Yıldız Profil Eşleşme Matrisi" alt-başlığı kaldırıldı. Yeni başlık: "Sahne-Level Etik Uyarı". Travma Matrisi 8×4 sahne-level uyarı sistemi olarak ifade edildi (gate değil); psikolojik puan eşikleri silindi.
+- **§3.4 Topraklanma Protokolü** — tetikleyici **yoğunluk 2 (Tanıklık) ve 3 (İcra) sahneler sonrası otomatik** olarak güncellendi (kategori- ve profil-bağımsız).
+- **§3.9 Yıldız Oyuncu** — psikolojik puan ile travma erişim eşiği atıfı kaldırıldı; pedagojik vurgu güçlendirildi; **"Karaktere Yaklaşım Katmanı"** yeni alt-katman olarak eklendi (VAK'ın `vakDili` örüntüsünde, 6 eksen için karaktere yaklaşım önerileri).
+- **§1 ekosistem haritası** eş kurucu paragrafından "Yıldız Profil Eşleşme §3.3" atıfı kaldırıldı.
+- **§3.12 Dijital Araç Sınırı tablosunda** Yıldız Oyuncu Testi'nin gerekçesi güncellendi ("travma erişim eşiği üreten algoritma" yerine "6 boyutlu pedagojik profil hesaplaması + karaktere yaklaşım katmanı").
+- **§3.13 Transmisyon Mimarisi** Modül I birlikte yorumlama paragrafı — psikolojik puan-travma erişim eşiği atıfı kaldırıldı.
+- **§3.17 Tarihsel Çizgi** — Filiz'in klinik altyapı listesinden "Yıldız Profil Eşleşme" çıkarıldı (artık kanon değil; tarihsel kayıt için Karar 21'e atıf).
+- **Etik Çerçeve** (`.claude/rules/etik-cerceve.md`) paralel güncellendi: §3 (Yıldız Profil Eşleşme) içeriği tarihsel rehber notuna dönüştürüldü; §2 (Travma Matrisi uyarı sistemi) ve §4 (Topraklanma yoğunluk-tetikli) yeniden ifade edildi.
+- **App tarafı uygulama** ayrı bir iş paketi olarak kuyrukta (`travma.js` refactor + UX metinleri + yeni `yildizYaklasimi` katmanı). Detay arşiv: `kararlar/2026-05-15-yildiz-travma-ayrismasi/04-app-degisiklik-listesi.md`.
+
+Filiz Kaya Ataklı'nın 2005'ten beri klinik tasarımı olan Yıldız Profil Eşleşme Matrisi'nin geri çekilmesi **kendi eş kurucu onayıyla** yapılmıştır. Karar Substitution Yasağı (§3.1) ile yapısal uyum gerekçesine dayanır.
+
+v1.8'in geri kalan tüm içeriği aynen korundu.
 
 ---
 
@@ -64,7 +84,7 @@ Detaylı sürüm geçmişi §6'da.
 
 ## 1 · Ekosistemin Haritası
 
-> **Eş Kurucular ve Eş Eğitmenler (Karar 16, v1.7):** ITC, Beyti Engin ve Filiz Kaya Ataklı tarafından 2005'ten bu yana birlikte geliştirilen bir yöntemdir. Her iki kurucu da metodolojinin eşit yaratıcı ortağıdır; Filiz'in klinik psikoloji çerçevesi yöntemin etik omurgasının (Travma Matrisi §3.2, Yıldız Profil Eşleşme §3.3, Topraklanma Protokolü §3.4, Substitution Yasağı §3.1) ayrılmaz parçasıdır. Dış iletişimde tam unvan: *Filiz Kaya Ataklı (Klinik Psikolog) — Eş Kurucu ve Eş Eğitmen* / *Beyti Engin — Eş Kurucu ve Eş Eğitmen*. Kısa yan yana referans: *Beyti Engin & Filiz Kaya Ataklı*.
+> **Eş Kurucular ve Eş Eğitmenler (Karar 16, v1.7):** ITC, Beyti Engin ve Filiz Kaya Ataklı tarafından 2005'ten bu yana birlikte geliştirilen bir yöntemdir. Her iki kurucu da metodolojinin eşit yaratıcı ortağıdır; Filiz'in klinik psikoloji çerçevesi yöntemin etik omurgasının (Travma Matrisi §3.2, Sahne-Level Etik Uyarı §3.3, Topraklanma Protokolü §3.4, Substitution Yasağı §3.1) ayrılmaz parçasıdır. Dış iletişimde tam unvan: *Filiz Kaya Ataklı (Klinik Psikolog) — Eş Kurucu ve Eş Eğitmen* / *Beyti Engin — Eş Kurucu ve Eş Eğitmen*. Kısa yan yana referans: *Beyti Engin & Filiz Kaya Ataklı*.
 >
 > **Sıralama Kuralı (Karar 20, v1.8):** Tüm ekosistem dokümantasyonunda ve dış iletişimde isim sıralaması her zaman **Beyti Engin önce, Filiz Kaya Ataklı sonra**. Sıralama hiyerarşi değil, kronolojik ve kavramsal kuruluş ağırlığıdır (BE pedagojik omurga mimarı, FKA klinik altyapı yaratıcısı — simetrik durur). Tarihsel kanıt alıntıları (Karakter Tasarım 2021 kapağı, Berlin Chubbuck Studio sitesi eski formülasyonu) bu kuralın istisnası — retroaktif değiştirilmez. Detay §3.17.
 
@@ -182,18 +202,29 @@ Dört projede de aynı sınıflandırma kullanılır.
 
 "0 Yok" seviyesi etik altyapının önemli bir parçası — bazı antrenmanların travmatik içermediğini açıkça işaretlemek için.
 
-### 3.3 · Yıldız Profil Eşleşme Matrisi
+### 3.3 · Sahne-Level Etik Uyarı (REVİZE — v1.9, Karar 21)
 
-Psikolojik puan eşikleri:
-- ≥5: Tüm seviyeler açık
-- 3–5: Uyarılı
-- <3: "Hazır olduğunda" — kilit değil bekleyiş
+§3.2'nin sınıflandırması (8 kategori × 4 yoğunluk) sahnelere atanır ve oyuncuya **uyarı** olarak gösterilir. Bu sistem oyuncu profilini (Yıldız Oyuncu §3.9) hesaba katmaz — travma sınıflandırması karakter verisinden çıkarılır, oyuncu verisinden değil. Substitution Yasağı (§3.1) ile yapısal uyum içindedir.
 
-**Travma Matrisi'nin (8×4) §3.15 Karakter Haritası Taksonomisi (yolculuk × çapa × tip) ile karışmadığına dikkat:** Birincisi sahnedeki içeriğin etik yoğunluğunu, ikincisi yolculuk içindeki yapısal konumu sınıflar. Eğitmen sertifikasyonunda (E1) bu ayrımı açıklayabilmek bir kriterdir.
+**Uyarı sistemi**
+
+- Her karakter sahnesi, içeriğine göre 0-N kategoride ve her kategori için bir yoğunluk değerinde işaretlenir.
+- Oyuncuya sahne öncesinde bu işaretler kategori adlarıyla **gösterilir** (örn. "bu sahne: Şiddet [yoğunluk 2], Kayıp [yoğunluk 1]").
+- Hiçbir sahne oyuncu profili nedeniyle kilitlenmez veya engellenmez.
+
+**Topraklanma tetikleyicisi (§3.4 ile bağ)**
+
+- **Yoğunluk 2 (Tanıklık) ve 3 (İcra)** sahneler sonrası §3.4 Topraklanma Protokolü otomatik önerilir.
+- **Yoğunluk 0 (Yok) ve 1 (Atıf)** sahneler sonrası otomatik tetiklenmez (oyuncu isterse her zaman manuel başlatabilir).
+- Tetikleme kategoriden bağımsızdır — yoğunluk eşiğini geçen her sahne sonrası protokol çağrılır.
+
+**Karakter Haritası Taksonomisi ile karışmama:** Travma Matrisi (8×4) §3.15 Karakter Haritası Taksonomisi (yolculuk × çapa × tip) ile karışmamalıdır. Birincisi sahnedeki içeriğin etik yoğunluğunu, ikincisi yolculuk içindeki yapısal konumu sınıflar. Eğitmen sertifikasyonunda (E1) bu ayrımı açıklayabilmek bir kriterdir.
+
+**Karar 21 öncesi (tarihsel kayıt):** v1.0–v1.8 arası bu alt-bölüm "Yıldız Profil Eşleşme Matrisi" olarak Filiz Kaya Ataklı'nın klinik tasarımı altında oyuncu psikolojik puanı ile travma erişim eşiğini bağlıyordu (psikolojik puan eşikleri ≥5 / 3–5 / <3). Bu yapı Filiz'in eş kurucu onayıyla Karar 21'de (15 Mayıs 2026) geri çekildi; gerekçe Substitution Yasağı (§3.1) ile yapısal uyumdur. Detay arşiv: `kararlar/2026-05-15-yildiz-travma-ayrismasi/`.
 
 ### 3.4 · Topraklanma Protokolü (6 adım)
 
-Method Book'taki jenerik form. Workbook s.288-289'da Hamlet'e özel adaptasyon var. App'te Modül III'e otomatik overlay olarak gelecek (ardışık 2 seviye 2 antrenman sonrası).
+Method Book'taki jenerik form. Workbook s.288-289'da Hamlet'e özel adaptasyon var. App'te §3.3 uyarı sistemi tetikleyicisiyle otomatik overlay olarak gelir: **yoğunluk 2 (Tanıklık) veya 3 (İcra) sahneler sonrası protokol önerilir** (kategori- ve oyuncu profili-bağımsız, v1.9 — Karar 21).
 
 1. Nefes (4-4-6, üç tekrar)
 2. Bedene dönüş (eller, yüz)
@@ -254,8 +285,11 @@ Modül I (Kalibrasyon) üç bağımsız test üzerine kurulur. Her test farklı 
 **Yıldız Oyuncu — 6 Boyut Profili**
 - Soru sayısı: 37 · Süre: ~7 dakika
 - Ölçtüğü: 6 boyut — Teknik · Psikolojik · Mesleki · Yaratıcı · Entelektüel · İlişkisel
-- Sonuç: Her boyutta puan, "psikolojik" boyutu travma erişim eşiğini belirler (§3.3)
-- Pedagojik kullanımı: Oyuncunun "yıldız" konumuna mesafesi gösterir; periyodik tekrar gerekir.
+- Sonuç: Her boyutta puan; oyuncunun "yıldız" konumuna mesafesini gösteren 6 boyutlu öz-farkındalık haritası
+- Pedagojik kullanımı: (1) Periyodik tekrar — oyuncunun gelişim rotası takibi (Parlayan / Gelişim / Plan bölgeleri). (2) **Karaktere yaklaşım katmanı** — her eksen için çalışma biçimi önerileri üretir (alt-katman aşağıda; VAK'ın `vakDili` örüntüsünde).
+- **Travma erişimini etkilemez** (v1.9 — Karar 21). Klinik güvenlik sahne-level çalışır (§3.3 ve §3.4 oyuncu profilinden bağımsız).
+
+> **Karaktere Yaklaşım Katmanı (Karar 21, v1.9):** Yıldız 6 boyutunun her biri için oyuncuya, karakter çalışmasında o eksenin pedagojik kullanımı önerilir. Güçlü eksenler "açık kapı" olarak kullanılır (örn. teknik güçlü ise → karakterin bedensel detaylarıyla başla; entelektüel güçlü ise → dramaturjik analizle başla); zayıf eksenler için "destek/geliştirme" önerisi gelir (örn. ilişki zayıf ise → karaktere monolog/iç ses üzerinden başla, partner sahnelerini sonra ekle). Bu öneriler **erişim hakkı** belirlemez (Yıldız Profil Eşleşme'nin yaptığı gibi), **çalışma yöntemini** seçer — VAK kanalları gibi. App tarafında bu katman `yildizYaklasimi(yildiz, karakter)` fonksiyonunda üretilir; Method Book Bölüm C/Modül I bu katmanın pedagojik yapısını anlatır.
 
 ### 3.10 · Çift Üçlü İlkesi ve 3×3 Matris (YENİ — v1.4, Karar 9)
 
@@ -400,7 +434,7 @@ Yalnızca dijital ortamda anlamlı çalışan araçlar (kişisel test, profil he
 
 | Araç | Yer | Gerekçe |
 |---|---|---|
-| Yıldız Oyuncu Testi | App-only | Puan hesaplama + travma erişim eşiği üreten algoritmaya bağlı |
+| Yıldız Oyuncu Testi | App-only | 6 boyutlu pedagojik profil hesaplaması + karaktere yaklaşım katmanı üreten algoritmaya bağlı (v1.9 — Karar 21 sonrası; travma erişim eşiği kaldırıldı) |
 | VAK Testi | App-only | Aynı mantık (kanal puanlaması) |
 | MBTI Testi | App-only | Aynı mantık (16 tip hesaplama) |
 | Karaktere Hazırlık Soruları | Method Book Bölüm F | Soru havuzu — bireyin kâğıt-kalemle çalıştığı araç |
@@ -416,7 +450,7 @@ ITC transmisyonu (atölye, akademik eğitim, kurumsal pilot) Beyti Engin (pedago
 
 **1. Teorik bloklar — paylaşımlı.** Felsefe, Kabuller, Manifesto, kuramsal zemin, Çift Üçlü matrisleri (§3.10 ve §3.11) iki ses olarak birlikte sunulur.
 
-**2. Modül I (Kalibrasyon) — birlikte.** VAK, MBTI, Yıldız Oyuncu yorumlamaları her zaman eş eğitmenlidir. Yıldız Oyuncu psikolojik puanı klinik perspektifle (FKA) ve pedagojik çerçeveyle (BE) birlikte okunur.
+**2. Modül I (Kalibrasyon) — birlikte.** VAK, MBTI, Yıldız Oyuncu yorumlamaları her zaman eş eğitmenlidir. Yıldız Oyuncu 6 boyutlu profili klinik perspektifle (FKA — psikolojik boyut sağlamlık okuması, sahne-level §3.3 uyarı sistemiyle birlikte) ve pedagojik çerçeveyle (BE — karaktere yaklaşım kanalları, §3.9 karaktere yaklaşım katmanı) birlikte okunur. (v1.9 — Karar 21 sonrası travma erişim eşiği belirleme atıfı kaldırıldı.)
 
 **3. Modül II (Karakter Dramaturjisi) — BE önder, FKA eşlikçi.** Karaktere Hazırlık Soruları, Doğrular, Timeline, Çerçeveler çalışması BE'nin pedagojik liderliğindedir. FKA arka planda gözlemci — etik kayma, kişisel travmaya kayma, dissosiyatif belirti gözetir. Müdahale eder ama merkeze çıkmaz.
 
@@ -428,7 +462,7 @@ ITC transmisyonu (atölye, akademik eğitim, kurumsal pilot) Beyti Engin (pedago
 
 Tetikleyici aktive olduğunda BE atölyeyi geçici duraklatır; FKA topraklanma protokolünü (§3.4) ya da klinik geçişi yönetir. Sonrasında devam ya da kapatma kararı FKA klinik değerlendirmesine göre alınır.
 
-**5. Etik bloklar — FKA imzalı.** Travma Matrisi (§3.3, 8×4), Substitution kullanılmaz ilkesi (§3.1), Topraklanma Protokolü (§3.4), Yıldız Profil Eşleşme Matrisi (§3.3), Yolculuk Geometrisi'nin klinik koruma katmanı (§3.16) bloklarının klinik içeriği FKA tarafından sunulur. Dokümantasyona "Bu bölüm Filiz Kaya Ataklı tarafından imzalanmıştır" işareti taşır.
+**5. Etik bloklar — FKA imzalı.** Travma Matrisi (§3.2, 8×4), Sahne-Level Etik Uyarı (§3.3), Substitution kullanılmaz ilkesi (§3.1), Topraklanma Protokolü (§3.4), Yolculuk Geometrisi'nin klinik koruma katmanı (§3.16) bloklarının klinik içeriği FKA tarafından sunulur. Dokümantasyona "Bu bölüm Filiz Kaya Ataklı tarafından imzalanmıştır" işareti taşır. (v1.9 — Karar 21 sonrası: eski Yıldız Profil Eşleşme Matrisi listesinden çıkarıldı; Yıldız Matrisi §3.9 pedagojik araç olarak ayrıldı.)
 
 **Operasyonel maliyet ve sonuçlar**
 
@@ -606,7 +640,9 @@ ITC ekosisteminin tüm dış iletişim ve yayın belgelerinin referans çerçeve
 
 Tüm belgelerde sıralama: **Beyti Engin önce, Filiz Kaya Ataklı sonra.**
 
-Bu sıralama hiyerarşi değil, kronolojik ve kavramsal kuruluş ağırlığıdır. Beyti Engin yöntemin pedagojik omurgasının ve karakter inşası araçlarının (metin çözümleme, boşluklar, timeline, değiştirilemez doğrular, Üç Kapı, 9 adım × 3 Giriş Kapısı) mimarıdır; Filiz Kaya Ataklı klinik altyapının (Travma Matrisi 8×4, Yıldız Profil Eşleşme, Topraklanma Protokolü, Substitution Yasağı) yaratıcısıdır. İki katkı alanı simetrik durur.
+Bu sıralama hiyerarşi değil, kronolojik ve kavramsal kuruluş ağırlığıdır. Beyti Engin yöntemin pedagojik omurgasının ve karakter inşası araçlarının (metin çözümleme, boşluklar, timeline, değiştirilemez doğrular, Üç Kapı, 9 adım × 3 Giriş Kapısı) mimarıdır; Filiz Kaya Ataklı klinik altyapının (Travma Matrisi 8×4, Sahne-Level Etik Uyarı §3.3, Topraklanma Protokolü, Substitution Yasağı) yaratıcısıdır. İki katkı alanı simetrik durur.
+
+> **Tarihsel kayıt (v1.9, Karar 21):** v1.0–v1.8 arası bu listede yer alan **Yıldız Profil Eşleşme Matrisi** Filiz Kaya Ataklı'nın kanonik klinik tasarımının bir parçasıydı (oyuncu psikolojik puanını travma erişim eşiği olarak kullanan yapı). Karar 21 ile (15 Mayıs 2026) Filiz'in eş kurucu onayıyla geri çekildi — kanonik klinik altyapı listesinin tarihsel bir parçası, ekosistemin bugünkü kanonu değil. Detay: `kararlar/2026-05-15-yildiz-travma-ayrismasi/`.
 
 Karar 16 (Eş Kurucu unvan) ile çelişmez — statü değişmez; sıralama bağlama göre değil her zaman BE → FKA olarak sabittir.
 
@@ -821,6 +857,7 @@ Bu doküman canlı belge. Aşağıdaki olaylar sonrası yeni sürüm çıkar:
 - **v1.5** — 12 Mayıs 2026 — §3.11 (Doğrular Üç Kaynak) "Doğrular Çift Üçlü ve 3×3 Matris" olarak genişletildi. Karar 3'ün Katman Üçlüsü korundu, Kaynak Üçlüsü eklendi (Workbook s.51 yapısı). İki üçlü çapraz eksenlerde — birlikte 3×3 matris. §3.10'daki VAK × Giriş Kapıları matrisinden farklı bir eksen olduğu vurgulandı. Decision Log Karar 10 kaydı.
 - **v1.6** — 12 Mayıs 2026 — Workshop Geri Besleme Paketi: dört yeni alt-bölüm eklendi. §3.13 Transmisyon Mimarisi (BE × FKA eş eğitmenlik, Karar 11). §3.14 Tek Karakter İlkesi (Karar 12). §3.15 Karakter Haritası Taksonomisi (Yolculuk × Çapa × Tip, Karar 13). §3.16 Yolculuk Geometrisi (sahne · tanıklık · çift geri bildirim, Karar 14 — **Filiz klinik onayı bekleniyor, provisional**). §3.1, §3.3, §3.4, §3.5, §3.7, §3.11'e çapraz atıflar. §4.5, §4.6, §4.7'ye Workshop güncellemeleri. v1.3–v1.5 intro/footer kozmetik temizlik. Decision Log Karar 11–14 kayıtları.
 - **v1.7** — 12 Mayıs 2026 — Karar 16 ile Filiz Kaya Ataklı'nın eş kurucu ve eş eğitmen statüsü ekosistem genelinde kanonlandı (**Filiz yazılı onayı bekleniyor, provisional**). Üst meta + footer'da yazar/kurucu bağlamında "×" → "&". §1 ekosistem haritası açılış paragrafına eş kurucu notu eklendi. §3.13 başlığındaki "BE × FKA Eş Eğitmenlik" pedagojik teknik formülasyon olarak korundu. v1.6'nın tüm içeriği aynen korundu.
+- **v1.9** — 15 Mayıs 2026 — **Yıldız–Travma Ayrılması (Karar 21).** Yıldız Oyuncu Matrisi ile Travma Sistemi arasındaki bağ tamamen koparıldı; v1.0'dan beri kanonik "Yıldız Profil Eşleşme Matrisi" (FKA klinik tasarımı, §3.3 alt-bölümü) Filiz'in eş kurucu onayıyla geri çekildi. §3.3 yeniden tanımlandı (Sahne-Level Etik Uyarı); §3.4 Topraklanma tetikleyicisi yoğunluk 2-3 sahneler olarak güncellendi (kategori- ve profil-bağımsız); §3.9 Yıldız Oyuncu bloğuna **Karaktere Yaklaşım Katmanı** alt-katmanı eklendi (VAK örüntüsünde). §1 ekosistem haritası eş kurucu paragrafı, §3.12 dijital araç sınırı tablosu Yıldız satırı, §3.13 Modül I birlikte yorumlama paragrafı, §3.17 Filiz klinik altyapı listesi güncellendi. Etik Çerçeve (`.claude/rules/etik-cerceve.md`) paralel revize edildi: §3 (Yıldız Profil Eşleşme) tarihsel rehber notuna dönüştürüldü, §2 uyarı sistemi olarak yeniden ifade edildi, §4 yoğunluk-tetikli ifade kazandı. Terminoloji dosyasına Yıldız Oyuncu Matrisi açıklaması eklendi. App tarafı uygulama (travma.js refactor, UX metinleri, yildizYaklasimi katmanı) ayrı iş paketi olarak kuyrukta. Gerekçe Substitution Yasağı (§3.1) ile yapısal uyum.
 - **v1.8** — 13 Mayıs 2026 — **Workshop Sonuç Paketi: 4 karar entegre.** (1) **Karar 17** ile HMDK Stuttgart 25-29 Ocak 2027 atölyesinin operasyonel bağlamı 13 maddeyle kanonlandı (A2-intensive ilk akademik kurumsal uygulama; FKA Eş Kurucu sahasındaki ilk akademik test). (2) **Karar 18** ile Berlin Chubbuck Studio Eylül 2026 atölyesi Workshop katmanının ilk gerçek pilotu ve A2-Berlin-Variant'ın kurucu uygulaması olarak kanonlandı (üç kademe: Auditor + Participant + Participant Advance; "Character Design" markası emekliye, "Inside The Character Berlin"). (3) **Karar 19** ile §3.16'ya bireysel yolculuk süresi 45-60 dk aralığı operasyonel parametresi eklendi (Berlin tarihsel kayıt kanonu); ayrıca karakter spektrumu sınırının olmadığı ve ses kayıtları arşivleme etiğinin çift onaylı olduğu kanonlandı (B + C **Filiz klinik onayı bekleniyor — provisional**). (4) **Karar 20** ile yöntemin tarihsel çizgisi ve isim sıralama kuralı kanonlandı; **§3.17 yeni alt-bölüm: Yöntem Tarihsel Çizgisi** açıldı (BE ve FKA özgeçmiş sabit hâlleri dahil). §1 ekosistem haritasına sıralama kuralı eki eklendi (her zaman BE önce, FKA sonra; tarihsel kanıt alıntıları istisna). Brief v2.3 yedirmesi sonraki tura ertelendi. Workshop Spine v1.2 → v1.3 (3 karar entegre: 17 + 18 + 19). v1.7'nin tüm içeriği aynen korundu.
 
 ---
@@ -836,5 +873,5 @@ Bu doküman canlı belge. Aşağıdaki olaylar sonrası yeni sürüm çıkar:
 
 ---
 
-*— ITC Ekosistem Spine v1.8 sonu —*
+*— ITC Ekosistem Spine v1.9 sonu —*
 *Inside The Character · Beyti Engin & Filiz Kaya Ataklı — Eş Kurucular ve Eş Eğitmenler · Mayıs 2026*
